@@ -1,3 +1,3 @@
 "" vim: ft=vim
 
-setlocal spell
+setlocal nospell
