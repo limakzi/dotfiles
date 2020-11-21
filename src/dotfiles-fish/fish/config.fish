@@ -39,7 +39,7 @@ set -U Z_OWNER "limakzi"
 ## }}}1
 
 
-## fisher-spacefish-prompt {{{1
+## fisher-prompt-spacefish {{{1
 set -U SPACEFISH_USER_SHOW false
 set -U SPACEFISH_NODE_SHOW false
 set -U SPACEFISH_JULIA_SHOW false
@@ -59,6 +59,13 @@ set -U SPACEFISH_BATTERY_THRESHOLD 100
 set -U SPACEFISH_PROMPT_SEPARATE_LINE false
 
 set -U SPACEFISH_CHAR_SHOW false
+## }}}1
+
+
+## fisher-prompt-tide {{{1
+set -x tide_pwd_max_dirs 3
+set -x tide_pwd_home_icon ""
+set -x tide_pwd_dir_icon ""
 ## }}}1
 
 
