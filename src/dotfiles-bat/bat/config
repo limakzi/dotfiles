@@ -1,5 +1,4 @@
---theme="dracula"
 --color=always
 --italic-text=always
 --wrap=never
-
+--number
