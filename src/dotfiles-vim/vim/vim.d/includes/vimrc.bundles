@@ -1,9 +1,0 @@
-"" vim: ft=vim
-
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'tomasr/molokai'
-Plugin 'dracula/vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'

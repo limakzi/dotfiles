@@ -24,15 +24,6 @@ endif
 "" Plugins & compatibility {{{1
 set nocompatible
 filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-if filereadable(expand("~/.vim/includes/vimrc.bundles"))
-  source ~/.vim/includes/vimrc.bundles
-endif
-
-call vundle#end()
 "" }}}1
 
 
@@ -76,7 +67,6 @@ set shiftround
 
 "" Appearance {{{1
 syntax enable
-colorscheme dracula
 
 set cursorcolumn
 set cursorline
