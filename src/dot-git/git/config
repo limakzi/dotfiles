@@ -1,0 +1,12 @@
+## vim: ft=gitconfig
+
+[user]
+	name = Kamil Zabielski
+	email = 50334623+limakzi@users.noreply.github.com
+	signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGT8ErUWtGR9ayGA9tUgov469wcG3Zrr67ACxrHidxd8"
+
+[init]
+	defaultBranch = main
+
+[commit]
+	gpgsign = true
