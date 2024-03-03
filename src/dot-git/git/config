@@ -36,3 +36,6 @@
 
 [gpg "ssh"]
 	allowedSignersFile = ~/.config/git/conf.d/allowed_signers
+
+[push]
+	autoSetupRemote = true
