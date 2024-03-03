@@ -1,0 +1,14 @@
+## vim: ft=gitattributes
+
+*.txt text=auto eol=lf
+*.c   text=auto eol=lf
+*.h   text=auto eol=lf
+
+*.bat text=auto eol=crlf
+*.cmd text=auto eol=crlf
+*.ps1 text=auto eol=crlf
+
+ *.zip filter=lfs diff=lfs merge=lfs
+
+ *.psd filter=lfs diff=lfs merge=lfs -text
+ *.pdf filter=lfs diff=lfs merge=lfs -text
