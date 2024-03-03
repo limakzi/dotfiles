@@ -17,3 +17,9 @@
     - ~/public
     - ~/templates
     - ~/videos
+
+- create:
+    - ~/.config/
+
+- link:
+    ~/.config/git: src/dot-git/git/
