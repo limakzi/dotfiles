@@ -22,6 +22,7 @@
     - ~/.config/
 
 - link:
+    ~/.config/bat: src/dot-bat/bat/
     ~/.config/git: src/dot-git/git/
     ~/.config/lsd: src/dot-lsd/lsd/
     ~/.config/nvim: src/dot-nvim/nvim/
