@@ -1,0 +1,22 @@
+## vim: ft=conf
+
+set adjust-open "width"
+set guioptions ""
+
+set scroll-page-aware true
+set scroll-full-overlap 0.01
+set scroll-step 128
+set advance-pages-per-row true
+
+set link-zoom true
+
+set zoom-step 8
+
+set page-padding 8
+
+set incremental-search true
+
+map r reload
+map 1 set "pages-per-row 1"
+map 2 set "pages-per-row 2"
+map 3 set "pages-per-row 3"
