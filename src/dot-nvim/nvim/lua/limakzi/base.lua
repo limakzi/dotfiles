@@ -92,8 +92,10 @@ vim.opt.spell = false
 vim.opt.spelllang = 'en_gb'
 -- }}}1
 
--- {{{1 keyboard
+-- {{{1 keyboard and mouse
 vim.g.mapleader = ','
+
+vim.opt.mouse = "a"
 
 -- {{{2 keymaps -- indentations
 vim.keymap.set('v', '>', '>gv', { silent = true })
