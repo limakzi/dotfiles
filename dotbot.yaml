@@ -25,4 +25,5 @@
     ~/.config/git: src/dot-git/git/
     ~/.config/nvim: src/dot-nvim/nvim/
     ~/.config/starship: src/dot-starship/starship/
+    ~/.config/tmux: src/dot-tmux/tmux/
     ~/.config/zathura: src/dot-zathura/zathura/
