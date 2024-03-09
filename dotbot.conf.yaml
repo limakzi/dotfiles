@@ -31,3 +31,6 @@
     ~/.config/starship: src/dot-starship/starship/
     ~/.config/tmux: src/dot-tmux/tmux/
     ~/.config/zathura: src/dot-zathura/zathura/
+
+- link:
+    ~/.config/user-dirs.dirs: src/dot-xdg/xdg/user-dirs.dirs
