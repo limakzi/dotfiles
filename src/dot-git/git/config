@@ -30,6 +30,7 @@
 	ll = lla --abbrev-commit -16
 	st = status --short
 	ss = st
+	sw = switch
 
 [gpg]
 	format = ssh
