@@ -33,4 +33,9 @@
     ~/.config/zathura: src/os-linux/dot-zathura/zathura/
 
 - link:
+    ~/.local/share/fonts/:
+        glob: true
+        path: src/data/fonts/**
+
+- link:
     ~/.config/user-dirs.dirs: src/os-linux/dot-xdg/xdg/user-dirs.dirs
