@@ -7,7 +7,6 @@
     create:
       mode: 0700
 
-
 - create:
     - ~/desktop
     - ~/documents
