@@ -21,6 +21,7 @@
     - ~/.config/
 
 - link:
+    ~/.config/alacritty: src/os-linux/dot-alacritty/alacritty/
     ~/.config/bat: src/os-linux/dot-bat/bat/
     ~/.config/fish: src/os-linux/dot-fish/fish/
     ~/.config/git: src/os-linux/dot-git/git/
