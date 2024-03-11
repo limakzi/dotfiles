@@ -24,6 +24,7 @@
     ~/.config/bat: src/os-linux/dot-bat/bat/
     ~/.config/fish: src/os-linux/dot-fish/fish/
     ~/.config/git: src/os-linux/dot-git/git/
+    ~/.config/htop: src/os-linux/dot-htop/htop/
     ~/.config/lsd: src/os-linux/dot-lsd/lsd/
     ~/.config/nvim: src/os-linux/dot-nvim/nvim/
     ~/.config/ranger: src/os-linux/dot-ranger/ranger/
