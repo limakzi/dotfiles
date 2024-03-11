@@ -1,0 +1,7 @@
+## {{{1 xft
+Xft.dpi: 192
+Xft.autohint: true
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: full
+## }}}1

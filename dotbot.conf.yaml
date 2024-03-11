@@ -29,6 +29,7 @@
     ~/.config/ranger: src/os-linux/dot-ranger/ranger/
     ~/.config/starship: src/os-linux/dot-starship/starship/
     ~/.config/tmux: src/os-linux/dot-tmux/tmux/
+    ~/.config/xorg: src/os-linux/dot-xorg/xorg/
     ~/.config/zathura: src/os-linux/dot-zathura/zathura/
 
 - link:
