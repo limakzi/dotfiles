@@ -22,15 +22,15 @@
     - ~/.config/
 
 - link:
-    ~/.config/bat: src/dot-bat/bat/
-    ~/.config/fish: src/dot-fish/fish/
-    ~/.config/git: src/dot-git/git/
-    ~/.config/lsd: src/dot-lsd/lsd/
-    ~/.config/nvim: src/dot-nvim/nvim/
-    ~/.config/ranger: src/dot-ranger/ranger/
-    ~/.config/starship: src/dot-starship/starship/
-    ~/.config/tmux: src/dot-tmux/tmux/
-    ~/.config/zathura: src/dot-zathura/zathura/
+    ~/.config/bat: src/os-linux/dot-bat/bat/
+    ~/.config/fish: src/os-linux/dot-fish/fish/
+    ~/.config/git: src/os-linux/dot-git/git/
+    ~/.config/lsd: src/os-linux/dot-lsd/lsd/
+    ~/.config/nvim: src/os-linux/dot-nvim/nvim/
+    ~/.config/ranger: src/os-linux/dot-ranger/ranger/
+    ~/.config/starship: src/os-linux/dot-starship/starship/
+    ~/.config/tmux: src/os-linux/dot-tmux/tmux/
+    ~/.config/zathura: src/os-linux/dot-zathura/zathura/
 
 - link:
-    ~/.config/user-dirs.dirs: src/dot-xdg/xdg/user-dirs.dirs
+    ~/.config/user-dirs.dirs: src/os-linux/dot-xdg/xdg/user-dirs.dirs
