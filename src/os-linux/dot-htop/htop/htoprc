@@ -1,0 +1,5 @@
+hide_threads=0
+detailed_cpu_time=1
+
+tree_view=1
+shadow_other_users=1
