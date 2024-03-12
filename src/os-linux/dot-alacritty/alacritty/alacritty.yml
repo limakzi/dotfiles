@@ -34,8 +34,8 @@ window:
   opacity: 1.0
   dynamic_title: true
   padding:
-    x: 5
-    y: 5
+    x: 4
+    y: 4
 
 mouse:
   hide_when_typing: true
