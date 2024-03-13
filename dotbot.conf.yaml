@@ -26,6 +26,7 @@
     ~/.config/fish: src/os-linux/dot-fish/fish/
     ~/.config/git: src/os-linux/dot-git/git/
     ~/.config/htop: src/os-linux/dot-htop/htop/
+    ~/.config/i3: src/os-linux/dot-i3/i3/
     ~/.config/lsd: src/os-linux/dot-lsd/lsd/
     ~/.config/nvim: src/os-linux/dot-nvim/nvim/
     ~/.config/ranger: src/os-linux/dot-ranger/ranger/
