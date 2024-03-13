@@ -1,6 +1,7 @@
 ## vim: ft=conf
 
-set adjust-open "width"
+set font "FiraCode Nerd Font 32"
+set adjust-open "best-fit"
 set guioptions ""
 
 set scroll-page-aware true
