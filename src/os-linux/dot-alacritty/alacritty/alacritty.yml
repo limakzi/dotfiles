@@ -9,7 +9,7 @@ shell:
     - 'tmux attach || tmux || bash'
 
 font:
-  size: 11.0
+  size: 24.0
   builtin_box_drawing: true
   normal:
     family: JetBrains Mono Nerd Font
