@@ -52,6 +52,7 @@
 
 ## {{{1 jupyter
 **/.ipynb_checkpoints/*
+**/.sobj
 ## }}}1
 
 ## {{{1 latex
