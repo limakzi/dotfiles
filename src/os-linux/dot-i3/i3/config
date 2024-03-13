@@ -98,7 +98,7 @@ bindsym $mod+Shift+x kill
 
 ## {{{2 keyboard shortcuts -- applications
 bindsym $mod+Shift+Return exec --no-startup-id "alacritty"
-bindsym $mod+d exec --no-startup-id "rofi -modu drun,run -show drun"
+bindsym $mod+d exec --no-startup-id "rofi -modi windowcd,run,drun,ssh -show drun"
 ## }}}2
 
 ## }}}1
