@@ -7,5 +7,5 @@ umask 077
 ## }}}1
 
 ## {{{1 app-zoxide
-zoxide init --cmd j fish | source
+zoxide init --cmd j --hook pwd fish | source
 ## }}}1
