@@ -11,12 +11,6 @@ default_border pixel 8
 default_floating_border pixel 8
 ## }}}1
 
-## {{{1 i3 -- startup
-exec --no-startup-id xsetroot -solid "#D0D0D0"
-exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-## }}}1
-
 ## {{{1 i3 -- workspaces
 set $ws1 "1:"
 set $ws2 "2:"
@@ -28,6 +22,14 @@ set $ws7 "7:󰎶"
 set $ws8 "8:󰎹"
 set $ws9 "9:󰎼"
 set $ws10 "10:"
+## }}}1
+
+## {{{1 i3 -- startup
+exec --no-startup-id xsetroot -solid "#D0D0D0"
+exec --no-startup-id dex --autostart --environment i3
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+exec --no-startup-id i3-msg workspace $ws10
 ## }}}1
 
 ## {{{1 i3 -- keyboard and mouse
@@ -136,8 +138,12 @@ bar {
 
         tray_output none
         workspace_buttons yes
-        workspace_min_width 64
+        workspace_min_width 80
         strip_workspace_numbers yes
         binding_mode_indicator no
 }
+## }}}1
+
+## {{{1 i3 -- application-mapping
+assign [class="^Alacritty$"] $ws1
 ## }}}1
