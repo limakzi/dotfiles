@@ -9,3 +9,8 @@ umask 077
 ## {{{1 app-zoxide
 zoxide init --cmd j --hook pwd fish | source
 ## }}}1
+
+## {{{1 app-starship
+export STARSHIP_CONFIG="$HOME/.config/starship/config.toml"
+starship init fish | source
+## }}}1
