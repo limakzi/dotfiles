@@ -8,16 +8,22 @@ vim.cmd [[colorscheme dracula]]
 require('colorizer').setup()
 -- }}}1
 
--- {{{1 plugins -- neogitorg/neogi
+-- {{{1 plugins -- neogitorg/neogit
 require('neogit').setup()
 -- }}}1
 
+
+
 return require('packer').startup(function(use)
     use {'wbthomason/packer.nvim'}
+
     use {'dracula/vim', as = 'dracula'}
     use {'norcalli/nvim-colorizer.lua'}
+
     use {'NeogitOrg/neogit', requires = {
             {'nvim-lua/plenary.nvim', opt = false},
             {'sindrets/diffview.nvim', opt = false},
             {'nvim-telescope/telescope.nvim', opt = false}}}
+
+    use {'lervag/vimtex'}
 end)
