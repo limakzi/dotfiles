@@ -15,6 +15,22 @@ neogit.setup()
 vim.keymap.set('n', '<leader>co', function() neogit.open { kind = 'auto' } end, { noremap = true, silent = true, desc = 'neo[g]it open [s]plit' })
 -- }}}1
 
+-- {{{1 plugins -- lewis6991/gitsigns.nvim
+require('gitsigns').setup({
+    signcolumn = true,
+    numhl = false,
+    linehl = false,
+    signs = {
+        add          = { text = '│' },
+        change       = { text = '│' },
+        delete       = { text = '_' },
+        topdelete    = { text = '‾' },
+        changedelete = { text = '~' },
+        untracked    = { text = '┆' },
+    },
+})
+-- }}}1
+
 -- {{{1 plugins --  numtostr/comment
 require('Comment').setup()
 -- }}}1
@@ -41,10 +57,12 @@ return require('packer').startup(function(use)
 
     use {'numToStr/Comment.nvim' }
 
+    use {'lewis6991/gitsigns.nvim'}
     use {'NeogitOrg/neogit', requires = {
             {'nvim-lua/plenary.nvim', opt = false},
             {'sindrets/diffview.nvim', opt = false},
-            {'nvim-telescope/telescope.nvim', opt = false}}}
+            {'nvim-telescope/telescope.nvim', opt = false},
+            {'nvim-tree/nvim-web-devicons', opt = false}}}
 
     use {'lervag/vimtex'}
 end)
