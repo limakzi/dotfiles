@@ -29,8 +29,11 @@ disabled = true
 [hostname]
 ssh_symbol = ' '
 
-[package]
-disabled = false
-
 [username]
 disabled = true
+
+[lua]
+disabled = true
+
+[package]
+disabled = false
