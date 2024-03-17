@@ -9,7 +9,10 @@ require('colorizer').setup()
 -- }}}1
 
 -- {{{1 plugins -- neogitorg/neogit
-require('neogit').setup()
+local neogit = require('neogit')
+neogit.setup()
+
+vim.keymap.set('n', '<leader>co', function() neogit.open { kind = 'auto' } end, { noremap = true, silent = true, desc = 'neo[g]it open [s]plit' })
 -- }}}1
 
 -- {{{1 plugins --  numtostr/comment
