@@ -12,6 +12,10 @@ require('colorizer').setup()
 require('neogit').setup()
 -- }}}1
 
+-- {{{1 plugins --  numtostr/comment
+require('Comment').setup()
+-- }}}1
+
 
 
 return require('packer').startup(function(use)
@@ -19,6 +23,8 @@ return require('packer').startup(function(use)
 
     use {'dracula/vim', as = 'dracula'}
     use {'norcalli/nvim-colorizer.lua'}
+
+    use {'numToStr/Comment.nvim' }
 
     use {'NeogitOrg/neogit', requires = {
             {'nvim-lua/plenary.nvim', opt = false},
