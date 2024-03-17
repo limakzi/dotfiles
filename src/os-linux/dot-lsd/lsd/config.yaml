@@ -20,3 +20,6 @@ sorting:
   column: name
   reverse: false
   dir-grouping: first
+
+ignore-globs:
+  - .git

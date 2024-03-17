@@ -1,6 +1,6 @@
 if type -q lsd
     function ll --wraps lsd
-        command lsd -Flh $argv
+        command lsd -Flha $argv
     end
 else
     function ll --wraps ls
