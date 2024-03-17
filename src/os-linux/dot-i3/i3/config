@@ -28,6 +28,7 @@ set $ws10 "10:"
 exec --no-startup-id xsetroot -solid "#D0D0D0"
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xset r rate 384 64
 
 exec --no-startup-id i3-msg workspace $ws10
 ## }}}1

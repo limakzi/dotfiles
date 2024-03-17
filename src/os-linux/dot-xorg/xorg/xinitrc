@@ -1,3 +1,2 @@
 xrdb -load ~/.config/xorg/Xresources
-xset rate 384 16
 exec i3
