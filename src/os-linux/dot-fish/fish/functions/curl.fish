@@ -3,4 +3,3 @@ if type -q curl
         command curl --config $HOME/.config/curl/curlrc $argv
     end
 end
-
