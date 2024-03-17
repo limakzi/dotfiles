@@ -23,14 +23,15 @@
 - link:
     ~/.config/alacritty: src/os-linux/dot-alacritty/alacritty/
     ~/.config/bat: src/os-linux/dot-bat/bat/
+    ~/.config/curl: src/os-linux/dot-curl/curl/
     ~/.config/fish: src/os-linux/dot-fish/fish/
     ~/.config/git: src/os-linux/dot-git/git/
     ~/.config/htop: src/os-linux/dot-htop/htop/
     ~/.config/i3: src/os-linux/dot-i3/i3/
     ~/.config/lsd: src/os-linux/dot-lsd/lsd/
     ~/.config/nvim: src/os-linux/dot-nvim/nvim/
-    ~/.config/rofi: src/os-linux/dot-rofi/rofi/
     ~/.config/ranger: src/os-linux/dot-ranger/ranger/
+    ~/.config/rofi: src/os-linux/dot-rofi/rofi/
     ~/.config/starship: src/os-linux/dot-starship/starship/
     ~/.config/tmux: src/os-linux/dot-tmux/tmux/
     ~/.config/xorg: src/os-linux/dot-xorg/xorg/
