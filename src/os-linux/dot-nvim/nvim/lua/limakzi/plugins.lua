@@ -36,6 +36,15 @@ require('gitsigns').setup({
 require('Comment').setup()
 -- }}}1
 
+-- {{{1 plugins -- nvim-treesitter/nvim-treesitter
+require('nvim-treesitter.configs').setup({
+    ensure_installed = { 'lua', 'vim', 'vimdoc', 'latex' },
+    highlight = {
+        enable = true,
+    }
+})
+-- }}}1
+
 -- {{{1 plugins -- nvim-telescope/telescope.nvim
 local telescope_builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', telescope_builtin.git_files, {})
@@ -53,6 +62,7 @@ return require('packer').startup(function(use)
     use {'dracula/vim', as = 'dracula'}
     use {'norcalli/nvim-colorizer.lua'}
 
+    use {'nvim-treesitter/nvim-treesitter'}
     use {'nvim-telescope/telescope.nvim', tag = '0.1.6', requires = {
             {'nvim-lua/plenary.nvim', opt = false}}}
 
