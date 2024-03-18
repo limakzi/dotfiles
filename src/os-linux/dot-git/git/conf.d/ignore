@@ -1,4 +1,4 @@
-## vim: ft=gitignore
+## vim: ft=gitignore foldmethod=marker
 
 
 ## {{{1 git

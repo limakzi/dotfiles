@@ -1,3 +1,5 @@
+## vim: foldmethod=marker
+
 set $mod Mod4
 
 ## {{{1 i3 -- appearance
