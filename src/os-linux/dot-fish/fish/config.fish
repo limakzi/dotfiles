@@ -14,3 +14,7 @@ zoxide init --cmd j --hook pwd fish | source
 export STARSHIP_CONFIG="$HOME/.config/starship/config.toml"
 starship init fish | source
 ## }}}1
+
+## {{{1 app-terraform
+set -x TF_CLI_CONFIG_FILE "$HOME/.config/terraform/config.tfrc"
+## }}}!
