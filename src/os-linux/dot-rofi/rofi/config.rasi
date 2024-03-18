@@ -3,5 +3,5 @@ configuration {
 }
 
 * {
-    font: "FiraCode Nerd Font 32";
+    font: "JetBrains Mono Nerd Font 32";
 }
