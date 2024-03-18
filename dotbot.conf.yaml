@@ -33,6 +33,7 @@
     ~/.config/ranger: src/os-linux/dot-ranger/ranger/
     ~/.config/rofi: src/os-linux/dot-rofi/rofi/
     ~/.config/starship: src/os-linux/dot-starship/starship/
+    ~/.config/terraform: src/os-linux/dot-terraform/terraform/
     ~/.config/tmux: src/os-linux/dot-tmux/tmux/
     ~/.config/xorg: src/os-linux/dot-xorg/xorg/
     ~/.config/zathura: src/os-linux/dot-zathura/zathura/
