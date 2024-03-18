@@ -1,6 +1,7 @@
 vim.cmd [[packadd packer.nvim]]
 
 -- {{{1 plugins -- dracula/vim
+vim.g.dracula_colorterm = 0
 vim.cmd [[colorscheme dracula]]
 -- }}}1
 

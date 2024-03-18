@@ -16,7 +16,7 @@ vim.opt.undodir = os.getenv("HOME") .. "/.cache/nvim/undodir"
 -- }}}1
 
 -- {{{1 appearance
-vim.o.termguicolors = true
+vim.opt.termguicolors = true
 
 vim.opt.cursorline = true
 vim.opt.cursorcolumn = true
