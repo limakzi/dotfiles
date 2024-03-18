@@ -103,5 +103,8 @@ return require('packer').startup(function(use)
             {'nvim-tree/nvim-web-devicons', opt = false}}}
 
     use {'lervag/vimtex'}
-    use {'windwp/nvim-autopairs', event = 'InsertEnter', config = function() require('nvim-autopairs').setup {} end}
+    use {'windwp/nvim-autopairs', event = 'InsertEnter', 
+                                  config = function() 
+                                               require('nvim-autopairs').setup({})
+                                           end}
 end)
