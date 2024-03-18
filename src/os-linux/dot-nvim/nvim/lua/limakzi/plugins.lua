@@ -1,3 +1,5 @@
+-- vim: foldmethod=marker
+
 vim.cmd [[packadd packer.nvim]]
 
 -- {{{1 plugins -- dracula/vim
@@ -70,6 +72,9 @@ require('nvim-treesitter.configs').setup({
         enable = true,
     }
 })
+
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
 -- }}}1
 
 -- {{{1 plugins -- nvim-telescope/telescope.nvim
