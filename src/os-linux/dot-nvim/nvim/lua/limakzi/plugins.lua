@@ -13,7 +13,7 @@ require('colorizer').setup()
 local neogit = require('neogit')
 neogit.setup()
 
-vim.keymap.set('n', '<leader>co', function() neogit.open { kind = 'auto' } end, { noremap = true, silent = true, desc = 'neo[g]it open [s]plit' })
+vim.keymap.set('n', '<leader>cc', function() neogit.open { kind = 'auto' } end, { noremap = true, silent = true, desc = 'neo[g]it open [s]plit' })
 -- }}}1
 
 -- {{{1 plugins -- lewis6991/gitsigns.nvim
