@@ -1,6 +1,6 @@
 ## vim: ft=conf
 
-set font "FiraCode Nerd Font 32"
+set font "JetBrains Mono Nerd Font 32"
 set adjust-open "best-fit"
 set guioptions ""
 

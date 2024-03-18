@@ -2,7 +2,7 @@ set $mod Mod4
 
 ## {{{1 i3 -- appearance
 set $fontsize 32
-font pango:FiraCode Nerd Font $fontsize
+font pango:JetBrains Mono Nerd Font $fontsize
 
 gaps inner 8
 gaps outer 4
@@ -135,7 +135,7 @@ bar {
 
         bindsym button1 nop
 
-        font pango:FiraCode Nerd Font Bold $fontsize
+        font pango:JetBrains Mono Nerd Font $fontsize
 
         tray_output none
         workspace_buttons yes
