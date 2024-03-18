@@ -1,0 +1,26 @@
+---
+
+name: dotbot
+run-name: dotbot-${{ github.event.number }} ${{ github.event.pull_request.title }}
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  dotbot:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: git -- checkout
+        uses: actions/checkout@v4
+
+      - name: python -- setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+          cache: pip
+
+      - name: python -- install dotbot
+        run: pip install dotbot
+
+      - name: dotbot -- apply
+        run: dotbot -c dotbot.conf.yaml
