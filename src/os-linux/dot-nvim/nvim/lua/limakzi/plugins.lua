@@ -38,7 +38,34 @@ require('Comment').setup()
 
 -- {{{1 plugins -- nvim-treesitter/nvim-treesitter
 require('nvim-treesitter.configs').setup({
-    ensure_installed = { 'lua', 'vim', 'vimdoc', 'latex' },
+    ensure_installed = { 
+        'fish',
+        'git_config',
+        'gitcommit',
+        'gitignore',
+        'latex',
+        'lua',
+        'markdown',
+        'ssh_config',
+        'terraform',
+        'tmux',
+        'vim',
+        'vimdoc',
+        'yaml',
+        'zathurarc'
+    },
+    indent = {
+        enable = true
+    },
+    incremental_selection = {
+        enable = true,
+        keymaps = {
+            init_selection = 'vnn',
+            node_incremental = 'J',
+            scope_incremental = 'L',
+            node_decremental = 'K',
+        },
+    },
     highlight = {
         enable = true,
     }
