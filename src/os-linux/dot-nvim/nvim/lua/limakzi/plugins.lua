@@ -39,14 +39,19 @@ require('Comment').setup()
 -- {{{1 plugins -- nvim-treesitter/nvim-treesitter
 require('nvim-treesitter.configs').setup({
     ensure_installed = { 
-        'latex',
+        'fish',
+        'git_config',
         'gitcommit',
         'gitignore',
+        'latex',
         'lua',
         'markdown',
+        'ssh_config',
+        'terraform',
         'vim',
         'vimdoc',
-        'yaml'
+        'yaml',
+        'zathurarc'
     },
     indent = {
         enable = true
