@@ -48,6 +48,7 @@ require('nvim-treesitter.configs').setup({
         'markdown',
         'ssh_config',
         'terraform',
+        'tmux',
         'vim',
         'vimdoc',
         'yaml',
