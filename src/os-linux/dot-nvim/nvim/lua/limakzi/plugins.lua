@@ -46,6 +46,7 @@ require('nvim-treesitter.configs').setup({
         'latex',
         'lua',
         'markdown',
+        'requirements',
         'ssh_config',
         'terraform',
         'tmux',
@@ -80,23 +81,72 @@ vim.keymap.set('n', '<leader>fb', telescope_builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', telescope_builtin.help_tags, {})
 -- }}}1
 
+-- {{{1 plugins -- nvim-cmp
+--
+local cmp_status, cmp = pcall(require, "cmp")
+if not cmp_status then
+  return
+end
+
+local luasnip_status, luasnip = pcall(require, "luasnip")
+if not luasnip_status then
+  return
+end
+
+require("luasnip/loaders/from_vscode").lazy_load()
+
+vim.opt.completeopt = "menu,menuone,noselect"
+
+cmp.setup({
+  snippet = {
+    expand = function(args)
+      luasnip.lsp_expand(args.body)
+    end,
+  },
+  mapping = cmp.mapping.preset.insert({
+    ["<C-k>"] = cmp.mapping.select_prev_item(),
+    ["<C-j>"] = cmp.mapping.select_next_item(),
+    ["<C-b>"] = cmp.mapping.scroll_docs(-4),
+    ["<C-f>"] = cmp.mapping.scroll_docs(4),
+    ["<C-Space>"] = cmp.mapping.complete(),
+    ["<C-e>"] = cmp.mapping.abort(),
+    ["<CR>"] = cmp.mapping.confirm({ select = false }),
+  }),
+  -- sources for autocompletion
+  sources = cmp.config.sources({
+    { name = "nvim_lsp" },
+    { name = "luasnip" },
+    { name = "buffer" },
+    { name = "path" },
+  }),
+})
+-- }}}1
+
 
 
 
 return require('packer').startup(function(use)
     use {'wbthomason/packer.nvim'}
 
-    use {'dracula/vim', as = 'dracula'}
-    use {'norcalli/nvim-colorizer.lua'}
+    use {'dracula/vim', as = 'dracula'}     -- Colorscheme.
+    use {'norcalli/nvim-colorizer.lua'}     -- Colorize #000000.
 
     use {'nvim-treesitter/nvim-treesitter'}
     use {'nvim-telescope/telescope.nvim', tag = '0.1.6', requires = {
             {'nvim-lua/plenary.nvim', opt = false}}}
 
-    use {'numToStr/Comment.nvim' }
+    use{'hrsh7th/nvim-cmp'}                 -- Completion - plugin
+    use{'hrsh7th/cmp-buffer'}               -- Completion - source buffer.
+    use{'hrsh7th/cmp-path'}                 -- Completion - source paths.
 
-    use {'lewis6991/gitsigns.nvim'}
-    use {'NeogitOrg/neogit', requires = {
+    use{'L3MON4D3/LuaSnip'}                 -- Snippet - engine.
+    use{'saadparwaiz1/cmp_luasnip'}         -- Snippet - autocompletion.
+    use{'rafamadriz/friendly-snippets'}     -- Snippet - collections.
+
+    use {'numToStr/Comment.nvim' }          -- Better comments.
+
+    use {'lewis6991/gitsigns.nvim'}         -- Git - inline.
+    use {'NeogitOrg/neogit', requires = {   -- Git - interactive.
             {'nvim-lua/plenary.nvim', opt = false},
             {'sindrets/diffview.nvim', opt = false},
             {'nvim-telescope/telescope.nvim', opt = false},
