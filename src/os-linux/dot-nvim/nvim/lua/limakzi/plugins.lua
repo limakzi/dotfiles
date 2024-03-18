@@ -38,7 +38,16 @@ require('Comment').setup()
 
 -- {{{1 plugins -- nvim-treesitter/nvim-treesitter
 require('nvim-treesitter.configs').setup({
-    ensure_installed = { 'lua', 'vim', 'vimdoc', 'latex' },
+    ensure_installed = { 
+        'latex',
+        'gitcommit',
+        'gitignore',
+        'lua',
+        'markdown',
+        'vim',
+        'vimdoc',
+        'yaml'
+    },
     indent = {
         enable = true
     },
