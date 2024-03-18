@@ -6,6 +6,11 @@ set -U fish_greeting ""
 umask 077
 ## }}}1
 
+## {{{1 terminal and editor
+set -gx EDITOR nvim
+set -gx TERMINAL alacritty
+## }}}1
+
 ## {{{1 app-zoxide
 zoxide init --cmd j --hook pwd fish | source
 ## }}}1
