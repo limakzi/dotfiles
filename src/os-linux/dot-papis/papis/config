@@ -1,0 +1,17 @@
+## vim: ft=toml
+
+[settings]
+default-library = inbox
+file-browser = ranger
+
+[inbox]
+dir = ~/documents/references/
+
+[books]
+dir = ~/documents/references/
+
+[research-antiassociativity]
+dir = ~/documents/references/research-antiassociativity
+
+[research-modular-isomorphism-problem]
+dir = ~/documents/references/research-modular-isomorphism-problem
