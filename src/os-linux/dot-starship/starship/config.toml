@@ -37,3 +37,9 @@ disabled = true
 
 [package]
 disabled = false
+
+[azure]
+disabled = false
+
+[aws]
+disabled = false
