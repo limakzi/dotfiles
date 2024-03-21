@@ -84,8 +84,6 @@
 
 *.run.xml
 *.fdb_latexmk
-
-*.pdf
 ## }}}1
 
 ## {{{1 python
