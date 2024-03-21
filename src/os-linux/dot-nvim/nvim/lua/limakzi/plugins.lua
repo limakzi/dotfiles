@@ -11,13 +11,6 @@ vim.cmd [[colorscheme dracula]]
 require('colorizer').setup()
 -- }}}1
 
--- {{{1 plugins -- neogitorg/neogit
-local neogit = require('neogit')
-neogit.setup()
-
-vim.keymap.set('n', '<leader>cc', function() neogit.open { kind = 'auto' } end, { noremap = true, silent = true, desc = 'neo[g]it open [s]plit' })
--- }}}1
-
 -- {{{1 plugins -- lewis6991/gitsigns.nvim
 require('gitsigns').setup({
     signcolumn = true,
@@ -127,6 +120,17 @@ cmp.setup({
 })
 -- }}}1
 
+-- {{{1 plugins -- neogitorg/neogit
+local neogit = require('neogit')
+neogit.setup {
+    auto_refresh = true,
+    integrations = {
+        telescope = true
+    }
+}
+
+vim.keymap.set('n', '<leader>cc', function() neogit.open { } end, { noremap = true, silent = true, desc = 'neo[g]it open [s]plit' })
+-- }}}1
 
 
 
