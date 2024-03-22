@@ -80,6 +80,9 @@ vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
 
 -- {{{1 plugins -- nvim-telescope/telescope.nvim
 local telescope_builtin = require('telescope.builtin')
+
+require("telescope").load_extension "file_browser"
+
 vim.keymap.set('n', '<leader>ff', telescope_builtin.git_files, {})
 vim.keymap.set('n', '<leader>fg', telescope_builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', telescope_builtin.buffers, {})
@@ -137,8 +140,12 @@ return require('packer').startup(function(use)
     use {'norcalli/nvim-colorizer.lua'}     -- Colorize #000000.
 
     use {'nvim-treesitter/nvim-treesitter'}
-    use {'nvim-telescope/telescope.nvim', tag = '0.1.6', requires = {
-            {'nvim-lua/plenary.nvim', opt = false}}}
+    use {'nvim-telescope/telescope.nvim', 
+            tag = '0.1.6', 
+            requires = {
+                {'nvim-lua/plenary.nvim', opt = false},
+                {'nvim-telescope/telescope-file-browser.nvim', opt = false}}
+    }
 
     use{'hrsh7th/nvim-cmp'}                 -- Completion - plugin
     use{'hrsh7th/cmp-buffer'}               -- Completion - source buffer.
@@ -151,15 +158,19 @@ return require('packer').startup(function(use)
     use {'numToStr/Comment.nvim' }          -- Better comments.
 
     use {'lewis6991/gitsigns.nvim'}         -- Git - inline.
-    use {'NeogitOrg/neogit', requires = {   -- Git - interactive.
-            {'nvim-lua/plenary.nvim', opt = false},
-            {'sindrets/diffview.nvim', opt = false},
-            {'nvim-telescope/telescope.nvim', opt = false},
-            {'nvim-tree/nvim-web-devicons', opt = false}}}
+    use {'NeogitOrg/neogit', 
+            requires = {                    -- Git - interactive.
+                {'nvim-lua/plenary.nvim', opt = false},
+                {'sindrets/diffview.nvim', opt = false},
+                {'nvim-telescope/telescope.nvim', opt = false},
+                {'nvim-tree/nvim-web-devicons', opt = false}}
+    }
 
     use {'lervag/vimtex'}
-    use {'windwp/nvim-autopairs', event = 'InsertEnter', 
-                                  config = function() 
-                                               require('nvim-autopairs').setup({})
-                                           end}
+    use {'windwp/nvim-autopairs',
+            event = 'InsertEnter',
+            config = function() 
+                        require('nvim-autopairs').setup({})
+                     end
+    }
 end)
