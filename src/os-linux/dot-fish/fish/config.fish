@@ -23,3 +23,7 @@ starship init fish | source
 ## {{{1 app-terraform
 set -x TF_CLI_CONFIG_FILE "$HOME/.config/terraform/config.tfrc"
 ## }}}!
+
+## {{{1 app-ssh
+export SSH_AUTH_SOCK="/tmp/limakzi-ssh-agent.socket"
+## }}}
