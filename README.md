@@ -6,4 +6,6 @@ Its independent on host-system setup.
 
 ## dotfiles-screenshots
 
-![scrot-desktop](./.github/assets/scrot-01-desktop.png)
+<p align="center">
+  <img width='640' height='640' src='./.github/assets/scrot-01-desktop.png'>
+</p>
