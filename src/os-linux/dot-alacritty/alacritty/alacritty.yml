@@ -39,3 +39,10 @@ window:
 
 mouse:
   hide_when_typing: true
+
+key_bindings:
+  - { key: C,              mods: Command,            action: Copy }
+  - { key: V,              mods: Command,            action: Paste }
+  - { key: Equals,         mods: Command,            action: ResetFontSize }
+  - { key: Minus,          mods: Command,            action: DecreaseFontSize }
+  - { key: Plus,           mods: Command|Shift,      action: IncreaseFontSize }
