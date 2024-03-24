@@ -132,7 +132,7 @@ mode "resize" {
 
 ## {{{1 i3 -- statusbar
 bar {
-        position top
+        position bottom
         modifier $mod
 
         bindsym button1 nop
