@@ -30,9 +30,16 @@ font:
     x: 0
     y: 0
 
+cursor:
+  style:
+    shape: Block
+    blinking: Always
+  blink_interval: 500
+
 window:
   opacity: 1.0
   dynamic_title: true
+  decorations: None
   padding:
     x: 2
     y: 2
