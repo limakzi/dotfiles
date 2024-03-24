@@ -11,12 +11,12 @@
     - ~/desktop
     - ~/documents
     - ~/downloads
+    - ~/macos
     - ~/music
     - ~/pictures
     - ~/public
     - ~/templates
     - ~/videos
-    - ~/macos
 
 - create:
     - ~/.config/
