@@ -7,5 +7,5 @@ Its independent on host-system setup.
 ## dotfiles-screenshots
 
 <p align="center">
-  <img width='640' height='640' src='./.github/assets/scrot-01-desktop.png'>
+  <img width='600' height='375' src='./.github/assets/scrot-01-desktop.png'>
 </p>
