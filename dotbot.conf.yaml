@@ -16,6 +16,7 @@
     - ~/public
     - ~/templates
     - ~/videos
+    - ~/macos
 
 - create:
     - ~/.config/
