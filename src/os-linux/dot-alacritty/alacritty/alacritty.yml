@@ -1,6 +1,9 @@
 ---
 live_config_reload: true
 
+import:
+  - ~/.config/alacritty/colors/dracula-dark.yaml
+
 shell:
   program: /bin/bash
   args:
@@ -39,10 +42,9 @@ cursor:
 window:
   opacity: 1.0
   dynamic_title: true
-  decorations: None
   padding:
-    x: 2
-    y: 2
+    x: 0
+    y: 0
 
 mouse:
   hide_when_typing: true
