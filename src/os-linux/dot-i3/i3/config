@@ -103,13 +103,13 @@ bindsym $mod+Shift+x kill
 
 ## {{{2 keyboard shortcuts -- applications
 bindsym $mod+Shift+Return exec --no-startup-id "alacritty"
-bindsym $mod+d exec --no-startup-id "rofi -modi windowcd,run,drun,ssh -show drun"
+bindsym $mod+r exec --no-startup-id "rofi -modi windowcd,run,drun,ssh -show drun"
 ## }}}2
 
 ## }}}1
 
 ## {{{1 i3 -- resize mode
-bindsym $mod+r mode "resize"
+bindsym $mod+o mode "resize"
 
 mode "resize" {
         bindsym j resize shrink width 10 px or 10 ppt
