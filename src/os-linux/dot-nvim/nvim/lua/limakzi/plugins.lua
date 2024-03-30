@@ -93,6 +93,8 @@ vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
 
 -- {{{1 plugins -- mfussenegger/nvim-lint
 require('lint').linters_by_ft = {
+  gitcommit = {'gitlint'},
+  latex = {'chktex'},
   lua = {'luacheck'},
   yaml = {'yamllint'}
 }
