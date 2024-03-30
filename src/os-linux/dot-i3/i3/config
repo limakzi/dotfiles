@@ -15,14 +15,14 @@ default_floating_border pixel 8
 
 ## {{{1 i3 -- workspaces
 set $ws1 "1:"
-set $ws2 "2:"
+set $ws2 "2:"
 set $ws3 "3:󰎪"
 set $ws4 "4:󰎭"
 set $ws5 "5:󰎱"
 set $ws6 "6:󰎳"
 set $ws7 "7:󰎶"
 set $ws8 "8:󰎹"
-set $ws9 "9:󰎼"
+set $ws9 "9:"
 set $ws10 "10:"
 ## }}}1
 
@@ -102,7 +102,7 @@ bindsym $mod+Shift+x kill
 ## }}}2
 
 ## {{{2 keyboard shortcuts -- applications
-bindsym $mod+Shift+Return exec --no-startup-id "alacritty"
+bindsym $mod+Shift+Return exec --no-startup-id  alacritty --class "Alacritty-Scratchpad"
 bindsym $mod+r exec --no-startup-id "rofi -modi windowcd,run,drun,ssh -show drun"
 ## }}}2
 
