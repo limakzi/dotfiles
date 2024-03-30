@@ -27,6 +27,7 @@
     ~/.config/curl: src/os-linux/dot-curl/curl/
     ~/.config/fish: src/os-linux/dot-fish/fish/
     ~/.config/git: src/os-linux/dot-git/git/
+    ~/.config/gitlint: src/os-linux/dot-gitlint/gitlint/
     ~/.config/htop: src/os-linux/dot-htop/htop/
     ~/.config/i3: src/os-linux/dot-i3/i3/
     ~/.config/lsd: src/os-linux/dot-lsd/lsd/
