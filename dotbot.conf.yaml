@@ -47,7 +47,12 @@
       path: src/data/fonts/**
 
 - link:
-    ~/.config/user-dirs.dirs: src/os-linux/dot-xdg/xdg/user-dirs.dirs
+    ~/.config/user-dirs.dirs:
+      force: true
+      path: src/os-linux/dot-xdg/xdg/user-dirs.dirs
+    ~/.config/user-dirs.locale:
+      force: true
+      path: src/os-linux/dot-xdg/xdg/user-dirs.locale
 
 - link:
     ~/.profile:
