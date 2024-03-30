@@ -9,7 +9,7 @@
 	defaultBranch = main
 
 [core]
-	editor = vim
+	editor = nvim
 	attributesFile = ~/.config/git/conf.d/attributes
 	excludesFile = ~/.config/git/conf.d/ignore
 
