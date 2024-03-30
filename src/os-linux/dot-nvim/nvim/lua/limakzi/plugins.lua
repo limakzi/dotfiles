@@ -15,7 +15,10 @@ require('colorizer').setup()
 local neogit = require('neogit')
 neogit.setup()
 
-vim.keymap.set('n', '<leader>bb', function() neogit.open { kind = 'auto' } end, { noremap = true, silent = true, desc = 'neo[g]it open [s]plit' })
+vim.keymap.set('n', '<leader>bb',
+    function()
+        neogit.open { kind = 'auto' }
+    end, { noremap = true, silent = true, desc = 'neo[g]it open [s]plit' })
 -- }}}1
 
 -- {{{1 plugins -- lewis6991/gitsigns.nvim
@@ -38,13 +41,23 @@ require('gitsigns').setup({
 require('Comment').setup()
 -- }}}1
 
+-- {{{1 plugins -- nvim/nvim-lspconfig
+require("mason").setup()
+require("mason-lspconfig").setup({
+    ensure_installed = { "lua_ls" }
+})
+
+
+-- }}}1
+
 -- {{{1 plugins -- nvim-treesitter/nvim-treesitter
 require('nvim-treesitter.configs').setup({
-    ensure_installed = { 
+    ensure_installed = {
         'fish',
         'git_config',
         'gitcommit',
         'gitignore',
+        'json5',
         'latex',
         'lua',
         'markdown',
@@ -76,6 +89,19 @@ require('nvim-treesitter.configs').setup({
 
 vim.opt.foldmethod = 'expr'
 vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+-- }}}1
+
+-- {{{1 plugins -- mfussenegger/nvim-lint
+require('lint').linters_by_ft = {
+  lua = {'luacheck'},
+  yaml = {'yamllint'}
+}
+
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+  callback = function()
+    require("lint").try_lint()
+  end,
+})
 -- }}}1
 
 -- {{{1 plugins -- nvim-telescope/telescope.nvim
@@ -136,41 +162,45 @@ cmp.setup({
 return require('packer').startup(function(use)
     use {'wbthomason/packer.nvim'}
 
-    use {'dracula/vim', as = 'dracula'}     -- Colorscheme.
-    use {'norcalli/nvim-colorizer.lua'}     -- Colorize #000000.
+    use {'dracula/vim', as = 'dracula'}                                         -- Colorscheme.
+    use {'norcalli/nvim-colorizer.lua'}                                         -- Colorize #000000.
 
-    use {'nvim-treesitter/nvim-treesitter'}
-    use {'nvim-telescope/telescope.nvim', 
-            tag = '0.1.6', 
-            requires = {
-                {'nvim-lua/plenary.nvim', opt = false},
-                {'nvim-telescope/telescope-file-browser.nvim', opt = false}}
+    use {
+        'williamboman/mason.nvim',
+        'williamboman/mason-lspconfig.nvim',
+        'neovim/nvim-lspconfig',
     }
 
-    use{'hrsh7th/nvim-cmp'}                 -- Completion - plugin
-    use{'hrsh7th/cmp-buffer'}               -- Completion - source buffer.
-    use{'hrsh7th/cmp-path'}                 -- Completion - source paths.
+    use {'mfussenegger/nvim-lint'}                                              -- Style - lint.
+    use {'nvim-treesitter/nvim-treesitter'}                                     -- Style - color syntax.
+    use {'nvim-telescope/telescope.nvim',
+            tag = '0.1.6',
+            requires = {
+                {'nvim-lua/plenary.nvim', opt = false},
+                {'nvim-telescope/telescope-file-browser.nvim', opt = false}}}
 
-    use{'L3MON4D3/LuaSnip'}                 -- Snippet - engine.
-    use{'saadparwaiz1/cmp_luasnip'}         -- Snippet - autocompletion.
-    use{'rafamadriz/friendly-snippets'}     -- Snippet - collections.
+    use{'hrsh7th/nvim-cmp'}                                                     -- Completion - plugin
+    use{'hrsh7th/cmp-buffer'}                                                   -- Completion - source buffer.
+    use{'hrsh7th/cmp-path'}                                                     -- Completion - source paths.
 
-    use {'numToStr/Comment.nvim' }          -- Better comments.
+    use{'L3MON4D3/LuaSnip'}                                                     -- Snippet - engine.
+    use{'saadparwaiz1/cmp_luasnip'}                                             -- Snippet - autocompletion.
+    use{'rafamadriz/friendly-snippets'}                                         -- Snippet - collections.
 
-    use {'lewis6991/gitsigns.nvim'}         -- Git - inline.
-    use {'NeogitOrg/neogit', 
-            requires = {                    -- Git - interactive.
+    use {'numToStr/Comment.nvim' }                                              -- Better comments.
+
+    use {'lewis6991/gitsigns.nvim'}                                             -- Git - inline.
+    use {'NeogitOrg/neogit',                                                    -- Git - interactive.
+            requires = {
                 {'nvim-lua/plenary.nvim', opt = false},
                 {'sindrets/diffview.nvim', opt = false},
                 {'nvim-telescope/telescope.nvim', opt = false},
-                {'nvim-tree/nvim-web-devicons', opt = false}}
-    }
+                {'nvim-tree/nvim-web-devicons', opt = false}}}
 
     use {'lervag/vimtex'}
     use {'windwp/nvim-autopairs',
             event = 'InsertEnter',
-            config = function() 
+            config = function()
                         require('nvim-autopairs').setup({})
-                     end
-    }
+                     end}
 end)
