@@ -11,18 +11,27 @@ gaps outer 4
 
 default_border pixel 8
 default_floating_border pixel 8
+
+## {{{2 i3 -- appearance colors
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #ff78c6
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+## }}}2
+
 ## }}}1
 
 ## {{{1 i3 -- workspaces
-set $ws1 "1:"
-set $ws2 "2:"
-set $ws3 "3:󰎪"
-set $ws4 "4:󰎭"
-set $ws5 "5:󰎱"
-set $ws6 "6:󰎳"
-set $ws7 "7:󰎶"
-set $ws8 "8:󰎹"
-set $ws9 "9:"
+set $ws1  "1:"
+set $ws2  "2:"
+set $ws3  "3:󰎪"
+set $ws4  "4:󰎭"
+set $ws5  "5:󰎱"
+set $ws6  "6:󰎳"
+set $ws7  "7:󰎶"
+set $ws8  "8:󰎹"
+set $ws9  "9:"
 set $ws10 "10:"
 ## }}}1
 
@@ -36,14 +45,13 @@ exec --no-startup-id i3-msg workspace $ws10
 ## }}}1
 
 ## {{{1 i3 -- keyboard and mouse
-
 focus_follows_mouse no
 
 ## {{{2 keyboard shortcuts -- switch focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 ## }}}2
 
 ## {{{2 keyboard shortcuts -- move window
@@ -59,11 +67,10 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 bindsym $mod+v split v
-bindsym $mod+h split h
 bindsym $mod+f fullscreen toggle
 
-bindsym $mod+a focus parent
-bindsym $mod+space focus mode_toggle
+bindsym $mod+a           focus parent
+bindsym $mod+space       focus mode_toggle
 bindsym $mod+Shift+space floating toggle
 ## }}}2
 
@@ -94,9 +101,8 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 ## }}}2
 
 ## {{{2 keyboard shortcuts -- general i3
-bindsym $mod+Shift+r restart
-bindsym $mod+Shift+c reload
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Control+Shift+r restart
+bindsym $mod+Control+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 bindsym $mod+Shift+x kill
 ## }}}2
@@ -112,21 +118,13 @@ bindsym $mod+r exec --no-startup-id "rofi -modi windowcd,run,drun,ssh -show drun
 bindsym $mod+o mode "resize"
 
 mode "resize" {
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym j         resize shrink width  10 px or 10 ppt
+        bindsym k         resize grow   height 10 px or 10 ppt
+        bindsym l         resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow   width  10 px or 10 ppt
 
         # back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
         bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
 }
 ## }}}1
 
@@ -144,9 +142,21 @@ bar {
         workspace_min_width 80
         strip_workspace_numbers yes
         binding_mode_indicator no
+
+        colors {
+            background #282A36
+            statusline #F8F8F2
+            separator  #44475A
+
+            focused_workspace  #F8F8F2 #44475A #F8F8F2
+            active_workspace   #282A36 #44475A #F8F8F2
+            inactive_workspace #282A36 #282A36 #BFBFBF
+            urgent_workspace   #FF5555 #FF5555 #F8F8F2
+            binding_mode       #FF5555 #FF5555 #F8F8F2
+        }
 }
 ## }}}1
 
 ## {{{1 i3 -- application-mapping
-assign [class="^Alacritty$"] $ws1
+assign [class="^Alacritty.*$"] $ws1
 ## }}}1
