@@ -138,7 +138,7 @@ bar {
 
         font pango:JetBrains Mono Nerd Font $fontsize
 
-        tray_output none
+        tray_output primary
         workspace_buttons yes
         workspace_min_width 80
         strip_workspace_numbers yes
