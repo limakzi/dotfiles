@@ -119,12 +119,23 @@ gitlint.args = {
 -- {{{1 plugins -- nvim-telescope/telescope.nvim
 local telescope_builtin = require('telescope.builtin')
 
-require("telescope").load_extension "file_browser"
+require("telescope").load_extension("file_browser")
+require("telescope").load_extension("find_template")
+
+vim.keymap.set('n', '<leader>tt', function() require("telescope").extensions.find_template.find_template({type = 'insert', filter_ft = 'false'}) end, {})
 
 vim.keymap.set('n', '<leader>ff', telescope_builtin.git_files, {})
 vim.keymap.set('n', '<leader>fg', telescope_builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', telescope_builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', telescope_builtin.help_tags, {})
+-- }}}1
+
+-- {{{1 plugins -- glepnir/template.nvim
+require("template").setup({
+    temp_dir = "~/.config/nvim/templates/",
+    author = "Kamil Zabielski",
+    email = "me@limakzi.me"
+})
 -- }}}1
 
 -- {{{1 plugins -- nvim-cmp
@@ -191,6 +202,7 @@ return require('packer').startup(function(use)
                 {'nvim-lua/plenary.nvim', opt = false},
                 {'nvim-telescope/telescope-file-browser.nvim', opt = false}}}
 
+    use{'glepnir/template.nvim'}                                                -- Templates.
     use{'hrsh7th/nvim-cmp'}                                                     -- Completion - plugin
     use{'hrsh7th/cmp-buffer'}                                                   -- Completion - source buffer.
     use{'hrsh7th/cmp-path'}                                                     -- Completion - source paths.
