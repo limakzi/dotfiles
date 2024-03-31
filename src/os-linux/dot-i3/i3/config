@@ -158,5 +158,6 @@ bar {
 ## }}}1
 
 ## {{{1 i3 -- application-mapping
-assign [class="^Alacritty.*$"] $ws1
+assign [class="^Alacritty.*$"]     $ws1
+assign [class="^.*[F|f]irefox.*$"] $ws9
 ## }}}1
