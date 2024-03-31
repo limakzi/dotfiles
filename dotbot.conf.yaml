@@ -47,6 +47,9 @@
     ~/.config/zathura: src/os-linux/dot-zathura/zathura/
 
 - link:
+    ~/.config/screenkey.json: src/os-linux/dot-screenkey/screenkey/screenkey.json
+
+- link:
     ~/.config/user-dirs.dirs:
       force: true
       path: src/os-linux/dot-xdg/xdg/user-dirs.dirs
