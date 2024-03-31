@@ -13,11 +13,13 @@ require('colorizer').setup()
 
 -- {{{1 plugins -- neogitorg/neogit
 local neogit = require('neogit')
-neogit.setup()
+neogit.setup({
+    kind = "replace"
+})
 
 vim.keymap.set('n', '<leader>bb',
     function()
-        neogit.open { kind = 'auto' }
+        neogit.open({})
     end, { noremap = true, silent = true, desc = 'neo[g]it open [s]plit' })
 -- }}}1
 
