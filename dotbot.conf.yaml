@@ -31,6 +31,7 @@
     ~/.config/bat: src/os-linux/dot-bat/bat/
     ~/.config/curl: src/os-linux/dot-curl/curl/
     ~/.config/fish: src/os-linux/dot-fish/fish/
+    ~/.config/gap: src/os-linux/dot-gap/gap/
     ~/.config/git: src/os-linux/dot-git/git/
     ~/.config/gitlint: src/os-linux/dot-gitlint/gitlint/
     ~/.config/htop: src/os-linux/dot-htop/htop/
