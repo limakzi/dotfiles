@@ -19,8 +19,10 @@ jobs:
           python-version: 3.12
           cache: pip
 
-      - name: python -- install dotbot
-        run: pip install dotbot
+      - name: python -- install dependencies
+        uses: py-actions/py-dependency-install@v4
+        with:
+          update-pip: true
 
       - name: dotbot -- apply
         run: dotbot -c dotbot.conf.yaml
