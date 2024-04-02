@@ -117,11 +117,25 @@ gitlint.args = {
 -- }}}1
 
 -- {{{1 plugins -- nvim-telescope/telescope.nvim
+require("telescope").setup({
+    extensions = {
+        project = {
+            theme = 'dropdown',
+            search_by = 'path',
+            base_dirs = {
+                {path = '~/dotfiles',  max_dept = 0},
+                {path = '~/documents', max_dept = 2}
+            }
+        }
+    }
+})
 local telescope_builtin = require('telescope.builtin')
 
 require("telescope").load_extension("file_browser")
 require("telescope").load_extension("find_template")
 
+
+vim.keymap.set('n', '<C-p>',      function() require("telescope").extensions.project.project({}) end, {noremap = true, silent = true})
 vim.keymap.set('n', '<leader>tt', function() require("telescope").extensions.find_template.find_template({type = 'insert', filter_ft = 'false'}) end, {})
 
 vim.keymap.set('n', '<leader>ff', telescope_builtin.git_files, {})
@@ -200,6 +214,7 @@ return require('packer').startup(function(use)
             tag = '0.1.6',
             requires = {
                 {'nvim-lua/plenary.nvim', opt = false},
+                {'nvim-telescope/telescope-project.nvim', opt = false},
                 {'nvim-telescope/telescope-file-browser.nvim', opt = false}}}
 
     use{'glepnir/template.nvim'}                                                -- Templates.
