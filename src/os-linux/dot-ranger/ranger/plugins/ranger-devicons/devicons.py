@@ -261,6 +261,7 @@ dir_node_exact_matches = {
     'downloads'                        : '',
     'dotfiles'                         : '',
     'dropbox'                          : '',
+    'macos'                            : '',
     'music'                            : '',
     'pictures'                         : '',
     'public'                           : '',
