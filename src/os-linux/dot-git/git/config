@@ -43,6 +43,14 @@
 [push]
 	autoSetupRemote = true
 
+[branch "master"]
+	pushRemote = no_push
+
+[branch "main"]
+	pushRemote = no_push
+
+[branch "develop"]
+	pushRemote = no_push
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
