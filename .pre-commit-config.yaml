@@ -31,3 +31,13 @@ repos:
         id: check-merge-conflict
       - name: (security) -- detect private key
         id: detect-private-key
+
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.28.2
+    hooks:
+      - name: (syntax-gh-dependabot) -- check dependabot
+        id: check-dependabot
+      - name: (syntax-gh-workflows) -- check github actions
+        id: check-github-workflows
+      - name: (syntax-gh-bb-workflows) -- check bitbucket
+        id: check-bitbucket-pipelines
