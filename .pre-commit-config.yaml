@@ -37,7 +37,13 @@ repos:
     hooks:
       - name: (syntax-gh-dependabot) -- check dependabot
         id: check-dependabot
-      - name: (syntax-gh-workflows) -- check github actions
+      - name: (syntax-gh-actions) -- check github actions
         id: check-github-workflows
       - name: (syntax-gh-bb-workflows) -- check bitbucket
         id: check-bitbucket-pipelines
+
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.6.27
+    hooks:
+      - name: (lint-gh-actions) - lint github actions
+        id: actionlint
