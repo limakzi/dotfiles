@@ -43,6 +43,20 @@
 [push]
 	autoSetupRemote = true
 
+[branch "master"]
+	remote = zelta
+	merge = refs/heads/master
+	pushRemote = no-push-branch
+
+[branch "main"]
+	remote = zelta
+	merge = refs/heads/main
+	pushRemote = no-push-branch
+
+[branch "develop"]
+	remote = zelta
+	merge = refs/heads/develop
+	pushRemote = no-push-branch
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
