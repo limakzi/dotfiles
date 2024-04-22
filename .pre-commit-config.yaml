@@ -1,0 +1,54 @@
+---
+
+fail_fast: true
+ci:
+  autoupdate_schedule: monthly
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - name: (code) -- check end of file
+        id: end-of-file-fixer
+      - name: (code) -- check trailing space
+        id: trailing-whitespace
+      - name: (syntax) -- check yaml
+        id: check-yaml
+      - name: (syntax) -- check json
+        id: check-json
+      - name: (syntax) -- check xml
+        id: check-xml
+      - name: (syntax) -- check toml
+        id: check-toml
+      - name: (file) -- check case conflict
+        id: check-case-conflict
+      - name: (file) -- check symlinks
+        id: check-symlinks
+      - name: (file) -- check destroyed symlinks
+        id: destroyed-symlinks
+      - name: (python) -- check requirements-txt
+        id: requirements-txt-fixer
+      - name: (python) -- check syntax
+        id: check-ast
+      - name: (git) -- no commit to branch
+        id: no-commit-to-branch
+      - name: (git) -- check merge conflicts
+        id: check-merge-conflict
+      - name: (security) -- detect private key
+        id: detect-private-key
+
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.28.2
+    hooks:
+      - name: (syntax-gh-dependabot) -- check dependabot
+        id: check-dependabot
+      - name: (syntax-gh-actions) -- check github actions
+        id: check-github-workflows
+      - name: (syntax-gh-bb-workflows) -- check bitbucket
+        id: check-bitbucket-pipelines
+
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.6.27
+    hooks:
+      - name: (lint-gh-actions) - lint github actions
+        id: actionlint

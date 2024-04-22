@@ -7,4 +7,3 @@ else
         command vi $argv
     end
 end
-

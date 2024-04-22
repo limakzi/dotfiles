@@ -1,0 +1,22 @@
+---
+name: pre-commit
+run-name: pre-commit-${{ github.event.number }} ${{ github.event.pull_request.title }}
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: git -- checkout
+        uses: actions/checkout@v4
+
+      - name: python -- setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+          cache: pip
+
+      - name: pre-commit - run checks
+        uses: pre-commit/action@v3.0.1

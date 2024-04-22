@@ -1,9 +1,3 @@
-#!/usr/bin/python
-# coding=UTF-8
-# These glyphs, and the mapping of file extensions to glyphs
-# has been copied from the vimscript code that is present in
-# https://github.com/ryanoasis/vim-devicons
-
 import re
 import os
 
