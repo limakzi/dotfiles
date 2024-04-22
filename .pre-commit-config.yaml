@@ -1,5 +1,6 @@
 ---
 
+fail_fast: true
 ci:
   autoupdate_schedule: monthly
 
