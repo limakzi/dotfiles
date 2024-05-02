@@ -1,7 +1,10 @@
 configuration {
     show-icons: true;
+    sidebar-mode: true;
+    levenshtein-sort: true;
+    combi-hide-mode-prefix: true;
 }
 
 * {
-    font: "JetBrains Mono Nerd Font 32";
+    font: "JetBrains Mono Nerd Font 24";
 }
