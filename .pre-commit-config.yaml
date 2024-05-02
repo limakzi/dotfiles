@@ -1,6 +1,6 @@
 ---
 
-fail_fast: true
+fail_fast: false
 ci:
   autoupdate_schedule: monthly
 
@@ -26,29 +26,49 @@ repos:
         id: check-symlinks
       - name: (file) -- check destroyed symlinks
         id: destroyed-symlinks
-      - name: (python) -- check requirements-txt
-        id: requirements-txt-fixer
-      - name: (python) -- check syntax
-        id: check-ast
-      - name: (git) -- no commit to branch
-        id: no-commit-to-branch
-      - name: (git) -- check merge conflicts
-        id: check-merge-conflict
       - name: (security) -- detect private key
         id: detect-private-key
 
   - repo: https://github.com/python-jsonschema/check-jsonschema
     rev: 0.28.2
     hooks:
-      - name: (syntax-gh-dependabot) -- check dependabot
-        id: check-dependabot
-      - name: (syntax-gh-actions) -- check github actions
-        id: check-github-workflows
-      - name: (syntax-gh-bb-workflows) -- check bitbucket
+      - name: (bitbucket-pipelines) -- check bitbucket-pipelines syntax
         id: check-bitbucket-pipelines
+      - name: (github-dependabot) -- check github-dependabot syntax
+        id: check-dependabot
+      - name: (github-actions) -- check github-actions syntax
+        id: check-github-workflows
 
   - repo: https://github.com/rhysd/actionlint
     rev: v1.6.27
     hooks:
-      - name: (lint-gh-actions) - lint github actions
+      - name: (github-actions) - lint github actions
         id: actionlint
+
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - name: (python) -- check requirements-txt
+        id: requirements-txt-fixer
+      - name: (python) -- check syntax with ast
+        id: check-ast
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.2
+    hooks:
+      - name: (python) -- check syntax with ruff
+        id: ruff
+        types_or: [ python, pyi, jupyter ]
+        args: [ --fix ]
+      - name: (python) -- format files with ruff
+        id: ruff-format
+        types_or: [ python, pyi, jupyter ]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - name: (git) -- no commit to branch
+        id: no-commit-to-branch
+      - name: (git) -- check merge conflicts
+        id: check-merge-conflict
