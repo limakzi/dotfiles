@@ -1,4 +1,4 @@
-import = ["/home/limakzi/.config/alacritty/colors/dracula-dark.toml"]
+import = ["~/.config/alacritty/colors/dracula-dark.toml"]
 live_config_reload = true
 
 [cursor]
