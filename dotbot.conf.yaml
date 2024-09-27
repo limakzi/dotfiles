@@ -7,6 +7,7 @@
     create:
       mode: 0700
 
+
 - create:
     - ~/desktop
     - ~/documents
@@ -18,13 +19,16 @@
     - ~/templates
     - ~/videos
 
+
 - create:
     - ~/.config/
+
 
 - link:
     ~/.profile:
       force: true
       path: src/os-linux/dot-sh/sh/profile
+
 
 - link:
     ~/.config/alacritty: src/os-linux/dot-alacritty/alacritty/
@@ -47,8 +51,10 @@
     ~/.config/xorg: src/os-linux/dot-xorg/xorg/
     ~/.config/zathura: src/os-linux/dot-zathura/zathura/
 
+
 - link:
     ~/.config/screenkey.json: src/os-linux/dot-screenkey/screenkey/screenkey.json
+
 
 - link:
     ~/.config/user-dirs.dirs:
@@ -58,11 +64,15 @@
       force: true
       path: src/os-linux/dot-xdg/xdg/user-dirs.locale
 
+
+- create:
+    - ~/.local/share/fonts/
 - link:
     ~/.local/share/fonts/:
       glob: true
       create: false
       path: src/data/fonts/firacode-nerdfont/**.ttf
+- link:
     ~/.local/share/fonts/:
       glob: true
       create: false
