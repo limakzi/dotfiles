@@ -61,4 +61,9 @@
 - link:
     ~/.local/share/fonts/:
       glob: true
-      path: src/data/fonts/**
+      create: false
+      path: src/data/fonts/firacode-nerdfont/**.ttf
+    ~/.local/share/fonts/:
+      glob: true
+      create: false
+      path: src/data/fonts/jetbrains-nerdfont/**.ttf
