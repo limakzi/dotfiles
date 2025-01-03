@@ -1,0 +1,32 @@
+## vim: ft=gitconfig
+
+[user]
+  name = "Kamil Zabielski"
+  email = "50334623+limakzi@users.noreply.github.com"
+  signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIJJadWsBFAckHfqqWY0zW70F7ZcTy9amFdAzwotJPca"
+
+[alias]
+  branches = branch -va
+  cd = checkout
+  ci = commit
+  cia = commit --amend
+  df = diff --ignore-all-space
+  dfw = df --word-diff
+  dfs = df --staged
+  dfsw = dfs --word-diff
+  lla = log --color --graph --pretty=format:'%<(8) %C(yellow)%h%Creset - %C(bold white)[%G?]%C(reset) %C(bold blue)%an%C(reset) - %C(green)(%cr)%C(reset): %s %C(red)%d%C(reset) %C(reset)'
+  ll = lla --abbrev-commit -16
+  st = status --short
+  ss = st
+
+[init]
+  defaultBranch = main
+
+[commit]
+  gpgsign = true
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  allowedSignersFile = ~/.config/git/conf.d/signers
