@@ -1,0 +1,38 @@
+---
+
+- defaults:
+    link:
+      create: true
+      relink: true
+    create:
+      mode: 0700
+
+
+- create:
+    - ~/desktop
+    - ~/documents
+    - ~/downloads
+    - ~/macos
+    - ~/music
+    - ~/pictures
+    - ~/public
+    - ~/templates
+    - ~/videos
+
+
+- create:
+    - ~/.config/
+
+- link:
+    ~/.config/git: src/linux/dot-git/git/
+    ~/.config/lsd: src/linux/dot-lsd/lsd/
+    ~/.config/starship: src/linux/dot-starship/starship/
+
+
+- link:
+    ~/.config/user-dirs.dirs:
+      force: true
+      path: src/linux/dot-xdg/xdg/user-dirs.dirs
+    ~/.config/user-dirs.locale:
+      force: true
+      path: src/linux/dot-xdg/xdg/user-dirs.locale
