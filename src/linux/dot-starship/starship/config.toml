@@ -38,6 +38,11 @@ disabled = true
 [package]
 disabled = false
 
+[python]
+detect_folders = [".venv"]
+detect_files = []
+detect_extensions = []
+
 [azure]
 disabled = false
 
