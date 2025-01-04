@@ -1,0 +1,25 @@
+---
+classic: false
+size: short
+date: relative
+
+symlink-arrow: ⇒
+dereference: false
+
+icons:
+  when: auto
+
+blocks:
+  - permission
+  - user
+  - size
+  - date
+  - name
+
+sorting:
+  column: name
+  reverse: false
+  dir-grouping: first
+
+ignore-globs:
+  - .git
