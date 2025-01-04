@@ -1,0 +1,26 @@
+## vim: ft=zathurarc
+
+set font "JetBrains Mono Nerd Font 32"
+set adjust-open "best-fit"
+set guioptions ""
+
+set scroll-page-aware true
+set scroll-full-overlap 0.01
+set scroll-step 128
+set advance-pages-per-row true
+
+set link-zoom true
+
+set zoom-step 8
+
+set page-padding 8
+
+set incremental-search true
+
+map r reload
+map 1 set "pages-per-row 1"
+map 2 set "pages-per-row 2"
+map 3 set "pages-per-row 3"
+map 4 set "pages-per-row 4"
+map 5 set "pages-per-row 5"
+map 0 set "pages-per-row 10"
