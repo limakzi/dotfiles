@@ -19,6 +19,9 @@
   st = status --short
   ss = st
 
+[core]
+  attributesfile = ~/.config/git/conf.d/attributes
+
 [init]
   defaultBranch = main
 
@@ -33,3 +36,9 @@
 
 [gpg "ssh"]
   allowedSignersFile = ~/.config/git/conf.d/signers
+
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
