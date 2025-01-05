@@ -24,6 +24,7 @@
     - ~/.config/
 
 - link:
+    ~/.config/gap: src/linux/dot-gap/gap/
     ~/.config/git: src/linux/dot-git/git/
     ~/.config/lsd: src/linux/dot-lsd/lsd/
     ~/.config/nvim: src/linux/dot-nvim/nvim/

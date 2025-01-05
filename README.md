@@ -8,3 +8,4 @@
 | 🗄️`ranger`   | [[dot-ranger]](./src/linux/dot-ranger/ranger/)       |
 | 🚀`starship` | [[dot-starship]](./src/linux/dot-starship/starship/) |
 | 📖`zathura`  | [[dot-zathura]](./src/linux/dot-zathura/zathura/)    |
+| 🧮`gap`      | [[dot-gap]](./src/linux/dot-gap/gap/)                |
