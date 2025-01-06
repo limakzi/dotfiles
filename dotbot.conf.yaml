@@ -24,6 +24,7 @@
     - ~/.config/
 
 - link:
+    ~/.config/bat: src/linux/dot-bat/bat/
     ~/.config/gap: src/linux/dot-gap/gap/
     ~/.config/git: src/linux/dot-git/git/
     ~/.config/lsd: src/linux/dot-lsd/lsd/
