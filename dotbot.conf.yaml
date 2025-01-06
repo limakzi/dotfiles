@@ -30,6 +30,7 @@
     ~/.config/nvim: src/linux/dot-nvim/nvim/
     ~/.config/ranger: src/linux/dot-ranger/ranger/
     ~/.config/starship: src/linux/dot-starship/starship/
+    ~/.config/tmux: src/linux/dot-tmux/tmux/
     ~/.config/zathura: src/linux/dot-zathura/zathura/
 
 
