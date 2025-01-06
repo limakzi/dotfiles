@@ -1,5 +1,7 @@
 ## dotfiles
 
+<div align="center">
+
 |              |                                                      |
 | ------------ | ---------------------------------------------------- |
 | 📝`nvim`     | [[dot-nvim]](./src/linux/dot-nvim/nvim/)             |
@@ -11,3 +13,5 @@
 | 📖`zathura`  | [[dot-zathura]](./src/linux/dot-zathura/zathura/)    |
 | 🔲`tmux`     | [[dot-tmux]](./src/linux/dot-tmux/tmux/)             |
 | 🧮`gap`      | [[dot-gap]](./src/linux/dot-gap/gap/)                |
+
+</div>
