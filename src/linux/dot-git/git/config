@@ -26,9 +26,11 @@
   defaultBranch = main
 
 [push]
+  default = current
   autoSetupRemote = true
 
 [commit]
+  verbose = true
   gpgsign = true
 
 [gpg]
