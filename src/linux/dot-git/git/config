@@ -29,6 +29,7 @@
   autoSetupRemote = true
 
 [commit]
+  verbose = true
   gpgsign = true
 
 [gpg]
