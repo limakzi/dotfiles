@@ -5,6 +5,7 @@
 |              |                                                      |
 | ------------ | ---------------------------------------------------- |
 | 📝`nvim`     | [[dot-nvim]](./src/linux/dot-nvim/nvim/)             |
+| 🐞`gdb`      | [[dot-gdb]](./src/linux/dot-gdb/gdb/)                |
 | 🐙`git`      | [[dot-git]](./src/linux/dot-git/git/)                |
 | 🦇`bat`      | [[dot-bat]](./src/linux/dot-bat/bat/)                |
 | 🗂️`lsd`      | [[dot-lsd]](./src/linux/dot-lsd/lsd/)                |
