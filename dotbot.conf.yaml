@@ -25,6 +25,7 @@
 
 - link:
     ~/.config/bat: src/linux/dot-bat/bat/
+    ~/.config/curl: src/linux/dot-curl/curl/
     ~/.config/gap: src/linux/dot-gap/gap/
     ~/.config/gdb: src/linux/dot-gdb/gdb/
     ~/.config/git: src/linux/dot-git/git/
