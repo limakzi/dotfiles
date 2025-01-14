@@ -34,6 +34,7 @@
     ~/.config/ranger: src/linux/dot-ranger/ranger/
     ~/.config/starship: src/linux/dot-starship/starship/
     ~/.config/tmux: src/linux/dot-tmux/tmux/
+    ~/.config/terraform: src/linux/dot-terraform/terraform/
     ~/.config/zathura: src/linux/dot-zathura/zathura/
 
 
