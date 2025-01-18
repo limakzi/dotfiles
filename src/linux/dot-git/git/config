@@ -20,6 +20,7 @@
   ss = st
 
 [core]
+  excludesFile = ~/.config/git/conf.d/ignore
   attributesfile = ~/.config/git/conf.d/attributes
 
 [init]

@@ -1,0 +1,106 @@
+## vim: ft=gitignore foldmethod=marker
+
+
+## {{{1 git
+*.orig
+*.rej
+## }}}1
+
+## {{{1 os
+.DS_Store
+## }}}1
+
+## {{{1 ide
+.idea
+.uuid
+## }}}1
+
+## {{{1 archives
+*.7z
+*.bz2
+*.bzip
+*.bzip2
+*.cab
+*.gz
+*.gzip
+*.jar
+*.lzma
+*.rar
+*.tar.gz
+*.tgz
+*.xar
+*.xz
+*.zip
+
+*.iso
+*.dmg
+
+*.deb
+*.egg
+*.gem
+*.msi
+*.msm
+*.msp
+*.rpm
+*.txz
+*.xpi
+## }}}1
+
+## {{{1 cpp
+*.o
+## }}}1
+
+## {{{1 jupyter
+**/.ipynb_checkpoints/*
+**/.sobj
+## }}}1
+
+## {{{1 latex
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.cb
+*.cb2
+*.fls
+*.fmt
+*.fot
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lol
+*.lot
+*.nav
+*.nlo
+*.out
+*.snm
+*.toc
+*.vrb
+
+*.synctex.gz
+*.synctex(busy)
+
+*.run.xml
+*.fdb_latexmk
+## }}}1
+
+## {{{1 python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+venv/
+venv.bak/
+cython_debug/
+## }}}1
+
+## {{{1 terraform
+.terraform.lock.hcl
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+## }}}1
