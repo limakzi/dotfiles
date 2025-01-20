@@ -29,6 +29,7 @@
     ~/.config/gap: src/linux/dot-gap/gap/
     ~/.config/gdb: src/linux/dot-gdb/gdb/
     ~/.config/git: src/linux/dot-git/git/
+    ~/.config/htop: src/linux/dot-htop/htop/
     ~/.config/lsd: src/linux/dot-lsd/lsd/
     ~/.config/nvim: src/linux/dot-nvim/nvim/
     ~/.config/ranger: src/linux/dot-ranger/ranger/
