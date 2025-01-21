@@ -1,0 +1,18 @@
+---
+k9s:
+  maxConnRetry: 1
+  readOnly: true
+  skipLatestRevCheck: true
+  disablePodCounting: true
+  liveViewAutoRefresh: true
+  noExitOnCtrlC: true
+  ui:
+    headless: true
+    logoless: true
+    noIcons: true
+    crumbsless: false
+    enableMouse: false
+    reactive: false
+    skin: dracula
+  imageScans:
+    enable: false
