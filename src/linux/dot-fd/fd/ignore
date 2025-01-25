@@ -1,0 +1,17 @@
+## {{{1 security
+.git
+## }}}1
+
+## {{{1 os
+.DS_Store
+## }}}1
+
+## {{{1 python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+venv/
+venv.bak/
+cython_debug/
+## }}}1
