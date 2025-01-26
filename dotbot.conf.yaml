@@ -26,6 +26,7 @@
 - link:
     ~/.config/bat: src/linux/dot-bat/bat/
     ~/.config/curl: src/linux/dot-curl/curl/
+    ~/.config/fd: src/linux/dot-fd/fd/
     ~/.config/gap: src/linux/dot-gap/gap/
     ~/.config/gdb: src/linux/dot-gdb/gdb/
     ~/.config/git: src/linux/dot-git/git/
@@ -35,8 +36,8 @@
     ~/.config/nvim: src/linux/dot-nvim/nvim/
     ~/.config/ranger: src/linux/dot-ranger/ranger/
     ~/.config/starship: src/linux/dot-starship/starship/
-    ~/.config/tmux: src/linux/dot-tmux/tmux/
     ~/.config/terraform: src/linux/dot-terraform/terraform/
+    ~/.config/tmux: src/linux/dot-tmux/tmux/
     ~/.config/zathura: src/linux/dot-zathura/zathura/
 
 

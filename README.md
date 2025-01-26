@@ -8,6 +8,7 @@
 | 🌐`curl`      | [[dot-curl]](./src/linux/dot-curl/curl/)                |
 | 🐞`gdb`       | [[dot-gdb]](./src/linux/dot-gdb/gdb/)                   |
 | 🧫`htop`      | [[dot-htop]](./src/linux/dot-htop/htop/)                |
+| 🔍`fd`        | [[dot-fd]](./src/linux/dot-fd/fd/)                      |
 | 🐙`git`       | [[dot-git]](./src/linux/dot-git/git/)                   |
 | 🦇`bat`       | [[dot-bat]](./src/linux/dot-bat/bat/)                   |
 | 🗂️`lsd`       | [[dot-lsd]](./src/linux/dot-lsd/lsd/)                   |
