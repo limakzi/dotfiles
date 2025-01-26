@@ -93,7 +93,8 @@ vim.opt.spelllang = 'en_gb'
 -- }}}1
 
 -- {{{1 keyboard and mouse
-vim.g.mapleader = ','
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
 vim.opt.mouse = "a"
 
