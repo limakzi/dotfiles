@@ -4,6 +4,7 @@
 
 |               |                                                         |
 | ------------- | ------------------------------------------------------- |
+| 🪟`i3`        | [[dot-i3]](./src/linux/dot-i3/i3/)                      |
 | 📝`nvim`      | [[dot-nvim]](./src/linux/dot-nvim/nvim/)                |
 | 🌐`curl`      | [[dot-curl]](./src/linux/dot-curl/curl/)                |
 | 🐞`gdb`       | [[dot-gdb]](./src/linux/dot-gdb/gdb/)                   |

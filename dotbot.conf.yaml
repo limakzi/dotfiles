@@ -24,6 +24,7 @@
     - ~/.config/
 
 - link:
+    ~/.config/i3: src/linux/dot-i3/i3/
     ~/.config/bat: src/linux/dot-bat/bat/
     ~/.config/curl: src/linux/dot-curl/curl/
     ~/.config/fd: src/linux/dot-fd/fd/
