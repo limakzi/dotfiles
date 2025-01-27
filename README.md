@@ -1,5 +1,15 @@
 ## dotfiles
 
+
+<div align="center">
+
+|               |                                                         |
+| ------------- | ------------------------------------------------------- |
+| 💻`ghostty`   | [[dot-ghostty]](./src/macos/dot-ghostty/ghostty/)       |
+
+</div>
+
+
 <div align="center">
 
 |               |                                                         |
@@ -19,7 +29,5 @@
 | 🔨`terraform` | [[dot-terraform]](./src/linux/dot-terraform/terraform/) |
 | 🐳`k9s`       | [[dot-k9s]](./src/linux/dot-k9s/k9s/)                   |
 | 🧮`gap`       | [[dot-gap]](./src/linux/dot-gap/gap/)                   |
-
-
 
 </div>
