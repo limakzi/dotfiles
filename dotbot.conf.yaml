@@ -24,7 +24,6 @@
     - ~/.config/
 
 - link:
-    ~/.config/i3: src/linux/dot-i3/i3/
     ~/.config/bat: src/linux/dot-bat/bat/
     ~/.config/curl: src/linux/dot-curl/curl/
     ~/.config/fd: src/linux/dot-fd/fd/
@@ -32,6 +31,7 @@
     ~/.config/gdb: src/linux/dot-gdb/gdb/
     ~/.config/git: src/linux/dot-git/git/
     ~/.config/htop: src/linux/dot-htop/htop/
+    ~/.config/i3: src/linux/dot-i3/i3/
     ~/.config/k9s: src/linux/dot-k9s/k9s/
     ~/.config/lsd: src/linux/dot-lsd/lsd/
     ~/.config/nvim: src/linux/dot-nvim/nvim/
