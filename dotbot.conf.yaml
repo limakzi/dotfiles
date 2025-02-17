@@ -26,15 +26,27 @@
 - link:
     ~/.config/bat: src/linux/dot-bat/bat/
     ~/.config/curl: src/linux/dot-curl/curl/
+    ~/.config/fd: src/linux/dot-fd/fd/
     ~/.config/gap: src/linux/dot-gap/gap/
     ~/.config/gdb: src/linux/dot-gdb/gdb/
     ~/.config/git: src/linux/dot-git/git/
+    ~/.config/htop: src/linux/dot-htop/htop/
+    ~/.config/i3: src/linux/dot-i3/i3/
+    ~/.config/k9s: src/linux/dot-k9s/k9s/
     ~/.config/lsd: src/linux/dot-lsd/lsd/
     ~/.config/nvim: src/linux/dot-nvim/nvim/
     ~/.config/ranger: src/linux/dot-ranger/ranger/
     ~/.config/starship: src/linux/dot-starship/starship/
+    ~/.config/terraform: src/linux/dot-terraform/terraform/
     ~/.config/tmux: src/linux/dot-tmux/tmux/
     ~/.config/zathura: src/linux/dot-zathura/zathura/
+
+
+- link:
+    ~/.config/ghostty: 
+      if: '[ `uname` = Darwin ]'
+      path: src/macos/dot-ghostty/ghostty/
+
 
 
 - link:

@@ -1,0 +1,19 @@
+## vim: ft=yaml
+## This CITATION.cff file was generated with cffinit.
+## Visit https://bit.ly/cffinit to generate yours today!
+
+---
+cff-version: 1.2.0
+title: dotfiles
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Kamil
+    family-names: Zabielski
+repository-code: 'https://github.com/limakzi/dotfiles'
+keywords:
+  - dotfiles
+  - limakzi
+license: CC-BY-4.0

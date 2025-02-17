@@ -1,1 +1,2 @@
-require('limakzi.base')
+require('config.limakzi')
+require('config.lazy')

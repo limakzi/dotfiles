@@ -11,7 +11,6 @@ icons:
 
 blocks:
   - permission
-  - user
   - size
   - date
   - name
