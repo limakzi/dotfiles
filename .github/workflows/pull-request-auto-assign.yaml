@@ -5,7 +5,7 @@ run-name: auto-assign-${{ github.event.number }} ${{ github.event.pull_request.t
 on:
   pull_request:
     branches: [ 'main' ]
-    types: [ 'opened', 'ready_for_review' ]
+    types: [ 'opened', 'reopened', 'ready_for_review' ]
 
 permissions:
   pull-requests: write
