@@ -27,6 +27,7 @@ disabled = true
 disabled = true
 
 [hostname]
+disabled = true
 ssh_symbol = ' '
 
 [username]
