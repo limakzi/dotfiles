@@ -30,6 +30,9 @@
   default = current
   autoSetupRemote = true
 
+[rebase]
+  instructionFormat = (%an <%ae>) %s
+
 [commit]
   verbose = true
   gpgsign = true
