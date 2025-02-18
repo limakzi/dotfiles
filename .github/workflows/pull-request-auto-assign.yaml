@@ -1,0 +1,18 @@
+---
+
+name: auto-assign
+run-name: auto-assign-${{ github.event.number }} ${{ github.event.pull_request.title }}
+on:
+  pull_request:
+    branches: [ 'main' ]
+    types: [ 'opened', 'ready_for_review' ]
+
+
+jobs:
+  auto-assign:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: auto-assign
+        uses: kentaro-m/auto-assign-action@v2.0.0
+        with:
+          configuration-path: '.github/configs/auto-assign.yaml'

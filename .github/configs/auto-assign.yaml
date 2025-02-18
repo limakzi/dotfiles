@@ -1,0 +1,11 @@
+---
+addReviewers: true
+addAssignees: true
+
+numberOfReviewers: 0
+reviewers:
+  - limakzi
+
+numberOfAssignees: 0
+assignees:
+  - limakzi
