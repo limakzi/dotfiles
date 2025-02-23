@@ -18,10 +18,10 @@
     - ~/public
     - ~/templates
     - ~/videos
-
-
-- create:
     - ~/.config/
+
+- link:
+    ~/.hushlogin: src/linux/dot-hushlogin/hushlogin/hushlogin
 
 - link:
     ~/.config/bat: src/linux/dot-bat/bat/
