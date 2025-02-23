@@ -255,6 +255,23 @@ file_node_extensions = {
 
 
 dir_node_exact_matches = {
+# limakzi
+    '.git'                             : '',
+    'desktop'                          : '',
+    'documents'                        : '',
+    'downloads'                        : '',
+    'dotfiles'                         : '',
+    'macos'                            : '',
+    'dropbox'                          : '',
+    'music'                            : '',
+    'pictures'                         : '',
+    'public'                           : '',
+    'templates'                        : '',
+    'videos'                           : '',
+    'anaconda3'                        : '',
+    'go'                               : '',
+    'workspace'                        : '',
+    'onedrive'                         : '',
 # English
     '.git'                             : '',
     'Desktop'                          : '',
