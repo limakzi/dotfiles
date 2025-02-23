@@ -1,5 +1,9 @@
 ## dotfiles
 
+This repository is divided into main parts _macOS_ and _Debian_.
+
+
+###  macOS
 
 <div align="center">
 
@@ -9,6 +13,8 @@
 
 </div>
 
+
+### 🐧 Debian
 
 <div align="center">
 
