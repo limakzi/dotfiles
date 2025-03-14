@@ -7,9 +7,10 @@ This repository is divided into main parts _macOS_ and _Debian_.
 
 <div align="center">
 
-|               |                                                         |
-| ------------- | ------------------------------------------------------- |
-| 💻`ghostty`   | [[dot-ghostty]](./src/macos/dot-ghostty/ghostty/)       |
+|               |                                                           |
+| ------------- | --------------------------------------------------------- |
+| 💻`ghostty`   | [[dot-ghostty]](./src/macos/dot-ghostty/ghostty/)         |
+| 🔐`1password` | [[dot-1password]](./src/macos/dot-1password/1password/)   |
 
 </div>
 
