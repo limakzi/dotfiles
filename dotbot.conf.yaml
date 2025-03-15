@@ -43,13 +43,6 @@
 
 
 - link:
-    ~/.config/ghostty: 
-      if: '[ `uname` = Darwin ]'
-      path: src/macos/dot-ghostty/ghostty/
-
-
-
-- link:
     ~/.config/user-dirs.dirs:
       force: true
       path: src/linux/dot-xdg/xdg/user-dirs.dirs
