@@ -1,0 +1,15 @@
+---
+name:
+  macos: 
+
+extension:
+  go: 
+  hs: 
+
+filetype:
+  executable: 
+  symlink-dir: 
+  symlink-file: 
+  device-char: 
+  device-block: 󰜫
+  special: 
