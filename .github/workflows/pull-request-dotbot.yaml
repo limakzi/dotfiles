@@ -9,6 +9,10 @@ on:
 jobs:
   dotbot:
     runs-on: ubuntu-22.04
+    matrix:
+        os:
+          - 'linux'
+          - 'macos'
     steps:
       - name: git -- checkout
         uses: actions/checkout@v4
@@ -25,4 +29,4 @@ jobs:
           update-pip: true
 
       - name: dotbot -- apply
-        run: dotbot -c dotbot.conf.yaml
+        run: dotbot -c dotbot.${{ matrix.os }}.conf.yaml
