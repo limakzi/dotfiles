@@ -3,9 +3,5 @@
 ## References: https://developer.1password.com/docs/ssh/agent/config
 
 [[ssh-keys]]
-item = "7izb2wrtxn6ub5mvi3lakp7rrq"
-vault = "limakzi"
-
-[[ssh-keys]]
-item = "ovzptdktu4yozbkjo24t3wgkzq"
-vault = "limakzi"
+item = "4tj53fcjqro33pj7iosnnyplga"
+vault = "work-academia"
