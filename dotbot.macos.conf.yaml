@@ -8,8 +8,8 @@
       mode: 0700
 
 - link:
-    ~/.config/1password: src/macos/dot-1password/1password/
     ~/.config/bash: src/macos/dot-bash/bash/
+    ~/.config/1password: src/macos/dot-1password/1password/
     ~/.config/ghostty: src/macos/dot-ghostty/ghostty/
 
 
