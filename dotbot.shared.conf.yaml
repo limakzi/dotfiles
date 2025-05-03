@@ -12,4 +12,5 @@
 - link:
     ~/.config/bash: src/macos/dot-bash/bash/
     ~/.config/git: src/linux/dot-git/git/
+    ~/.config/lsd: src/linux/dot-lsd/lsd/
     ~/.config/starship: src/linux/dot-starship/starship/
