@@ -4,15 +4,21 @@ name: dotbot
 run-name: dotbot-${{ github.event.number }} ${{ github.event.pull_request.title }}
 on:
   pull_request:
-    branches: [ "main" ]
+    branches: [ "**" ]
 
 jobs:
   dotbot:
-    runs-on: ubuntu-22.04
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        - 'dotbot.linux.conf.yaml'
-        - 'dotbot.macos.conf.yaml'
+        os:
+          - macos-latest
+          - ubuntu-latest
+        include:
+          - os: macos-latest
+            dotbot-config: 'dotbot.macos.conf.yaml'
+          - os: ubuntu-latest
+            dotbot-config: 'dotbot.linux.conf.yaml'
 
     steps:
       - name: Checkout repository
@@ -30,4 +36,4 @@ jobs:
           update-pip: true
 
       - name: Run dotbot 
-        run: dotbot -c dotbot.conf.yaml
+        run: dotbot -c ${{ matrix.dotbot-config }}
