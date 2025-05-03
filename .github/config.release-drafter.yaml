@@ -1,6 +1,6 @@
 ---
 
-name-template: '$REPOSITORY - v$RESOLVED_VERSION'
+name-template: 'dotfiles - v$RESOLVED_VERSION'
 tag-template: 'v$RESOLVED_VERSION'
 categories:
   - title: '🚀 Features'
