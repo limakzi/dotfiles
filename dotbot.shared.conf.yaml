@@ -10,7 +10,7 @@
     ~/.hushlogin: src/linux/dot-hushlogin/hushlogin/hushlogin
 
 - link:
-    ~/.config/bash: src/macos/dot-bash/bash/
-    ~/.config/git: src/linux/dot-git/git/
-    ~/.config/lsd: src/linux/dot-lsd/lsd/
-    ~/.config/starship: src/linux/dot-starship/starship/
+    ~/.config/bash: src/shared/dot-bash/bash/
+    ~/.config/git: src/shared/dot-git/git/
+    ~/.config/lsd: src/shared/dot-lsd/lsd/
+    ~/.config/starship: src/shared/dot-starship/starship/
