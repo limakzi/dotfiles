@@ -1,0 +1,15 @@
+---
+- defaults:
+    link:
+      create: true
+      relink: true
+    create:
+      mode: 0700
+
+- link:
+    ~/.hushlogin: src/linux/dot-hushlogin/hushlogin/hushlogin
+
+- link:
+    ~/.config/bash: src/macos/dot-bash/bash/
+    ~/.config/git: src/linux/dot-git/git/
+    ~/.config/starship: src/linux/dot-starship/starship/

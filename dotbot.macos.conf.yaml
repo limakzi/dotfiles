@@ -8,11 +8,9 @@
       mode: 0700
 
 - link:
-    ~/.hushlogin: src/macos/dot-hushlogin/hushlogin/hushlogin
     ~/.aerospace.toml: src/macos/dot-aerospace/aerospace/aerospace.toml
 
 - link:
     ~/.config/1password: src/macos/dot-1password/1password/
-    ~/.config/bash: src/macos/dot-bash/bash/
     ~/.config/ghostty: src/macos/dot-ghostty/ghostty/
 
