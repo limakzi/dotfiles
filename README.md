@@ -9,6 +9,7 @@ This repository is divided into main parts _macOS_ and _Debian_.
 
 |               |                                                           |
 | ------------- | --------------------------------------------------------- |
+| 🪟`aerospace` | [[dot-aerospace]](./src/macos/dot-aerospace/aerospace)    |
 | 💻`ghostty`   | [[dot-ghostty]](./src/macos/dot-ghostty/ghostty/)         |
 | 🔐`1password` | [[dot-1password]](./src/macos/dot-1password/1password/)   |
 
