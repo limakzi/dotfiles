@@ -9,6 +9,7 @@
 
 - link:
     ~/.hushlogin: src/macos/dot-hushlogin/hushlogin/hushlogin
+    ~/.aerospace.toml: src/macos/dot-aerospace/aerospace/aerospace.toml
 
 - link:
     ~/.config/1password: src/macos/dot-1password/1password/
