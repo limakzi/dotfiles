@@ -9,20 +9,25 @@ on:
 jobs:
   dotbot:
     runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        - 'dotbot.linux.conf.yaml'
+        - 'dotbot.macos.conf.yaml'
+
     steps:
-      - name: git -- checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: python -- setup
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: 3.12
           cache: pip
 
-      - name: python -- install dependencies
+      - name: Install dependencies
         uses: py-actions/py-dependency-install@v4
         with:
           update-pip: true
 
-      - name: dotbot -- apply
+      - name: Run dotbot 
         run: dotbot -c dotbot.conf.yaml
