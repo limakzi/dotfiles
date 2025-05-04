@@ -1,2 +1,10 @@
-fullscreen = true
-theme = "Dracula+"
+fullscreen = false
+theme = "Dracula"
+
+window-decoration = "none"
+window-theme = "light"
+
+window-padding-x = 2
+window-padding-y = 2
+
+quick-terminal-position = "center"
