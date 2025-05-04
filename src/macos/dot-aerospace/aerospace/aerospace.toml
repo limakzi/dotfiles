@@ -55,7 +55,6 @@ automatically-unhide-macos-hidden-apps = true
     cmd-7 = 'workspace 7'
     cmd-8 = 'workspace 8'
     cmd-9 = 'workspace 9'
-    cmd-0 = 'workspace 0'
 
     cmd-shift-1 = 'move-node-to-workspace W'
     cmd-shift-2 = 'move-node-to-workspace T'
