@@ -36,15 +36,15 @@ automatically-unhide-macos-hidden-apps = true
     alt-slash = 'layout tiles horizontal vertical'
     alt-comma = 'layout accordion vertical'
 
-    cmd-h = 'focus left'
-    cmd-j = 'focus down'
-    cmd-k = 'focus up'
-    cmd-l = 'focus right'
+    cmd-left = 'focus left'
+    cmd-right = 'focus right'
+    cmd-up = 'focus up'
+    cmd-down = 'focus down'
 
-    cmd-shift-h = 'move left'
-    cmd-shift-j = 'move down'
-    cmd-shift-k = 'move up'
-    cmd-shift-l = 'move right'
+    cmd-shift-left = 'move left'
+    cmd-shift-right = 'move right'
+    cmd-shift-down = 'move down'
+    cmd-shift-up = 'move up'
 
     cmd-1 = 'workspace W'
     cmd-2 = 'workspace T'
