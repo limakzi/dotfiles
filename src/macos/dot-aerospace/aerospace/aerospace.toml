@@ -65,7 +65,7 @@ automatically-unhide-macos-hidden-apps = true
     cmd-shift-7 = 'move-node-to-workspace 7'
     cmd-shift-8 = 'move-node-to-workspace 8'
     cmd-shift-9 = 'move-node-to-workspace 9'
-    cmd-alt-ctrl-right = 'move-workspace-to-monitor --wrap-around next'
+    cmd-ctrl-shift-right = 'move-workspace-to-monitor --wrap-around next'
 
     cmd-shift-x = 'close'
     cmd-ctrl-alt-shift-semicolon = 'mode service'
@@ -80,6 +80,11 @@ automatically-unhide-macos-hidden-apps = true
     alt-shift-j = ['join-with down', 'mode main']
     alt-shift-k = ['join-with up', 'mode main']
     alt-shift-l = ['join-with right', 'mode main']
+
+
+[[on-window-detected]]
+    check-further-callbacks = true
+    run = 'move-node-to-workspace 8'
 
 [[on-window-detected]]
     if.app-id = 'com.mitchellh.ghostty'
