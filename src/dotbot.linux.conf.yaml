@@ -7,10 +7,6 @@
     create:
       mode: 0700
 
-- shell:
-  - command: dotbot -c dotbot.shared.conf.yaml
-    stdout: true
-    stdin: false
 
 - create:
     - ~/desktop
