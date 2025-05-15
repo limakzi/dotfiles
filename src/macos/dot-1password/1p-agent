@@ -1,10 +1,10 @@
 #!/bin/bash
 set -o pipefail
 
-AGENT_CONFIG="$HOME/.config/1password/ssh/agent.toml"
+AGENT_DESTINATION_CONFIG="$HOME/.config/1password/ssh/agent.toml"
 
 if [ "$#" -ne 1 ]; then
-  VAULT_NAME=$(readlink ${AGENT_CONFIG} | xargs basename | awk -F. '{print $2}')
+  VAULT_NAME=$(readlink "${AGENT_DESTINATION_CONFIG}" | xargs basename | awk -F. '{print $2}')
   if [ $? -eq 0 ]; then
     echo ${VAULT_NAME}
     exit 0;
@@ -13,14 +13,14 @@ if [ "$#" -ne 1 ]; then
 else
   case $1 in
       limakzi|academia|sysdogs)
-          CONFIG_SOURCE_PATH="$HOME/.config/1password/ssh/agent.$1.toml"
+          AGENT_SOURCE_CONFIG="$HOME/.config/1password/ssh/agent.$1.toml"
           ;;
       *)
           echo "Invalid option. Please choose <limakzi|academia|sysdogs>."
 	  exit 1;
           ;;
   esac
-  ln -sf ${CONFIG_SOURCE_PATH} ${AGENT_CONFIG}
+  ln -sf "${AGENT_SOURCE_CONFIG}" "${AGENT_DESTINATION_CONFIG}"
   exit 0;
 fi
 
