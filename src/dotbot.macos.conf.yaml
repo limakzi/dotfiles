@@ -1,0 +1,16 @@
+---
+
+- defaults:
+    link:
+      create: true
+      relink: true
+    create:
+      mode: 0700
+
+- link:
+    ~/.aerospace.toml: ./macos/dot-aerospace/aerospace/aerospace.toml
+
+- link:
+    ~/.config/1password: ./macos/dot-1password/1password/
+    ~/.config/ghostty: ./macos/dot-ghostty/ghostty/
+

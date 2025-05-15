@@ -1,0 +1,16 @@
+---
+- defaults:
+    link:
+      create: true
+      relink: true
+    create:
+      mode: 0700
+
+- link:
+    ~/.hushlogin: ./linux/dot-hushlogin/hushlogin/hushlogin
+
+- link:
+    ~/.config/bash: ./shared/dot-bash/bash/
+    ~/.config/git: ./shared/dot-git/git/
+    ~/.config/lsd: ./shared/dot-lsd/lsd/
+    ~/.config/starship: ./shared/dot-starship/starship/

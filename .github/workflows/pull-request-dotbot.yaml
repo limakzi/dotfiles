@@ -36,4 +36,5 @@ jobs:
           update-pip: true
 
       - name: Run dotbot 
+        working-directory: src
         run: dotbot -c ${{ matrix.dotbot-config }}
