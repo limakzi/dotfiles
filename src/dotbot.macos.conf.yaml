@@ -8,9 +8,9 @@
       mode: 0700
 
 - link:
-    ~/.aerospace.toml: ./macos/dot-aerospace/aerospace/aerospace.toml
-
-- link:
     ~/.config/1password: ./macos/dot-1password/1password/
     ~/.config/ghostty: ./macos/dot-ghostty/ghostty/
 
+
+- link:
+    ~/.local/bin/1p-agent: ./macos/dot-1password/1p-agent

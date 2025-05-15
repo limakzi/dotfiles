@@ -1,0 +1,30 @@
+#!/bin/bash
+set -o pipefail
+
+P_TARGET="$HOME/.config/1password/ssh/agent.toml"
+
+if [ "$#" -ne 1 ]; then
+  echo $(readlink ${P_TARGET} | xargs basename | awk -F. '{print $2}' || echo "not")
+else
+  choice=$1
+  # Use a case statement to determine the source based on the argument
+  case $choice in
+      limakzi)
+          P_SOURCE="$HOME/.config/1password/ssh/agent.limakzi.toml"
+	  ln -sf ${P_SOURCE} ${P_TARGET}
+          ;;
+      academia)
+          P_SOURCE="$HOME/.config/1password/ssh/agent.academia.toml"
+	  ln -sf ${P_SOURCE} ${P_TARGET}
+          ;;
+      sysdogs)
+          P_SOURCE="$HOME/.config/1password/ssh/agent.sysdogs.toml"
+	  ln -sf ${P_SOURCE} ${P_TARGET}
+          ;;
+      *)
+          echo "Invalid option. Please choose <limakzi|academia|sysdogs>."
+          ;;
+  esac
+fi
+
+
