@@ -7,7 +7,7 @@
       mode: 0700
 
 - link:
-    ~/.hushlogin: src/linux/dot-hushlogin/hushlogin/hushlogin
+    ~/.hushlogin: src/shared/dot-hushlogin/hushlogin/hushlogin
 
 - link:
     ~/.config/bash: src/shared/dot-bash/bash/
