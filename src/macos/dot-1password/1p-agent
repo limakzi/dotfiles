@@ -1,35 +1,27 @@
 #!/bin/bash
 set -o pipefail
 
-P_TARGET="$HOME/.config/1password/ssh/agent.toml"
+AGENT_CONFIG="$HOME/.config/1password/ssh/agent.toml"
 
 if [ "$#" -ne 1 ]; then
-  VAULT_NAME=$(readlink ${P_TARGET} | xargs basename | awk -F. '{print $2}')
-  VAULT_STATUS=$?
+  VAULT_NAME=$(readlink ${AGENT_CONFIG} | xargs basename | awk -F. '{print $2}')
   if [ $? -eq 0 ]; then
-    echo -n ${VAULT_NAME}
+    echo ${VAULT_NAME}
+    exit 0;
   fi;
-  exit $VAULT_STATUS;
+  exit 1;
 else
-  choice=$1
-  # Use a case statement to determine the source based on the argument
-  case $choice in
-      limakzi)
-          P_SOURCE="$HOME/.config/1password/ssh/agent.limakzi.toml"
-	  ln -sf ${P_SOURCE} ${P_TARGET}
-          ;;
-      academia)
-          P_SOURCE="$HOME/.config/1password/ssh/agent.academia.toml"
-	  ln -sf ${P_SOURCE} ${P_TARGET}
-          ;;
-      sysdogs)
-          P_SOURCE="$HOME/.config/1password/ssh/agent.sysdogs.toml"
-	  ln -sf ${P_SOURCE} ${P_TARGET}
+  case $1 in
+      limakzi|academia|sysdogs)
+          CONFIG_SOURCE_PATH="$HOME/.config/1password/ssh/agent.$1.toml"
           ;;
       *)
           echo "Invalid option. Please choose <limakzi|academia|sysdogs>."
+	  exit 1;
           ;;
   esac
+  ln -sf ${CONFIG_SOURCE_PATH} ${AGENT_CONFIG}
+  exit 0;
 fi
 
 
