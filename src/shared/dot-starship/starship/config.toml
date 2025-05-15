@@ -1,5 +1,5 @@
 "$schema" = 'https://starship.rs/config-schema.json'
-format = """$all"""
+format = """${custom.1p-agent}$all"""
 add_newline = false
 
 [line_break]
@@ -28,8 +28,8 @@ disabled = true
 disabled = false
 ssh_only = false
 ssh_symbol = ' '
+style = 'green'
 aliases = { "xi-mbp" = " xi-mbp" }
-
 
 [username]
 disabled = true
@@ -50,3 +50,14 @@ disabled = false
 
 [aws]
 disabled = false
+
+[vagrant]
+disabled = true
+
+[custom.1p-agent]
+disabled = false
+style = 'bold blue'
+symbol = ' '
+when = '1p-agent'
+command = '1p-agent'
+os = 'macos'
