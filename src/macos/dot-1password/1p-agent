@@ -23,5 +23,3 @@ else
   ln -sf "${AGENT_SOURCE_CONFIG}" "${AGENT_DESTINATION_CONFIG}"
   exit 0;
 fi
-
-
