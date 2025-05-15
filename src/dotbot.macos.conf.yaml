@@ -8,6 +8,7 @@
       mode: 0700
 
 - link:
+    ~/.config/nvim: ./macos/dot-1password/1password/
     ~/.config/1password: ./macos/dot-1password/1password/
     ~/.config/ghostty: ./macos/dot-ghostty/ghostty/
 
