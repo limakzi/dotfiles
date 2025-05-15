@@ -30,7 +30,6 @@
     ~/.config/htop: ./linux/dot-htop/htop/
     ~/.config/i3: ./linux/dot-i3/i3/
     ~/.config/k9s: ./linux/dot-k9s/k9s/
-    ~/.config/nvim: ./linux/dot-nvim/nvim/
     ~/.config/ranger: ./linux/dot-ranger/ranger/
     ~/.config/terraform: ./linux/dot-terraform/terraform/
     ~/.config/tmux: ./linux/dot-tmux/tmux/
