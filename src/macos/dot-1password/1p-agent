@@ -4,7 +4,12 @@ set -o pipefail
 P_TARGET="$HOME/.config/1password/ssh/agent.toml"
 
 if [ "$#" -ne 1 ]; then
-  echo $(readlink ${P_TARGET} | xargs basename | awk -F. '{print $2}' || echo "not")
+  VAULT_NAME=$(readlink ${P_TARGET} | xargs basename | awk -F. '{print $2}')
+  VAULT_STATUS=$?
+  if [ $? -eq 0 ]; then
+    echo -n ${VAULT_NAME}
+  fi;
+  exit $VAULT_STATUS;
 else
   choice=$1
   # Use a case statement to determine the source based on the argument
