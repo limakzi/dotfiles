@@ -24,7 +24,7 @@ return {
                     "elixir",
                     "gap",
                     "gaptst",
-                    "hcl" ,
+                    "hcl",
                     "html",
                     "javascript",
                     "lua",
