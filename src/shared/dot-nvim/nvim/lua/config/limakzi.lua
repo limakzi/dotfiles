@@ -58,7 +58,9 @@ vim.opt.splitbelow = true
 
 -- {{{1 Foldings.
 vim.opt.foldlevelstart = 0
-vim.opt.foldmethod = 'marker'
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldtext = "v:lua.vim.treesitter.foldtext()"
 -- }}}1
 
 -- {{{1 Searching and highlighting.
