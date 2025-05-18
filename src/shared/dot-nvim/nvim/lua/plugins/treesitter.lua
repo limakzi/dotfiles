@@ -19,6 +19,10 @@ return {
         config = function () 
             local configs = require("nvim-treesitter.configs")
             configs.setup({
+                sync_install = false,
+                incremental_selection = {
+                    enable = false
+                },
                 ensure_installed = { 
                     "c", 
                     "elixir",
@@ -32,7 +36,6 @@ return {
                     "vim",
                     "vimdoc"
                 },
-                sync_install = false,
                 highlight = { 
                     enable = true 
                 },
