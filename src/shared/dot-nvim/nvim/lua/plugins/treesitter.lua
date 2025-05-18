@@ -21,15 +21,16 @@ return {
             configs.setup({
                 ensure_installed = { 
                     "c", 
-                    "lua", 
-                    "vim", 
-                    "vimdoc", 
-                    "query", 
-                    "elixir", 
-                    "javascript", 
-                    "gap", 
-                    "gaptst", 
-                    "html" 
+                    "elixir",
+                    "gap",
+                    "gaptst",
+                    "hcl",
+                    "html",
+                    "javascript",
+                    "lua",
+                    "query",
+                    "vim",
+                    "vimdoc"
                 },
                 sync_install = false,
                 highlight = { 
