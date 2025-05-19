@@ -35,8 +35,8 @@ automatically-unhide-macos-hidden-apps = true
 [mode.main.binding]
     cmd-h = []
 
-    alt-slash = 'layout tiles horizontal vertical'
-    alt-comma = 'layout accordion vertical'
+    cmd-shift-slash = 'layout tiles horizontal vertical'
+    cmd-shift-comma = 'layout accordion vertical'
 
     cmd-left = 'focus left'
     cmd-right = 'focus right'
