@@ -8,10 +8,17 @@
       mode: 0700
 
 - link:
-    ~/.config/nvim: ./macos/dot-1password/1password/
-    ~/.config/1password: ./macos/dot-1password/1password/
-    ~/.config/ghostty: ./macos/dot-ghostty/ghostty/
-
+    ~/.hushlogin: ./dot-hushlogin/hushlogin/hushlogin
+    ~/.config/bash: ./dot-bash/bash/
+    ~/.config/git: ./dot-git/git/
+    ~/.config/lsd: ./dot-lsd/lsd/
+    ~/.config/nvim: ./dot-nvim/nvim/
+    ~/.config/starship: ./dot-starship/starship/
 
 - link:
-    ~/.local/bin/1p-agent: ./macos/dot-1password/1p-agent
+    ~/.config/nvim: ./dot-1password/1password/
+    ~/.config/1password: ./dot-1password/1password/
+    ~/.config/ghostty: ./dot-ghostty/ghostty/
+
+- link:
+    ~/.local/bin/1p-agent: ./dot-1password/1p-agent
