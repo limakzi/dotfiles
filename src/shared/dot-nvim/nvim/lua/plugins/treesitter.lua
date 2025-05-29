@@ -34,7 +34,8 @@ return {
                     "lua",
                     "query",
                     "vim",
-                    "vimdoc"
+                    "vimdoc",
+                    "yaml"
                 },
                 highlight = { 
                     enable = true 
