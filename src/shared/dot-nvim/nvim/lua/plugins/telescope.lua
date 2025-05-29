@@ -10,7 +10,9 @@ return {
       { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make', cond = vim.fn.executable('make') == 1 }
     },
     keys = {
-      { "<leader>p", function() require("telescope.builtin").fd() end, desc="Find: Files" },
+      { "<leader>pp", function() require("telescope.builtin").git_files() end, desc="Find: Files from git-repository" },
+      { "<leader>pf", function() require("telescope.builtin").fd() end, desc="Find: Find all-files" },
+      { "<leader>e",  function() require("telescope.builtin").buffers() end, desc="Find: Buffers" },
     },
     defaults = {
       layout_config = {

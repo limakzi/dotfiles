@@ -2,7 +2,7 @@ return {
     {
         "sustech-data/wildfire.nvim",
         event = "VeryLazy",
-        dependencies = { 
+        dependencies = {
             { "nvim-treesitter/nvim-treesitter" },
         },
         config = function()
