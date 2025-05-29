@@ -20,26 +20,33 @@
     - ~/videos
     - ~/.config/
 
+- link:
+    ~/.hushlogin: ./dot-hushlogin/hushlogin/hushlogin
+    ~/.config/bash: ./dot-bash/bash/
+    ~/.config/git: ./dot-git/git/
+    ~/.config/lsd: ./dot-lsd/lsd/
+    ~/.config/nvim: ./dot-nvim/nvim/
+    ~/.config/starship: ./dot-starship/starship/
 
 - link:
-    ~/.config/bat: ./linux/dot-bat/bat/
-    ~/.config/curl: ./linux/dot-curl/curl/
-    ~/.config/fd: ./linux/dot-fd/fd/
-    ~/.config/gap: ./linux/dot-gap/gap/
-    ~/.config/gdb: ./linux/dot-gdb/gdb/
-    ~/.config/htop: ./linux/dot-htop/htop/
-    ~/.config/i3: ./linux/dot-i3/i3/
-    ~/.config/k9s: ./linux/dot-k9s/k9s/
-    ~/.config/ranger: ./linux/dot-ranger/ranger/
-    ~/.config/terraform: ./linux/dot-terraform/terraform/
-    ~/.config/tmux: ./linux/dot-tmux/tmux/
-    ~/.config/zathura: ./linux/dot-zathura/zathura/
+    ~/.config/bat: ./dot-bat/bat/
+    ~/.config/curl: ./dot-curl/curl/
+    ~/.config/fd: ./dot-fd/fd/
+    ~/.config/gap: ./dot-gap/gap/
+    ~/.config/gdb: ./dot-gdb/gdb/
+    ~/.config/htop: ./dot-htop/htop/
+    ~/.config/i3: ./dot-i3/i3/
+    ~/.config/k9s: ./dot-k9s/k9s/
+    ~/.config/ranger: ./dot-ranger/ranger/
+    ~/.config/terraform: ./dot-terraform/terraform/
+    ~/.config/tmux: ./dot-tmux/tmux/
+    ~/.config/zathura: ./dot-zathura/zathura/
 
 
 - link:
     ~/.config/user-dirs.dirs:
       force: true
-      path: ./linux/dot-xdg/xdg/user-dirs.dirs
+      path: ./dot-xdg/xdg/user-dirs.dirs
     ~/.config/user-dirs.locale:
       force: true
-      path: ./linux/dot-xdg/xdg/user-dirs.locale
+      path: ./dot-xdg/xdg/user-dirs.locale
