@@ -122,6 +122,6 @@ vim.opt.visualbell = true
 
 -- {{{1 Timeout.
 vim.opt.timeout = true
-vim.opt.timeoutlen = 500
-vim.opt.updatetime = 200
+vim.opt.timeoutlen = 250
+vim.opt.updatetime = 250
 -- }}}1
