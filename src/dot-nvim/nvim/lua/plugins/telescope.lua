@@ -4,7 +4,6 @@ return {
     tag = '0.1.8',
     dependencies = {
       { 'nvim-lua/plenary.nvim' },
-      { 'nvim-treesitter/nvim-treesitter' },
       { "nvim-tree/nvim-web-devicons" },
       { "nvim-telescope/telescope-project.nvim" },
       { "nvim-telescope/telescope-symbols.nvim" },
@@ -16,18 +15,25 @@ return {
       { "<leader>o", function() require("telescope").extensions.project.project{} end, desc="Find projects" },
     },
     config = function()
-      require("telescope").load_extension("project")
       require("telescope").setup({
         extensions = {
           project = {
               sync_with_nvim_tree = true,
               ignore_missing_dirs = true,
-              theme = "dropdown",
+              theme = "ivy",
               base_dirs = {
                   { path = "~/dotfiles" },
+                  { path = "~/documents/sysdogs/" },
                   { path = "~/documents/academia/" },
               },
           },
+        },
+        pickers = {
+          find_files = { theme = "ivy" },
+          git_files = { theme = "ivy" },
+          oldfiles = { theme = "ivy" },
+          buffers = { theme = "ivy" },
+          project = { theme = "ivy" },
         },
         defaults = {
           path_display = { "smart" },
