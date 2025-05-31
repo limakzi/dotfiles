@@ -12,7 +12,7 @@ return {
     keys = {
       { "<leader>p", function() require("telescope.builtin").git_files() end, desc="Find git-files" },
       { "<leader>e", function() require("telescope.builtin").buffers() end, desc="Find buffers" },
-      { "<leader>o", function() require("telescope").extensions.project.project{} end, desc="Find projects" },
+      { "<leader>o", function() require("telescope").extensions.project.project{ hide_workspace = true } end, desc="Find projects" },
     },
     config = function()
       require("telescope").setup({
