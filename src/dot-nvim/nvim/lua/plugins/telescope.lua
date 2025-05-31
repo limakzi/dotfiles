@@ -10,8 +10,9 @@ return {
       { 'nvim-telescope/telescope-fzf-native.nvim' }
     },
     keys = {
-      { "<leader>p", function() require("telescope.builtin").git_files() end, desc="Find git-files" },
+      { "<leader>p", function() require("telescope.builtin").fd() end, desc="Find files" },
       { "<leader>e", function() require("telescope.builtin").buffers() end, desc="Find buffers" },
+      { "<leader>s", function() require("telescope.builtin").live_grep() end, desc="Find buffers" },
       { "<leader>o", function() require("telescope").extensions.project.project{ hide_workspace = true } end, desc="Find projects" },
     },
     config = function()
@@ -29,10 +30,12 @@ return {
           },
         },
         pickers = {
+          buffers = { theme = "ivy" },
+          fd = { theme = "ivy" },
+          live_grep = { theme = "ivy" },
           find_files = { theme = "ivy" },
           git_files = { theme = "ivy" },
           oldfiles = { theme = "ivy" },
-          buffers = { theme = "ivy" },
           project = { theme = "ivy" },
         },
         defaults = {
