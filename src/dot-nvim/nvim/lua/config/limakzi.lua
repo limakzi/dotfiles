@@ -87,7 +87,7 @@ vim.opt.expandtab = true
 vim.opt.shiftround = true
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
-vim.opt.softtabstop = -1
+vim.opt.softtabstop = 4
 -- }}}1
 --
 -- {{{1 Spell-checking.
@@ -122,6 +122,6 @@ vim.opt.visualbell = true
 
 -- {{{1 Timeout.
 vim.opt.timeout = true
-vim.opt.timeoutlen = 250
-vim.opt.updatetime = 250
+vim.opt.timeoutlen = 500
+vim.opt.updatetime = 500
 -- }}}1
