@@ -4,7 +4,7 @@ return {
         build = ":TSUpdate",
         opts = function(_, _)
             vim.filetype.add({
-                extension = { 
+                extension = {
                     g = "gap",
                     gi = "gap",
                     gd = "gap",
@@ -16,15 +16,15 @@ return {
                 callback = function() vim.o.commentstring = "#%s" end,
             })
             end,
-        config = function () 
+        config = function ()
             local configs = require("nvim-treesitter.configs")
             configs.setup({
                 sync_install = false,
                 incremental_selection = {
                     enable = false
                 },
-                ensure_installed = { 
-                    "c", 
+                ensure_installed = {
+                    "c",
                     "elixir",
                     "gap",
                     "gaptst",
@@ -37,8 +37,8 @@ return {
                     "vimdoc",
                     "yaml"
                 },
-                highlight = { 
-                    enable = true 
+                highlight = {
+                    enable = true
                 },
                 indent = {
                     enable = true
