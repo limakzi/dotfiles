@@ -1,0 +1,52 @@
+---
+
+- defaults:
+    link:
+      create: true
+      relink: true
+    create:
+      mode: 0700
+
+
+- create:
+    - ~/desktop
+    - ~/documents
+    - ~/downloads
+    - ~/macos
+    - ~/music
+    - ~/pictures
+    - ~/public
+    - ~/templates
+    - ~/videos
+    - ~/.config/
+
+- link:
+    ~/.hushlogin: ./dot-hushlogin/hushlogin/hushlogin
+    ~/.config/bash: ./dot-bash/bash/
+    ~/.config/git: ./dot-git/git/
+    ~/.config/lsd: ./dot-lsd/lsd/
+    ~/.config/nvim: ./dot-nvim/nvim/
+    ~/.config/starship: ./dot-starship/starship/
+
+- link:
+    ~/.config/bat: ./dot-bat/bat/
+    ~/.config/curl: ./dot-curl/curl/
+    ~/.config/fd: ./dot-fd/fd/
+    ~/.config/gap: ./dot-gap/gap/
+    ~/.config/gdb: ./dot-gdb/gdb/
+    ~/.config/htop: ./dot-htop/htop/
+    ~/.config/i3: ./dot-i3/i3/
+    ~/.config/k9s: ./dot-k9s/k9s/
+    ~/.config/ranger: ./dot-ranger/ranger/
+    ~/.config/terraform: ./dot-terraform/terraform/
+    ~/.config/tmux: ./dot-tmux/tmux/
+    ~/.config/zathura: ./dot-zathura/zathura/
+
+
+- link:
+    ~/.config/user-dirs.dirs:
+      force: true
+      path: ./dot-xdg/xdg/user-dirs.dirs
+    ~/.config/user-dirs.locale:
+      force: true
+      path: ./dot-xdg/xdg/user-dirs.locale

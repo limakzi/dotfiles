@@ -1,0 +1,63 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+format = """${custom.1p-agent}$all"""
+add_newline = false
+
+[line_break]
+disabled = true
+
+[character]
+success_symbol = "[λ](bold #50fa7b)"
+error_symbol = "[λ](bold #ff5555)"
+
+[directory]
+truncation_length = 2
+
+[cmd_duration]
+disabled = true
+
+[git_branch]
+only_attached = true
+
+[git_metrics]
+disabled = true
+
+[git_status]
+disabled = true
+
+[hostname]
+disabled = false
+ssh_only = false
+ssh_symbol = ' '
+style = 'green'
+aliases = { "xi-mbp" = " xi-mbp" }
+
+[username]
+disabled = true
+
+[lua]
+disabled = true
+
+[package]
+disabled = false
+
+[python]
+detect_folders = [".venv"]
+detect_files = []
+detect_extensions = []
+
+[azure]
+disabled = false
+
+[aws]
+disabled = false
+
+[vagrant]
+disabled = true
+
+[custom.1p-agent]
+disabled = false
+style = 'bold blue'
+symbol = ' '
+when = '1p'
+command = '1p'
+os = 'macos'

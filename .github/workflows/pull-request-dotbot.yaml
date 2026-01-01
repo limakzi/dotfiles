@@ -4,29 +4,37 @@ name: dotbot
 run-name: dotbot-${{ github.event.number }} ${{ github.event.pull_request.title }}
 on:
   pull_request:
-    branches: [ "main" ]
+    branches: [ "**" ]
 
 jobs:
   dotbot:
-    runs-on: ubuntu-22.04
-    matrix:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
         os:
-          - 'linux'
-          - 'macos'
-    steps:
-      - name: git -- checkout
-        uses: actions/checkout@v4
+          - macos-latest
+          - ubuntu-latest
+        include:
+          - os: macos-latest
+            dotbot-config: 'dotbot.macos.conf.yaml'
+          - os: ubuntu-latest
+            dotbot-config: 'dotbot.linux.conf.yaml'
 
-      - name: python -- setup
-        uses: actions/setup-python@v5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
         with:
           python-version: 3.12
           cache: pip
 
-      - name: python -- install dependencies
+      - name: Install dependencies
         uses: py-actions/py-dependency-install@v4
         with:
           update-pip: true
 
-      - name: dotbot -- apply
-        run: dotbot -c dotbot.${{ matrix.os }}.conf.yaml
+      - name: Run dotbot 
+        working-directory: src
+        run: dotbot -c ${{ matrix.dotbot-config }}

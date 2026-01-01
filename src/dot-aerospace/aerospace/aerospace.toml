@@ -1,0 +1,132 @@
+after-login-command = []
+after-startup-command = []
+
+start-at-login = true
+
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+accordion-padding = 5
+
+# Possible values: tiles|accordion
+default-root-container-layout = 'accordion'
+default-root-container-orientation = 'auto'
+
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+on-focus-changed = ['move-mouse window-lazy-center']
+automatically-unhide-macos-hidden-apps = true
+
+[key-mapping]
+    preset = 'qwerty'
+
+[gaps]
+    inner.horizontal = 4
+    inner.vertical =   4
+    outer.left =       4
+    outer.bottom =     4
+    outer.top =        4
+    outer.right =      4
+
+[workspace-to-monitor-force-assignment]
+    W = 2
+    T = 1
+    I = 1
+
+[mode.main.binding]
+    cmd-h = []
+
+    cmd-shift-slash = 'layout tiles horizontal vertical'
+    cmd-shift-comma = 'layout accordion vertical'
+
+    cmd-left = 'focus left'
+    cmd-right = 'focus right'
+    cmd-up = 'focus up'
+    cmd-down = 'focus down'
+
+    cmd-shift-left = 'move left'
+    cmd-shift-right = 'move right'
+    cmd-shift-down = 'move down'
+    cmd-shift-up = 'move up'
+
+    cmd-1 = 'workspace W'
+    cmd-2 = 'workspace T'
+    cmd-3 = 'workspace I'
+    cmd-4 = 'workspace 4'
+    cmd-5 = 'workspace 5'
+    cmd-6 = 'workspace 6'
+    cmd-7 = 'workspace 7'
+    cmd-8 = 'workspace 8'
+    cmd-9 = 'workspace M'
+    cmd-tab = 'workspace-back-and-forth'
+
+
+    cmd-shift-1 = 'move-node-to-workspace W'
+    cmd-shift-2 = 'move-node-to-workspace T'
+    cmd-shift-3 = 'move-node-to-workspace I'
+    cmd-shift-4 = 'move-node-to-workspace 4'
+    cmd-shift-5 = 'move-node-to-workspace 5'
+    cmd-shift-6 = 'move-node-to-workspace 6'
+    cmd-shift-7 = 'move-node-to-workspace 7'
+    cmd-shift-8 = 'move-node-to-workspace 8'
+    cmd-shift-9 = 'move-node-to-workspace M'
+    cmd-ctrl-shift-right = 'move-workspace-to-monitor --wrap-around next'
+
+    cmd-shift-x = 'close'
+    cmd-ctrl-alt-shift-r = 'mode resize'
+    cmd-ctrl-alt-shift-semicolon = 'mode service'
+
+[mode.service.binding]
+    esc = ['reload-config', 'mode main']
+    r = ['flatten-workspace-tree', 'mode main'] # reset layout
+    f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+    backspace = ['close-all-windows-but-current', 'mode main']
+
+    alt-shift-h = ['join-with left', 'mode main']
+    alt-shift-j = ['join-with down', 'mode main']
+    alt-shift-k = ['join-with up', 'mode main']
+    alt-shift-l = ['join-with right', 'mode main']
+
+[mode.resize.binding]
+    left = 'resize width -50'
+    right = 'resize width +50'
+    up = 'resize height +50'
+    down = 'resize height -50'
+    enter = 'mode main'
+    esc = 'mode main'
+
+[[on-window-detected]]
+    check-further-callbacks = false
+    if.app-id = 'com.1password.1password'
+    run = 'layout floating'
+
+[[on-window-detected]]
+    check-further-callbacks = true
+    run = 'move-node-to-workspace 8'
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.MobileSMS'
+    run = 'move-node-to-workspace M'
+
+[[on-window-detected]]
+     if.app-id = 'com.tinyspeck.slackmacgap'
+     run = 'move-node-to-workspace M'
+
+[[on-window-detected]]
+    if.app-id = 'com.mitchellh.ghostty'
+    run = 'move-node-to-workspace T'
+    check-further-callbacks = true
+
+[[on-window-detected]]
+    if.app-id = 'com.brave.Browser'
+    run = 'move-node-to-workspace W'
+    check-further-callbacks = true
+
+[[on-window-detected]]
+    if.app-id = 'com.zed.Zed'
+    run = 'move-node-to-workspace I'
+    check-further-callbacks = true
+
+[[on-window-detected]]
+    if.app-id = 'com.zed.Zed-Preview'
+    run = 'move-node-to-workspace I'
+    check-further-callbacks = true

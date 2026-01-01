@@ -1,0 +1,24 @@
+---
+
+- defaults:
+    link:
+      create: true
+      relink: true
+    create:
+      mode: 0700
+
+- link:
+    ~/.hushlogin: ./dot-hushlogin/hushlogin/hushlogin
+    ~/.config/bash: ./dot-bash/bash/
+    ~/.config/git: ./dot-git/git/
+    ~/.config/lsd: ./dot-lsd/lsd/
+    ~/.config/nvim: ./dot-nvim/nvim/
+    ~/.config/starship: ./dot-starship/starship/
+
+- link:
+    ~/.config/nvim: ./dot-1password/1password/
+    ~/.config/1password: ./dot-1password/1password/
+    ~/.config/ghostty: ./dot-ghostty/ghostty/
+
+- link:
+    ~/.local/bin/1p: ./dot-1password/1p

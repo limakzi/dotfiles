@@ -1,0 +1,11 @@
+## You can test the result by running:
+## SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ssh-add -l
+## References: https://developer.1password.com/docs/ssh/agent/config
+
+[[ssh-keys]]
+item = "imxckr6fbjna42ax72dd4gpmo4"
+vault = "work-sysdogs"
+
+[[ssh-keys]]
+item = "t4wtzpmvzsnfmfpdbpuw3u6loa"
+vault = "work-sysdogs"
