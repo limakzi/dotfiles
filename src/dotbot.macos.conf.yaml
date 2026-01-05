@@ -14,11 +14,8 @@
     ~/.config/lsd: ./dot-lsd/lsd/
     ~/.config/nvim: ./dot-nvim/nvim/
     ~/.config/starship: ./dot-starship/starship/
-
-- link:
-    ~/.config/nvim: ./dot-1password/1password/
-    ~/.config/1password: ./dot-1password/1password/
     ~/.config/ghostty: ./dot-ghostty/ghostty/
 
 - link:
     ~/.local/bin/1p: ./dot-1password/1p
+    ~/.config/1password: ./dot-1password/1password/
