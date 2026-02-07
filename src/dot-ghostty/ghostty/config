@@ -2,7 +2,7 @@ theme = "Dracula+"
 window-theme = dark
 
 font-family = "Hack Nerd Font Mono Regular"
-font-size = 22
+font-size = 18
 
 cursor-style = bar
 
