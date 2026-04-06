@@ -6,10 +6,8 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    types: [opened, reopened, synchronize]
-  pull_request_target:
-    types: [opened, reopened, synchronize]
+    tags:
+      - 'v*'
 
 permissions:
   contents: read
@@ -22,7 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: release-drafter/release-drafter@v7
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           config-name: config.release-drafter.yaml
+          tag: ${{ github.ref_type == 'tag' && github.ref_name || '' }}
+          publish: ${{ github.ref_type == 'tag' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
