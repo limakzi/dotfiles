@@ -1,5 +1,7 @@
 ---
-applyTo: "**/*.tf"
+applyTo:
+  - "**/*.tf"
+  - "**/.gitignore"
 ---
 
 # Terraform — Remote State
