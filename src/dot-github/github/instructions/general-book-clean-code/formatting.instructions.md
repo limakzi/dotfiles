@@ -6,7 +6,7 @@ applyTo:
 
 # Formatting
 
-- Keep files small and focused.
-- Related code should appear vertically close together.
+- Keep files small and focused to one topic.
+- Place related code vertically close together.
 - Declare variables close to their usage.
-- Dependent functions should be close to their callers, ideally just below.
+- Place functions just below their callers.
