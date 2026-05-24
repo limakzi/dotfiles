@@ -1,0 +1,12 @@
+---
+applyTo: "**/*.instructions.md,**/copilot-instructions.md,**/AGENTS.md,**/CLAUDE.md,**/GEMINI.md"
+---
+
+# Content
+
+- State what to do.
+- Cover behavior and output.
+- Include file paths and extensions when relevant.
+- Add examples for non-obvious rules.
+- Do not repeat rules from other instruction files.
+- Do not explain why.
