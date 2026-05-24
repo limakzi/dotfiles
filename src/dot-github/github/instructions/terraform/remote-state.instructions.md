@@ -6,7 +6,7 @@ applyTo:
 
 # Terraform — remote state
 
-- Use a remote backend (ex. S3, GCS, or HCP Terraform).
+- Use a remote backend (e.g., S3, GCS, or HCP Terraform).
 - Never use a local backend unless explicitly stated.
 - Enable state locking on every backend that supports it.
 - For S3, use `use_lockfile = true`.
