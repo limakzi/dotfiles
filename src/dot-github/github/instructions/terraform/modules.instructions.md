@@ -2,7 +2,7 @@
 applyTo: "**/*.tf"
 ---
 
-# Terraform — Modules
+# Terraform — modules
 
 - Include `main.tf`, `variables.tf`, `outputs.tf`, and `versions.tf` in every module.
 - Create all required files even if initially empty.

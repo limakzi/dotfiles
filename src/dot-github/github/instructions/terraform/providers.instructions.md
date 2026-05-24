@@ -2,7 +2,7 @@
 applyTo: "**/*.tf"
 ---
 
-# Terraform — Providers
+# Terraform — providers
 
 - In root directories, pin provider versions in `required_providers` using `~>`.
 - Pin the Terraform CLI version in `required_version` using `~>`.

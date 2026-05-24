@@ -2,7 +2,7 @@
 applyTo: "**/*.tf"
 ---
 
-# Terraform — Assertions
+# Terraform — assertions
 
 - Use `precondition` blocks to enforce assumptions before resource creation.
 - Use `postcondition` blocks to enforce guarantees after apply.

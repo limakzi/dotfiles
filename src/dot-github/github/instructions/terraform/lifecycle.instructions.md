@@ -2,7 +2,7 @@
 applyTo: "**/*.tf"
 ---
 
-# Terraform — Lifecycle
+# Terraform — lifecycle
 
 ## Lifecycle meta-arguments
 

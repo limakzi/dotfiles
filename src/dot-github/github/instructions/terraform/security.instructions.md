@@ -2,7 +2,7 @@
 applyTo: "**/*.tf"
 ---
 
-# Terraform — Security
+# Terraform — security
 
 - Never hardcode credentials, passwords, or tokens in `.tf` or `.tfvars` files.
 - Source credentials from environment variables, instance profiles, workload identity, or a secrets manager.

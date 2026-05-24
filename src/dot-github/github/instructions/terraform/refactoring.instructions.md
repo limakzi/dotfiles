@@ -2,7 +2,7 @@
 applyTo: "**/*.tf"
 ---
 
-# Terraform — Refactoring
+# Terraform — refactoring
 
 - Use `moved` blocks (Terraform ≥ 1.1) instead of `terraform state mv` for renames and restructuring.
 - Use declarative `import` blocks (Terraform ≥ 1.5) instead of `terraform import` CLI commands.

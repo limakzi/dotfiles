@@ -2,7 +2,7 @@
 applyTo: "**/*.tf"
 ---
 
-# Terraform — Outputs
+# Terraform — outputs
 
 - Include `description` in every `output` block.
 - Mark outputs that expose sensitive data with `sensitive = true`.

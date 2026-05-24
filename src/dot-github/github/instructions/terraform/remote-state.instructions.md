@@ -4,7 +4,7 @@ applyTo:
   - "**/.gitignore"
 ---
 
-# Terraform — Remote State
+# Terraform — remote state
 
 - Use a remote backend (S3, GCS, or HCP Terraform) in all shared environments.
 - Never use a local backend in shared environments.

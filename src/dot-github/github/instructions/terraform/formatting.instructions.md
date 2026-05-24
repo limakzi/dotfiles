@@ -2,7 +2,7 @@
 applyTo: "**/*.tf,**/*.tfvars"
 ---
 
-# Terraform — Formatting
+# Terraform — formatting
 
 - Run `terraform fmt` before every commit.
 - Use two-space indentation in all `.tf` files.

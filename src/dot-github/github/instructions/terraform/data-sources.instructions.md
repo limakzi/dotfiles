@@ -2,7 +2,7 @@
 applyTo: "**/*.tf"
 ---
 
-# Terraform — Data Sources
+# Terraform — data sources
 
 - Use data sources to look up cloud-assigned IDs (AMI IDs, VPC IDs, subnet IDs).
 - Never hardcode cloud-assigned IDs.

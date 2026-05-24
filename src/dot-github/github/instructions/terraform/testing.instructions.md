@@ -2,7 +2,7 @@
 applyTo: "**/*.tf,.github/workflows/**"
 ---
 
-# Terraform — Testing and CI/CD
+# Terraform — testing and ci/cd
 
 ## Static validation
 

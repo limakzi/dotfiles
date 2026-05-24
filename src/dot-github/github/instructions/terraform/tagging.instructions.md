@@ -2,7 +2,7 @@
 applyTo: "**/*.tf"
 ---
 
-# Terraform — Tagging
+# Terraform — tagging
 
 - Tag all resources with `Name`, `environment`, and `managed_by = "terraform"`.
 - Define a `local.common_tags` map.

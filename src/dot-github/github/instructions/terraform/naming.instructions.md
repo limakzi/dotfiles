@@ -2,7 +2,7 @@
 applyTo: "**/*.tf,**/*.tfvars"
 ---
 
-# Terraform — Naming
+# Terraform — naming
 
 - Use `snake_case` for all resource, variable, output, local, and module names.
 - Name resources as `this`, by default.

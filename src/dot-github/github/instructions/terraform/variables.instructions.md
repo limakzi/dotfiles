@@ -2,7 +2,7 @@
 applyTo: "**/*.tf,**/*.tfvars"
 ---
 
-# Terraform — Variables
+# Terraform — variables
 
 - Include `description` and `type` in every `variable` block.
 - Set `default` only when all callers share the same fallback value.
