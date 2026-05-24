@@ -6,8 +6,8 @@ applyTo:
 
 # Terraform — remote state
 
-- Use a remote backend (S3, GCS, or HCP Terraform) in all shared environments.
-- Never use a local backend in shared environments.
+- Use a remote backend (ex. S3, GCS, or HCP Terraform).
+- Never use a local backend.
 - Enable state locking on every backend that supports it.
 - For S3, use `use_lockfile = true`.
 - Use `terraform_remote_state` data sources to read outputs from other state files.
