@@ -1,4 +1,5 @@
 ---
+description: Rules from Clean Code for when to write, avoid, and delete comments.
 applyTo:
   - "**"
 ---

@@ -1,4 +1,5 @@
 ---
+description: Class design rules from Clean Code covering SRP, cohesion, and encapsulation.
 applyTo:
   - "**"
 ---

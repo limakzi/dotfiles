@@ -1,4 +1,5 @@
 ---
+description: Formatting rules for Terraform files using terraform fmt, locals, and dynamic blocks.
 applyTo:
   - "**/*.tf"
   - "**/*.tfvars"

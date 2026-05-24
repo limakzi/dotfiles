@@ -1,4 +1,5 @@
 ---
+description: Rules for creating and configuring Dependabot configuration files.
 applyTo:
   - ".github/dependabot.{yaml,yml}"
 ---

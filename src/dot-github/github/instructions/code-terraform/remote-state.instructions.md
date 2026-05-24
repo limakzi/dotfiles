@@ -1,4 +1,5 @@
 ---
+description: Rules for Terraform remote state backends, locking, encryption, and gitignore entries.
 applyTo:
   - "**/*.tf"
   - "**/.gitignore"

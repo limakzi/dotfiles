@@ -1,4 +1,5 @@
 ---
+description: Rules for declaring Terraform variables with types, defaults, validation, and sensitivity.
 applyTo:
   - "**/*.tf"
   - "**/*.tfvars"

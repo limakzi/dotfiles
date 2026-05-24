@@ -1,4 +1,5 @@
 ---
+description: Function design rules from Clean Code covering size, arguments, and command-query separation.
 applyTo:
   - "**"
 ---

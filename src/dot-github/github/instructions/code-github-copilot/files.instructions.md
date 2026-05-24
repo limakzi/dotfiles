@@ -1,4 +1,5 @@
 ---
+description: Rules for instruction file locations, frontmatter fields, and file structure.
 applyTo:
   - "**/*.instructions.md"
   - "**/copilot-instructions.md"
@@ -20,6 +21,7 @@ applyTo:
 ## Frontmatter
 
 - Add `applyTo` glob to path-specific files.
+- Add a `description` field summarizing the file's purpose.
 - Use a YAML array for multiple patterns, one entry per pattern.
 - Omit frontmatter in repository-wide files.
 

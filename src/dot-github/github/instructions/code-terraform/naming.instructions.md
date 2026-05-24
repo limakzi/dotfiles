@@ -1,4 +1,5 @@
 ---
+description: Naming conventions for Terraform resources, variables, outputs, locals, and modules.
 applyTo:
   - "**/*.tf"
   - "**/*.tfvars"

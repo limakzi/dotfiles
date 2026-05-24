@@ -1,4 +1,5 @@
 ---
+description: Rules for Terraform resource lifecycle, assertions, iteration, and refactoring.
 applyTo:
   - "**/*.tf"
 ---

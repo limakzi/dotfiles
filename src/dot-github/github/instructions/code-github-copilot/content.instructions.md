@@ -1,4 +1,5 @@
 ---
+description: Rules for writing instruction file content clearly, concisely, and without duplication.
 applyTo:
   - "**/*.instructions.md"
   - "**/copilot-instructions.md"

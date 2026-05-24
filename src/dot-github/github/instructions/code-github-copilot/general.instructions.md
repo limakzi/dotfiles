@@ -1,4 +1,5 @@
 ---
+description: General rules for creating and organizing Copilot instruction files.
 applyTo:
   - "**/*.instructions.md"
   - "**/copilot-instructions.md"

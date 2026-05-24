@@ -1,4 +1,5 @@
 ---
+description: Rules for tagging all Terraform-managed resources consistently.
 applyTo:
   - "**/*.tf"
 ---

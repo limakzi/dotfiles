@@ -1,4 +1,5 @@
 ---
+description: Writing style rules for Copilot instruction files.
 applyTo:
   - "**/*.instructions.md"
   - "**/copilot-instructions.md"

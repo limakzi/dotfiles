@@ -1,4 +1,5 @@
 ---
+description: Rules for configuring, versioning, and pinning Terraform providers.
 applyTo:
   - "**/*.tf"
 ---

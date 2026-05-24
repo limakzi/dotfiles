@@ -1,4 +1,5 @@
 ---
+description: Rules for Terraform static validation, unit tests, CI/CD pipelines, and drift detection.
 applyTo:
   - "**/*.tf"
   - ".github/workflows/**"
