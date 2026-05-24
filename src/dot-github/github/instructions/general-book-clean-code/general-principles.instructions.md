@@ -1,5 +1,6 @@
 ---
-applyTo: "**"
+applyTo:
+  - "**"
 ---
 
 # General Principles

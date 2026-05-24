@@ -1,5 +1,7 @@
 ---
-applyTo: "**/*.tf,.github/workflows/**"
+applyTo:
+  - "**/*.tf"
+  - ".github/workflows/**"
 ---
 
 # Terraform — testing and ci/cd

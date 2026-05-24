@@ -1,5 +1,6 @@
 ---
-applyTo: ".github/dependabot.{yaml,yml}"
+applyTo:
+  - ".github/dependabot.{yaml,yml}"
 ---
 
 # Dependabot

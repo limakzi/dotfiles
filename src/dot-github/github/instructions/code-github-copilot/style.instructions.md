@@ -1,5 +1,10 @@
 ---
-applyTo: "**/*.instructions.md,**/copilot-instructions.md,**/AGENTS.md,**/CLAUDE.md,**/GEMINI.md"
+applyTo:
+  - "**/*.instructions.md"
+  - "**/copilot-instructions.md"
+  - "**/AGENTS.md"
+  - "**/CLAUDE.md"
+  - "**/GEMINI.md"
 ---
 
 # Writing Style

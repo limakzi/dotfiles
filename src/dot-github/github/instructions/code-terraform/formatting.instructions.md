@@ -1,5 +1,7 @@
 ---
-applyTo: "**/*.tf,**/*.tfvars"
+applyTo:
+  - "**/*.tf"
+  - "**/*.tfvars"
 ---
 
 # Terraform — formatting
