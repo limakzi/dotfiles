@@ -7,7 +7,6 @@ applyTo: "**/*.tf,**/*.tfvars"
 - Run `terraform fmt` before every commit.
 - Use two-space indentation in all `.tf` files.
 - Use `terraform fmt` standard spacing around `=`; do not manually vertically align attributes.
-- Enforce `terraform fmt -check -recursive` as a CI gate.
 - Place one resource per file.
 - Group resources in a single file only when they share a direct dependency.
 - Use `locals` to deduplicate repeated expressions.
