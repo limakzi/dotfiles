@@ -1,5 +1,6 @@
 ---
-applyTo: ".github/workflows/**"
+applyTo:
+  - ".github/workflows/**"
 ---
 
 # GitHub Actions

@@ -1,5 +1,10 @@
 ---
-applyTo: "**/*.instructions.md,**/copilot-instructions.md,**/AGENTS.md,**/CLAUDE.md,**/GEMINI.md"
+applyTo:
+  - "**/*.instructions.md"
+  - "**/copilot-instructions.md"
+  - "**/AGENTS.md"
+  - "**/CLAUDE.md"
+  - "**/GEMINI.md"
 ---
 
 # Instruction Files
@@ -15,7 +20,7 @@ applyTo: "**/*.instructions.md,**/copilot-instructions.md,**/AGENTS.md,**/CLAUDE
 ## Frontmatter
 
 - Add `applyTo` glob to path-specific files.
-- Use comma-separated patterns for multiple paths.
+- Use a YAML array for multiple patterns, one entry per pattern.
 - Omit frontmatter in repository-wide files.
 
 ## Structure

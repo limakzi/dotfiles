@@ -1,5 +1,6 @@
 ---
-applyTo: "**/*.tf"
+applyTo:
+  - "**/*.tf"
 ---
 
 # Terraform — modules
