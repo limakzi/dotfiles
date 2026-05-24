@@ -6,7 +6,8 @@ applyTo:
 
 # Classes
 
-- Classes should be small and have a single responsibility (SRP).
-- Aim for high cohesion: class variables should be used by most methods.
+- Keep classes small.
+- Give each class a single responsibility (SRP).
+- Aim for high cohesion.
 - Prefer composition over inheritance.
-- Encapsulate: minimize public surface area.
+- Minimize public surface area.
