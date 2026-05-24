@@ -29,6 +29,7 @@
     ~/.config/starship: ./dot-starship/starship/
 
 - link:
+    ~/.config/github: ./dot-github/github/
     ~/.config/bat: ./dot-bat/bat/
     ~/.config/curl: ./dot-curl/curl/
     ~/.config/fd: ./dot-fd/fd/
