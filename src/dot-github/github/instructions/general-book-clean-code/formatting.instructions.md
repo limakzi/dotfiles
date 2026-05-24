@@ -1,4 +1,5 @@
 ---
+description: Code formatting rules from Clean Code for file size, vertical proximity, and variable placement.
 applyTo:
   - "**"
 ---

@@ -1,4 +1,5 @@
 ---
+description: Rules for structuring, composing, and documenting Terraform modules.
 applyTo:
   - "**/*.tf"
 ---

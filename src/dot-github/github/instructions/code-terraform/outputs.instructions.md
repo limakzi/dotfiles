@@ -1,4 +1,5 @@
 ---
+description: Rules for declaring Terraform outputs with descriptions, sensitivity, and preconditions.
 applyTo:
   - "**/*.tf"
 ---

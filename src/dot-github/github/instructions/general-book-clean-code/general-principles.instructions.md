@@ -1,4 +1,5 @@
 ---
+description: General software engineering principles from Clean Code (DRY, KISS, YAGNI, Boy Scout Rule).
 applyTo:
   - "**"
 ---

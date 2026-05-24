@@ -1,4 +1,5 @@
 ---
+description: Rules for using Terraform data sources to look up cloud-assigned IDs.
 applyTo:
   - "**/*.tf"
 ---

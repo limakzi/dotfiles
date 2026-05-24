@@ -1,4 +1,5 @@
 ---
+description: Rules for creating and naming GitHub Actions workflow files.
 applyTo:
   - ".github/workflows/**"
 ---

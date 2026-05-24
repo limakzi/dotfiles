@@ -1,4 +1,5 @@
 ---
+description: Security rules for Terraform covering credentials, IAM, CI/CD, and static analysis.
 applyTo:
   - "**/*.tf"
 ---

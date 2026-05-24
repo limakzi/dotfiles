@@ -1,4 +1,5 @@
 ---
+description: Error handling rules from Clean Code covering exceptions, null, and happy-path first.
 applyTo:
   - "**"
 ---

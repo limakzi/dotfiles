@@ -1,4 +1,5 @@
 ---
+description: Naming rules from Clean Code for intention-revealing, consistent, and searchable names.
 applyTo:
   - "**"
 ---
