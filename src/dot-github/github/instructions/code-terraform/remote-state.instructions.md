@@ -10,7 +10,7 @@ applyTo:
 - Use a remote backend (e.g., S3, GCS, or HCP Terraform).
 - Never use a local backend unless explicitly stated.
 - Enable state locking on every backend that supports it.
-- For S3, use `use_lockfile = true`.
+- For S3, use `use_lockfile = true` (Terraform ≥ 1.10) or `dynamodb_table` for older versions.
 - Use `terraform_remote_state` data sources to read outputs from other state files.
 - Never duplicate resource definitions across root modules.
 - Store backend configuration in `backend.tf`.

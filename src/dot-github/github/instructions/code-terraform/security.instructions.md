@@ -22,5 +22,4 @@ applyTo:
 - Use OIDC or workload identity credentials in CI/CD.
 - Never use long-lived static access keys in CI/CD.
 - Configure separate plan and apply roles.
-- When suppressing a static analysis finding inline (e.g., `#tfsec:ignore:...`), include an expiry date.
-- Include a tracking reference (e.g., a Jira ticket) with every inline suppression.
+- When suppressing a static analysis finding inline, include an expiry date and a tracking reference in the comment (e.g., `#tfsec:ignore:aws-s3-enable-versioning # exp:2026-12-31 ref:TICKET-123`).
