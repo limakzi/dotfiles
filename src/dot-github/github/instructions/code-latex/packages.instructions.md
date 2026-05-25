@@ -10,8 +10,9 @@ applyTo:
 
 ## Load order
 
-- Load `babel` or `polyglossia` before most other packages.
-- Load `hyperref` as the last package in the preamble.
+- For pdfLaTeX: load `babel` before most other packages.
+- For LuaLaTeX or XeLaTeX: load `fontspec` before `polyglossia`, then load `polyglossia` before most other packages.
+- Load `hyperref` late in the preamble, after most other packages.
 - Load `cleveref` after `hyperref`.
 - Load `glossaries` after `hyperref`.
 

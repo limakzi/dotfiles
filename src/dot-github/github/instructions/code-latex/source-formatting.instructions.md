@@ -23,16 +23,12 @@ applyTo:
 
 - Separate paragraphs with a single blank source line.
 - Never use `\\` to end a paragraph — use a blank line instead.
-- Place a blank line before and after every display environment.
 
 ## Named environments
 
 - Always use named `\begin{...}` / `\end{...}` environments — never TeX primitives.
-- Never use `$$...$$` for display math — use `\begin{equation}` or `\begin{equation*}`.
-- Never use `\[...\]` for display math — use `\begin{equation*}` for explicit named markup.
 
 ## Comments
 
-- Mark each major preamble group with `%% --- Group name ---`.
 - Use `%` comments to explain non-obvious choices.
 - Do not leave commented-out code in committed files.
