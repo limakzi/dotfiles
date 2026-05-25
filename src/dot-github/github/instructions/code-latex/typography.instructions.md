@@ -15,7 +15,7 @@ applyTo:
 
 ## Spacing
 
-- Use `~` for a non-breaking space before cross-references and citations (e.g., `\Cref{fig:example}`, `\parencite{source}`, `Fig.~\Cref{fig:example}`), and before abbreviations.
+- Use `~` for a non-breaking space before cross-references and citations (e.g., `see~\Cref{fig:example}`, `see~\parencite{source}`), and before abbreviations (e.g., `Prof.~Smith`).
 - Use `\,` for a thin space between a number and its unit.
 - Never use `\ ` (backslash-space) to force a space after a mid-sentence period — rewrite instead.
 - Never use `\vspace` or `\hspace` for layout — use them only for intentional mathematical spacing.
