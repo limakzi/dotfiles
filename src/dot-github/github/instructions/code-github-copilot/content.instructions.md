@@ -13,6 +13,7 @@ applyTo:
 - State what to do.
 - Cover behavior and output.
 - Include file paths and extensions when relevant.
+- Include at least one non-obvious rule per file — omit rules any developer would apply without guidance.
 - Add examples for non-obvious rules.
 - Do not repeat rules from other instruction files.
 - Do not explain why.
