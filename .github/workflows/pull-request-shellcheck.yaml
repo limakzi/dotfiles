@@ -1,0 +1,30 @@
+---
+
+name: shellcheck
+run-name: shellcheck-${{ github.event.number }} ${{ github.event.pull_request.title }}
+on:
+  pull_request:
+    branches: [ "**" ]
+
+jobs:
+  shellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Find shell scripts
+        id: find-scripts
+        run: |
+          scripts=$(find src -type f -executable -exec sh -c 'file -b "$1" | grep -qi "shell\|bash"' _ {} \; -print)
+          if [ -z "$scripts" ]; then
+            echo "found=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "found=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run shellcheck
+        if: steps.find-scripts.outputs.found == 'true'
+        run: |
+          find src -type f -executable -exec sh -c 'file -b "$1" | grep -qi "shell\|bash"' _ {} \; -print \
+            | xargs shellcheck
