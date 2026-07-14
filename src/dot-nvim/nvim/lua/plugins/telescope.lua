@@ -31,7 +31,7 @@ return {
         },
         pickers = {
           buffers = { theme = "ivy" },
-          fd = { theme = "ivy" },
+          fd = { theme = "ivy", file_ignore_patterns = { "%.ttf$" } },
           live_grep = { theme = "ivy" },
           find_files = { theme = "ivy" },
           git_files = { theme = "ivy" },
