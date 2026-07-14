@@ -27,6 +27,11 @@ confirm_close = true
 prompt_new_tab_name = false
 show_agent_labels_on_pane_borders = true
 
+sidebar_width = 64
+sidebar_min_width = 48
+sidebar_max_width = 64
+sidebar_collapsed_mode = "hidden"
+
 
 [experimental]
 pane_history = true
