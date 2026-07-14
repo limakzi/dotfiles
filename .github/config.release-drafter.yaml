@@ -4,34 +4,43 @@ name-template: 'v$RESOLVED_VERSION'
 tag-template: 'v$RESOLVED_VERSION'
 categories:
   - title: '🚀 Features'
-    labels:
-      - 'feature'
-      - 'enhancement'
+    when:
+      labels:
+        - 'feature'
+        - 'enhancement'
   - title: '🐛 Fixes'
-    labels:
-      - 'fix'
-      - 'bugfix'
-      - 'bug'
+    when:
+      labels:
+        - 'fix'
+        - 'bugfix'
+        - 'bug'
   - title: '🧰 Maintenance'
-    labels: 
-      - 'chore'
-      - 'documentation'
-      - 'dependencies'
+    when:
+      labels:
+        - 'chore'
+        - 'documentation'
+        - 'dependencies'
+  - type: version-resolver
+    semver-increment: major
+    when:
+      labels:
+        - 'release-major'
+  - type: version-resolver
+    semver-increment: minor
+    when:
+      labels:
+        - 'release-minor'
+  - type: version-resolver
+    semver-increment: patch
+    when:
+      labels:
+        - 'release-patch'
+  - type: changelog
+    semver-increment: minor
 
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
-version-resolver:
-  patch:
-    labels:
-      - 'release-patch'
-  minor:
-    labels:
-      - 'release-minor'
-  major:
-    labels:
-      - 'release-major'
-  default: minor
 template: |
-  ## What’s Changed
+  ## What's Changed
 
   $CHANGES
