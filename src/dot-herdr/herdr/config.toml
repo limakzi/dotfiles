@@ -1,5 +1,10 @@
 onboarding = false
 
+
+[terminal]
+default_shell = "zsh"
+
+
 [theme]
 name = "terminal"
 
