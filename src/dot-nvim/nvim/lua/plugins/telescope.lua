@@ -33,7 +33,7 @@ return {
           buffers = { theme = "ivy" },
           fd = { theme = "ivy", file_ignore_patterns = { "%.ttf$" } },
           live_grep = { theme = "ivy" },
-          find_files = { theme = "ivy" },
+          find_files = { theme = "ivy", file_ignore_patterns = { "%.ttf$" } },
           git_files = { theme = "ivy" },
           oldfiles = { theme = "ivy" },
           project = { theme = "ivy" },
