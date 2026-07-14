@@ -1,0 +1,28 @@
+onboarding = false
+
+[theme]
+name = "terminal"
+
+
+[keys]
+prefix = "ctrl+a"
+goto = "prefix+ctrl+p"
+
+split_vertical   = "prefix+|"
+split_horizontal = "prefix+-"
+new_tab    = ["prefix+c", "prefix+ctrl+n"]
+close_workspace = "prefix+shift+q"
+switch_tab = "alt+1..9"
+reload_config = "prefix+r"
+resize_mode   = "prefix+shift+r"
+
+
+[ui]
+confirm_close = true
+prompt_new_tab_name = false
+show_agent_labels_on_pane_borders = true
+
+
+[experimental]
+pane_history = true
+

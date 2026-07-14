@@ -43,6 +43,7 @@
     ~/.config/ranger: ./dot-ranger/ranger/
     ~/.config/terraform: ./dot-terraform/terraform/
     ~/.config/tmux: ./dot-tmux/tmux/
+    ~/.config/herdr: ./dot-herdr/herdr/
     ~/.config/zathura: ./dot-zathura/zathura/
 
 
