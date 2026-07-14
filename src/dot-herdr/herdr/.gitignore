@@ -1,5 +1,6 @@
 ## {{{
 session.json
+session-history.json
 herdr.sock
 herdr-client.log
 herdr-client.sock
