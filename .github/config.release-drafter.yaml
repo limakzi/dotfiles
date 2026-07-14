@@ -35,7 +35,7 @@ categories:
     when:
       labels:
         - 'release-patch'
-  - type: changelog
+  - type: version-resolver
     semver-increment: minor
 
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
