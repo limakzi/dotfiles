@@ -5,6 +5,7 @@ vim.opt.fileformats = 'unix'
 vim.opt.autoread = true
 vim.opt.autowrite = false
 vim.opt.autowriteall = false
+vim.opt.autochdir = true
 
 vim.opt.backup = false
 vim.opt.writebackup = false
