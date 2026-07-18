@@ -1,0 +1,6 @@
+## {{{
+./pi/agent/auth.json
+./pi/agent/models-store.json
+./pi/agent/bin/*
+./pi/agent/sessions/*
+## }}}

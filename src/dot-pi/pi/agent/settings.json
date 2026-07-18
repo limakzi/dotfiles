@@ -1,0 +1,14 @@
+{
+  "lastChangelogVersion": "0.80.10",
+  "theme": "dark",
+  "defaultProvider": "google",
+  "defaultModel": "gemini-2.5-pro",
+  "tools": [
+    "read",
+    "edit",
+    "write",
+    "grep",
+    "find",
+    "ls"
+  ]
+}
