@@ -1,0 +1,9 @@
+## {{{
+herdr/session.json
+herdr/session-history.json
+herdr/herdr.sock
+herdr/herdr-client.log
+herdr/herdr-client.sock
+herdr/herdr-server.log
+herdr/release-notes.json
+## }}}
