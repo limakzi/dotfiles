@@ -19,7 +19,7 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - uses: release-drafter/release-drafter@v7
+      - uses: release-drafter/release-drafter@v7.6.0
         with:
           config-name: config.release-drafter.yaml
           tag: ${{ github.ref_type == 'tag' && github.ref_name || '' }}
