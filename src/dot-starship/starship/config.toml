@@ -41,9 +41,11 @@ disabled = true
 disabled = false
 
 [python]
+disabled = false
 detect_folders = [".venv"]
 detect_files = []
 detect_extensions = []
+symbol = " "
 
 [azure]
 disabled = false
