@@ -10,11 +10,12 @@
 - link:
     ~/.hushlogin: ./dot-hushlogin/hushlogin/hushlogin
     ~/.config/bash: ./dot-bash/bash/
+    ~/.config/ghostty: ./dot-ghostty/ghostty/
     ~/.config/git: ./dot-git/git/
+    ~/.config/herdr: ./dot-herdr/herdr/
     ~/.config/lsd: ./dot-lsd/lsd/
     ~/.config/nvim: ./dot-nvim/nvim/
     ~/.config/starship: ./dot-starship/starship/
-    ~/.config/ghostty: ./dot-ghostty/ghostty/
 
 - link:
     ~/.local/bin/1p: ./dot-1password/1p
