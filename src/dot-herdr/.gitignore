@@ -1,4 +1,5 @@
 ## {{{
+herdr/sessions/*
 herdr/session.json
 herdr/session-history.json
 herdr/herdr.sock
