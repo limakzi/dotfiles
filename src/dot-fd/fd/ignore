@@ -1,12 +1,31 @@
 ## {{{1 security
-.git
+# .git is natively ignored by fd, so we don't need it here
+# This allows us to search for git roots when using --ignore-file
 ## }}}1
 
-## {{{1 os
+## {{{1 linux
+## }}}1
+
+## {{{1 macos
 .DS_Store
 ## }}}1
 
-## {{{1 python
+## {{{1 code-rust
+.cargo/
+.rustup/
+target/
+## }}}1
+
+## {{{1 code-golang
+.go/
+## }}}1
+
+## {{{1 code-node
+.npm/
+node_modules/
+## }}}1
+
+## {{{1 code-python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -14,4 +33,9 @@ __pycache__/
 venv/
 venv.bak/
 cython_debug/
+## }}}1
+
+## {{{1 system
+.local/
+.cache/
 ## }}}1
