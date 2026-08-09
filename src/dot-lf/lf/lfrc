@@ -1,0 +1,9 @@
+# lf configuration
+
+set icons true
+set drawbox true
+set ignorecase true
+set smartcase true
+set relativenumber true
+set number true
+set dirfirst true
