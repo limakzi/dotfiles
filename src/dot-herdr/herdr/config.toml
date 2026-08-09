@@ -20,6 +20,7 @@ close_workspace = "prefix+shift+q"
 switch_tab = "alt+1..9"
 reload_config = "prefix+r"
 resize_mode   = "prefix+shift+r"
+zoom          = "prefix+enter"
 
 
 [ui]
@@ -37,6 +38,6 @@ hide_tab_bar_when_single_tab = false
 
 
 [experimental]
+allow_nested = true
 pane_history = true
-allow_nested = false
 
