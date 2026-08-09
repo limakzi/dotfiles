@@ -7,3 +7,12 @@ set smartcase true
 set relativenumber true
 set number true
 set dirfirst true
+
+cmd fzf_jump ${{
+    res="$(fdfind -H -t d '^\.git$' "$HOME" -0 2>/dev/null | xargs -0 -r -n 1 dirname | tr '\n' '\0' | xargs -0 -r lsd -d -1 --icon=always --color=always 2>/dev/null | fzf --ansi | sed 's/\x1b\[[0-9;]*m//g' | sed 's/^[^ ]* //' | sed 's/ ⇒ .*//')"
+    res="${res%/}"
+    if [ -n "$res" ]; then
+        lf -remote "send $id cd \"$res\""
+    fi
+}}
+map <c-p> fzf_jump
