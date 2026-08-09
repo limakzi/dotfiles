@@ -1,23 +1,7 @@
 theme = "Dracula+"
-window-theme = dark
 
-font-family = "Hack Nerd Font Mono Regular"
-font-size = 18
+font-size = 14
+font-family = "JetBrainsMono Nerd Font"
+cursor-style = "bar"
 
-cursor-style = bar
-
-initial-window = false
-window-decoration = auto
-fullscreen = true
-macos-non-native-fullscreen = false
-
-quick-terminal-position = top
-quick-terminal-screen = macos-menu-bar
-quick-terminal-size = 85%
-quick-terminal-animation-duration = 0
-quick-terminal-autohide = true
-quick-terminal-space-behavior = remain
-
-macos-option-as-alt = left
-keybind = global:cmd+r=reload_config
-keybind = global:cmd+enter=toggle_quick_terminal
+macos-option-as-alt = "left"
