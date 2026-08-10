@@ -25,6 +25,7 @@
     ~/.zshenv: ./dot-zsh/zshenv
     ~/.config/bash: ./dot-bash/bash/
     ~/.config/zsh: ./dot-zsh/zsh/
+    ~/.config/claude: ./dot-claude/claude/
     ~/.config/git: ./dot-git/git/
     ~/.config/lsd: ./dot-lsd/lsd/
     ~/.config/nvim: ./dot-nvim/nvim/

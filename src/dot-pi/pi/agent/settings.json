@@ -1,0 +1,26 @@
+{
+  "defaultModel": "gemini-3.5-flash",
+  "defaultThinkingLevel": "high",
+  "compaction": {
+    "enabled": true
+  },
+  "enableSkillCommands": true,
+  "skills": [
+    "~/.config/claude/skills",
+    "!task-planning",
+    "+skills/task-planning"
+  ],
+  "quietStartup": false,
+  "hideThinkingBlock": true,
+  "enableInstallTelemetry": false,
+  "tuiMode": "fullscreen",
+  "defaultProjectTrust": "ask",
+  "fullscreenScrollbar": "hidden",
+  "lastChangelogVersion": "0.84.1",
+  "theme": "dark",
+  "defaultProvider": "google",
+  "packages": [
+    "npm:pi-agent-extensions",
+    "npm:pi-mcp-adapter"
+  ]
+}

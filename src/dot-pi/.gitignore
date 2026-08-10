@@ -9,5 +9,4 @@ pi/agent/auth.json
 pi/agent/mcp-cache.json
 pi/agent/mcp-onboarding.json
 pi/agent/models-store.json
-pi/agent/settings.json
 pi/agent/trust.json

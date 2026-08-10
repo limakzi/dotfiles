@@ -1,0 +1,5 @@
+## {{{ runtime state — track only skills and commands
+claude/*
+!claude/commands/
+!claude/skills/
+## }}}
