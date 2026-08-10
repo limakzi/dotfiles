@@ -1,0 +1,13 @@
+pi/agent/bin/
+pi/agent/extensions/
+pi/agent/npm/
+pi/agent/sessions/
+pi/workflows/
+
+
+pi/agent/auth.json
+pi/agent/mcp-cache.json
+pi/agent/mcp-onboarding.json
+pi/agent/models-store.json
+pi/agent/settings.json
+pi/agent/trust.json
