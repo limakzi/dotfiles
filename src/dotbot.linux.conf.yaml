@@ -7,6 +7,8 @@
     create:
       mode: 0700
 
+- create:
+    - ~/.config/
 
 - create:
     - ~/desktop
@@ -18,7 +20,9 @@
     - ~/public
     - ~/templates
     - ~/videos
-    - ~/.config/
+
+- create:
+    - ~/.local/state/
 
 - link:
     ~/.hushlogin: ./dot-hushlogin/hushlogin/hushlogin
