@@ -1,422 +1,760 @@
 # vim:ft=conf
+## {{{1 types
+ln      
+or      
+tw      
+ow      
+st      
+di      
+pi      p
+so      s
+bd      b
+cd      c
+su      u
+sg      g
+ex      
+fi      
+## }}}1
 
-# These examples require Nerd Fonts or a compatible font to be used.
-# See https://www.nerdfonts.com for more information.
+## {{{1 home - xdg
+~/desktop       
+~/documents     
+~/downloads     
+~/music         
+~/pictures      
+~/public        
+~/templates     
+~/videos        
+## }}}1
 
-## {{{ Default values
-# default values from lf (with matching order)
-# ln      l       # LINK
-# or      l       # ORPHAN
-# tw      t       # STICKY_OTHER_WRITABLE
-# ow      d       # OTHER_WRITABLE
-# st      t       # STICKY
-# di      d       # DIR
-# pi      p       # FIFO
-# so      s       # SOCK
-# bd      b       # BLK
-# cd      c       # CHR
-# su      u       # SETUID
-# sg      g       # SETGID
-# ex      x       # EXEC
-# fi      -       # FILE
+## {{{1 home - personal
+~/dotfiles      
+~/macos         
+~/go            
+## }}}1
 
-## }}}
-## {{{ File types
-# file types (with matching order)
-ln             # LINK
-or             # ORPHAN
-tw             # STICKY_OTHER_WRITABLE
-ow             # OTHER_WRITABLE
-st             # STICKY
-di             # DIR
-pi      p       # FIFO
-so      s       # SOCK
-bd      b       # BLK
-cd      c       # CHR
-su      u       # SETUID
-sg      g       # SETGID
-ex             # EXEC
-fi             # FILE
+## {{{1 home - base
+~/.cache        
+~/.config       
+~/.local        󰜷
+## }}}1
 
-## }}}
-## {{{ Disabled default filetypes
-# disable some default filetype icons, let them choose icon by filename
-# ln             # LINK
-# or             # ORPHAN
-# tw             # STICKY_OTHER_WRITABLE
-# ow             # OTHER_WRITABLE
-# st             # STICKY
-# di             # DIR
-# pi              # FIFO
-# so              # SOCK
-# bd              # BLK
-# cd              # CHR
-# su              # SETUID
-# sg              # SETGID
-# ex              # EXEC
-# fi             # FILE
+## {{{1 home - tools
+~/.ssh          󰣀
+~/.gnupg        
+~/.cargo        
+~/.rustup       
+~/.java         
+~/.vim          
+## }}}1
 
-## }}}
-## {{{ File extensions
-# file extensions (vim-devicons)
-*.styl          
-*.sass          
-*.scss          
-*.htm           
-*.html          
-*.slim          
-*.haml          
-*.ejs           
-*.css           
-*.less          
-*.md            
-*.mdx           
-*.markdown      
-*.rmd           
-*.json          
-*.webmanifest   
-*.js            
-*.mjs           
-*.jsx           
-*.rb            
-*.gemspec       
-*.rake          
-*.php           
-*.py            
-*.pyc           
-*.pyo           
-*.pyd           
-*.coffee        
-*.mustache      
-*.hbs           
-*.conf          
-*.ini           
-*.yml           
-*.yaml          
-*.toml          
-*.bat           
-*.mk            
-*.jpg           
-*.jpeg          
-*.bmp           
-*.png           
-*.webp          
-*.gif           
-*.ico           
-*.twig          
-*.cpp           
+## {{{1 dir - xdg
+desktop/            
+Desktop/            
+documents/          
+Documents/          
+downloads/          
+Downloads/          
+music/              
+Music/              
+pictures/           
+Pictures/           
+public/             
+Public/             
+templates/          
+Templates/          
+videos/             
+Videos/             
+## }}}1
+
+## {{{1 dir - dev
+.git/               
+go/                 
+workspace/          
+anaconda3/          
+dotfiles/           
+Dotfiles/           
+macos/              
+## }}}1
+
+## {{{1 dir - cloud
+dropbox/            
+Dropbox/            
+onedrive/           
+OneDrive/           
+## }}}1
+
+## {{{1 dir - base
+.config/            
+.cache/             
+.local/             󰜷
+.ssh/               󰣀
+bin/                b
+home/               c
+## }}}1
+
+## {{{1 dir - i18n
+Bilder/             
+Bureau/             
+CONFIG/             
+DOCUMENTS/          
+DOWNLOAD/           
+Descargas/          
+Documenti/          
+Documentos/         
+Dokument/           
+Dokumente/          
+Dokumentumok/       
+Escritorio/         
+Hämtningar/         
+Imagens/            
+Images/             
+Immagini/           
+Imágenes/           
+Képek/              
+Letöltések/         
+MUSIC/              
+Mallar/             
+Modelli/            
+Modelos/            
+Musica/             
+Musik/              
+Musique/            
+Música/             
+PICTURES/           
+PUBLICSHARE/        
+Plantillas/         
+Pubblici/           
+Publique/           
+Público/            
+Scaricati/          
+Schreibtisch/       
+Scrivania/          
+Skrivbord/          
+Számítógép/         
+TEMPLATES/          
+Téléchargements/    
+VIDEOS/             
+Video/              
+Videók/             
+Vidéos/             
+Vorlagen/           
+Vídeos/             
+Zene/               
+Öffentlich/         
+下載/               
+下载/               
+公共/               
+公共的/             
+图片/               
+圖片/               
+文档/               
+文檔/               
+桌面/               
+模板/               
+視頻/               
+视频/               
+音乐/               
+音樂/               
+## }}}1
+
+## {{{1 name - shell
+*.bashrc                    
+*.bash_profile              
+*.bashprofile               
+*.bash_aliases              
+*.bash_history              
+*.bash_logout               
+*.profile                   
+*.zshrc                     
+*.zshenv                    
+*.zprofile                  
+*.inputrc                   
+*.selected_editor           
+*.fasd                      
+*bspwmrc                    
+*sxhkdrc                    
+## }}}1
+
+## {{{1 name - vim
+*.vim                       
+*.vimrc                     
+*.gvimrc                    
+*_vimrc                     
+*_gvimrc                    
+*vimrc                      
+*.viminfo                   
+## }}}1
+
+## {{{1 name - vcs
+*.gitconfig                 
+*.gitignore                 
+*.gitattributes             
+*.gitlab-ci.yml             
+*known_hosts                
+*authorized_keys            
+## }}}1
+
+## {{{1 name - build
+*Makefile                   
+*makefile                   
+*Makefile.ac                
+*Makefile.in                
+*cmakelists.txt             
+*CMakeLists.txt             
+*config.ac                  
+*config.m4                  
+*config.mk                  
+*config.ru                  
+*configure                  
+*a.out                      
+*ledger                     
+## }}}1
+
+## {{{1 name - pkg
+*package.json               
+*package-lock.json          
+*mix.lock                   
+*node_modules               
+*Gemfile                    
+*gemfile                    
+*Rakefile                   
+*rakefile                   
+*Procfile                   
+*procfile                   
+*webpack.config.js          
+## }}}1
+
+## {{{1 name - docker
+*Dockerfile                 
+*dockerfile                 
+*docker-compose.yml         
+*docker-compose.yaml        
+*Docker-compose.yml         
+*Docker-compose.yaml        
+*compose.yml                
+*compose.yaml               
+*Vagrantfile                
+## }}}1
+
+## {{{1 name - docs
+*README                     
+*README.md                  
+*README.markdown            
+*README.rst                 
+*README.txt                 
+*LICENSE                    
+*license                    
+*LICENSE.md                 
+*LICENSE.txt                
+## }}}1
+
+## {{{1 name - x11
+*.Xauthority                
+*.Xdefaults                 
+*.Xresources                
+*.xinitrc                   
+*.xinputrc                  
+*.dmrc                      
+*.fehbg                     
+*.pam_environment           
+*.mime.types                
+*mimeapps.list              
+*user-dirs.dirs             
+*.recently-used             
+*.nvidia-settings-rc        
+*.jack-settings             
+*.ncmpcpp                   
+*playlists                  
+*.DS_Store                  
+*.ds_store                  
+## }}}1
+
+## {{{1 name - web
+*favicon.ico                
+*robots.txt                 󰚩
+*react.jsx                  
+*React.jsx                  
+*jquery.min.js              
+*angular.min.js             
+*backbone.min.js            
+*require.min.js             
+*materialize.min.js         
+*materialize.min.css        
+*mootools.min.js            
+*gruntfile.js               
+*gruntfile.coffee           
+*gruntfile.ls               
+*Gruntfile.js               
+*Gruntfile.coffee           
+*Gruntfile.ls               
+*gulpfile.js                
+*gulpfile.coffee            
+*gulpfile.ls                
+*Gulpfile.js                
+*Gulpfile.coffee            
+*Gulpfile.ls                
+## }}}1
+
+## {{{1 name - cloud
+*dropbox                    
+*Dropbox                    
+## }}}1
+
+## {{{1 name - misc
+*config                     
+*ini                        
+## }}}1
+
+## {{{1 code - c
+*.c             
 *.c++           
-*.cxx           
 *.cc            
 *.cp            
-*.c             
-*.cs            󰌛
-*.h             
+*.cpp           
+*.cxx           
+*.h             
 *.hh            
-*.hpp           
+*.hpp           
 *.hxx           
-*.hs            
-*.lhs           
-*.nix           
-*.lua           
+## }}}1
+
+## {{{1 code - d
+*.d             
+## }}}1
+
+## {{{1 code - cs
+*.cs            󰌛
+## }}}1
+
+## {{{1 code - fs
+*.fs            
+*.fsi           
+*.fsx           
+*.fsscript      
+'*.f#'          
+## }}}1
+
+## {{{1 code - go
+*.go            
+## }}}1
+
+## {{{1 code - rust
+*.rs            
+*.rlib          
+## }}}1
+
+## {{{1 code - java
 *.java          
-*.sh            
-*.fish          
-*.bash          
-*.zsh           
-*.ksh           
-*.csh           
-*.awk           
-*.ps1           
-*.ml            λ
-*.mli           λ
-*.diff          
-*.db            
-*.sql           
-*.dump          
+*.class         
+## }}}1
+
+## {{{1 code - jvm
+*.scala         
 *.clj           
 *.cljc          
 *.cljs          
 *.edn           
-*.scala         
-*.go            
-*.dart          
-*.xul           
-*.sln           
-*.suo           
+## }}}1
+
+## {{{1 code - python
+*.py            
+*.pyc           
+*.pyd           
+*.pyo           
+*.ipynb         
+## }}}1
+
+## {{{1 code - ruby
+*.rb            
+*.gemspec       
+*.rake          
+*.gem           
+## }}}1
+
+## {{{1 code - perl
 *.pl            
 *.pm            
 *.t             
-*.rss           
-'*.f#'          
-*.fsscript      
-*.fsx           
-*.fs            
-*.fsi           
-*.rs            
-*.rlib          
-*.d             
+## }}}1
+
+## {{{1 code - php
+*.php           
+## }}}1
+
+## {{{1 code - haskell
+*.hs            
+*.lhs           
+## }}}1
+
+## {{{1 code - erlang
 *.erl           
 *.hrl           
+## }}}1
+
+## {{{1 code - elixir
 *.ex            
 *.exs           
 *.eex           
 *.leex          
 *.heex          
-*.vim           
-*.ai            
-*.psd           
-*.psb           
-*.ts            
-*.tsx           
-*.jl            
-*.pp            
-*.vue           
-*.elm           
+## }}}1
+
+## {{{1 code - ocaml
+*.ml            λ
+*.mli           λ
+## }}}1
+
+## {{{1 code - lua
+*.lua           
+## }}}1
+
+## {{{1 code - swift
 *.swift         
 *.xcplayground  
-*.tex           󰙩
+## }}}1
+
+## {{{1 code - dart
+*.dart          
+## }}}1
+
+## {{{1 code - julia
+*.jl            
+## }}}1
+
+## {{{1 code - r
 *.r             󰟔
+*.rmd           
 *.rproj         󰗆
+## }}}1
+
+## {{{1 code - nix
+*.nix           
+## }}}1
+
+## {{{1 code - elm
+*.elm           
+## }}}1
+
+## {{{1 code - solidity
 *.sol           󰡪
+## }}}1
+
+## {{{1 code - asm
+*.asm           
+*.s             
+## }}}1
+
+## {{{1 code - puppet
+*.pp            
+## }}}1
+
+## {{{1 code - shell
+*.sh            
+*.bash          
+*.zsh           
+*.fish          
+*.ksh           
+*.csh           
+*.ps1           
+*.awk           
+*.bat           
+*.rc            
+## }}}1
+
+## {{{1 web - html
+*.html          
+*.htm           
+*.xhtml         
+*.xul           
+## }}}1
+
+## {{{1 web - css
+*.css           
+*.scss          
+*.sass          
+*.styl          
+*.less          
+## }}}1
+
+## {{{1 web - js
+*.js            
+*.mjs           
+*.jsx           
+*.ts            
+*.tsx           
+*.coffee        
+## }}}1
+
+## {{{1 web - vue
+*.vue           󰡄
+*.svelte        
+## }}}1
+
+## {{{1 web - template
+*.ejs           
+*.slim          
+*.haml          
+*.hbs           
+*.mustache      
+*.twig          
+*.asp           
+*.webmanifest   
+## }}}1
+
+## {{{1 data - config
+*.json          
+*.jsonc         
+*.yaml          
+*.yml           
+*.toml          
+*.ini           
+*.conf          
+*.cmake         
+*.mk            
+*.sln           
+*.suo           
+*.cvs           
+## }}}1
+
+## {{{1 data - markup
+*.xml           
+*.rss           
+## }}}1
+
+## {{{1 data - log
+*.log           
+*.part          
+## }}}1
+
+## {{{1 doc - text
+*.md            
+*.mdx           
+*.markdown      
+*.tex           󰙩
+*.pdf           
+*.epub          
+*.rtf           
+## }}}1
+
+## {{{1 doc - office
+*.doc           
+*.docx          
+*.docm          
+*.dotx          
+*.dotm          
+*.wps           
+*.wpt           
+## }}}1
+
+## {{{1 doc - sheet
+*.xls           󰈛
+*.xlsx          󰈛
+*.xlsm          󰈛
+*.xlsb          󰈛
+*.xlt           󰈛
+*.xltx          󰈛
+*.xltm          󰈛
+*.xla           󰈛
+*.xlam          󰈛
+*.et            󰈛
+*.ett           󰈛
+## }}}1
+
+## {{{1 doc - slide
+*.ppt           
+*.pptx          
+*.pptm          
+*.pot           
+*.potx          
+*.potm          
+*.pps           
+*.ppsx          
+*.ppsm          
+*.dps           
+*.dpt           
+## }}}1
+
+## {{{1 img - raster
+*.jpg           
+*.jpeg          
+*.mjpg          
+*.mjpeg         
+*.png           
+*.gif           
+*.bmp           
+*.ico           
+*.webp          
+*.tif           
+*.tiff          
+*.tga           
+*.xbm           
+*.xpm           
+*.pbm           
+*.pgm           
+*.ppm           
+*.pcx           
+*.xwd           
+*.yuv           
+*.dl            
+*.gl            
+## }}}1
+
+## {{{1 img - vector
+*.svg           
+*.svgz          
+*.cgm           
+*.emf           
+*.mng           
+*.ai            
+## }}}1
+
+## {{{1 img - design
+*.psd           
+*.psb           
+*.xcf           
+## }}}1
+
+## {{{1 media - video
+*.avi           
+*.mkv           
+*.mp4           
+*.m4v           
+*.mp4v          
+*.mpg           
+*.mpeg          
+*.m2v           
+*.mov           
+*.qt            
+*.webm          
+*.ogv           
+*.ogm           
+*.ogx           
+*.flv           
+*.fli           
+*.flc           
+*.vob           
+*.wmv           
+*.asf           
+*.rm            
+*.rmvb          
+*.nuv           
+## }}}1
+
+## {{{1 media - audio
+*.mp3           
+*.m4a           
+*.mka           
+*.flac          
+*.wav           
+*.ogg           
+*.oga           
+*.opus          
+*.spx           
+*.aac           
+*.au            
+*.mid           
+*.midi          
+*.mpc           
+*.ra            
+*.cue           
+*.aup           
+*.xspf          
+## }}}1
+
+## {{{1 arch - archive
+*.zip           
+*.7z            
+*.rar           
+*.tar           
+*.tgz           
+*.taz           
+*.gz            
+*.gzip          
+*.bz            
+*.bz2           
+*.tbz           
+*.tbz2          
+*.xz            
+*.txz           
+*.lzma          
+*.tlz           
+*.lz            
+*.lz4           
+*.lzo           
+*.lzh           
+*.lha           
+*.lrz           
+*.zst           
+*.tzst          
+*.tz            
+*.tzo           
+*.t7z           
+*.z             
+*.dz            
+*.rz            
+*.arc           
+*.arj           
+*.ace           
+*.alz           
+*.cab           
+*.cpio          
+*.zoo           
+*.wim           
+*.swm           
+*.dwm           
+*.esd           
+*.cbr           
+*.cbz           
+*.torrent       
+## }}}1
+
+## {{{1 arch - package
+*.deb           
+*.rpm           
+*.apk           
+*.xbps          
+*.msi           
+*.jar           
+*.war           
+*.ear           
+*.sar           
+## }}}1
+
+## {{{1 arch - disk
+*.iso           
+*.img           
+*.rom           
+## }}}1
+
+## {{{1 bin - exe
+*.exe           
+*.efi           
+*.elf           
+## }}}1
+
+## {{{1 bin - obj
+*.o             
+*.a             
+*.so            
+*.dll           
+## }}}1
+
+## {{{1 db - sql
+*.db            
+*.sql           
+*.dump          
+## }}}1
+
+## {{{1 sec - key
 *.pem           
+*.pub           
+*.key           
+*.htaccess      
+*.htpasswd      
+## }}}1
 
-## }}}
-## {{{ File names
-# file names (vim-devicons) (case-insensitive not supported in lf)
-*gruntfile.coffee       
-*gruntfile.js           
-*gruntfile.ls           
-*gulpfile.coffee        
-*gulpfile.js            
-*gulpfile.ls            
-*mix.lock               
-*dropbox                
-*.ds_store              
-*.gitconfig             
-*.gitignore             
-*.gitattributes         
-*.gitlab-ci.yml         
-*.bashrc                
-*.zshrc                 
-*.zshenv                
-*.zprofile              
-*.vimrc                 
-*.gvimrc                
-*_vimrc                 
-*_gvimrc                
-*.bashprofile           
-*favicon.ico            
-*license                
-*node_modules           
-*react.jsx              
-*procfile               
-*dockerfile             
-*docker-compose.yml     
-*docker-compose.yaml    
-*compose.yml            
-*compose.yaml           
-*rakefile               
-*config.ru              
-*gemfile                
-*makefile               
-*cmakelists.txt         
-*robots.txt             󰚩
-
-## }}}
-## {{{ File names (case-sensitive)
-# file names (case-sensitive adaptations)
-*[Dd][Ee][Ss][Kk][Tt][Oo][Pp]              󰧨
-*[Dd][Oo][Ww][Nn][Ll][Oo][Aa][Dd][Ss]      󰇚
-*[Dd][Oo][Cc][Uu][Mm][Ee][Nn][Tt][Ss]      󰈙
-*[Pp][Ii][Cc][Tt][Uu][Rr][Ee][Ss]          󰉏
-*[Mm][Uu][Ss][Ii][Cc]                      󰎆
-*[Vv][Ii][Dd][Ee][Oo][Ss]                  󰕧
-*[Pp][Uu][Bb][Ll][Ii][Cc]                  󰩈
-*[Tt][Ee][Mm][Pp][Ll][Aa][Tt][Ee][Ss]      󰃚
-*[Mm][Aa][Cc][Oo][Ss]                      
-*.[Mm][Aa][Cc][Oo][Ss]                     
-*[Hh][Oo][Mm][Ee]                          󰋜
-*~                                         󰋜
-*.[Dd][Oo][Tt][Ff][Ii][Ll][Ee][Ss]         󰓇
-*[Dd][Oo][Tt][Ff][Ii][Ll][Ee][Ss]          󰓇
-*.[Cc][Oo][Nn][Ff][Ii][Gg]                 
-*.[Gg][Ii][Tt]                             
-*.[Ll][Oo][Cc][Aa][Ll]                     󰜷
-*.[Ss][Ss][Hh]                             󰣀
-*[Bb][Ii][Nn]                              󰟫
-*.[Cc][Aa][Cc][Hh][Ee]                     
-*[Ww][Oo][Rr][Kk][Ss][Pp][Aa][Cc][Ee]      
-*Gruntfile.coffee       
-*Gruntfile.js           
-*Gruntfile.ls           
-*Gulpfile.coffee        
-*Gulpfile.js            
-*Gulpfile.ls            
-*Dropbox                
-*.DS_Store              
-*LICENSE                
-*React.jsx              
-*Procfile               
-*Dockerfile             
-*Docker-compose.yml     
-*Docker-compose.yaml    
-*Rakefile               
-*Gemfile                
-*Makefile               
-*CMakeLists.txt         
-
-## }}}
-## {{{ File patterns
-# file patterns (vim-devicons) (patterns not supported in lf)
-# .*jquery.*\.js$         
-# .*angular.*\.js$        
-# .*backbone.*\.js$       
-# .*require.*\.js$        
-# .*materialize.*\.js$    
-# .*materialize.*\.css$   
-# .*mootools.*\.js$       
-# .*vimrc.*               
-# Vagrantfile$            
-
-## }}}
-## {{{ File patterns (adaptations)
-# file patterns (file name adaptations)
-*jquery.min.js          
-*angular.min.js         
-*backbone.min.js        
-*require.min.js         
-*materialize.min.js     
-*materialize.min.css    
-*mootools.min.js        
-*vimrc                  
-Vagrantfile             
-
-## }}}
-## {{{ Archives
-# archives or compressed (extensions from dircolors defaults)
-*.tar   
-*.tgz   
-*.arc   
-*.arj   
-*.taz   
-*.lha   
-*.lz4   
-*.lzh   
-*.lzma  
-*.tlz   
-*.txz   
-*.tzo   
-*.t7z   
-*.zip   
-*.z     
-*.dz    
-*.gz    
-*.lrz   
-*.lz    
-*.lzo   
-*.xz    
-*.zst   
-*.tzst  
-*.bz2   
-*.bz    
-*.tbz   
-*.tbz2  
-*.tz    
-*.deb   
-*.rpm   
-*.jar   
-*.war   
-*.ear   
-*.sar   
-*.rar   
-*.alz   
-*.ace   
-*.zoo   
-*.cpio  
-*.7z    
-*.rz    
-*.cab   
-*.wim   
-*.swm   
-*.dwm   
-*.esd   
-
-## }}}
-## {{{ Images
-# image formats (extensions from dircolors defaults)
-*.jpg   
-*.jpeg  
-*.mjpg  
-*.mjpeg 
-*.gif   
-*.bmp   
-*.pbm   
-*.pgm   
-*.ppm   
-*.tga   
-*.xbm   
-*.xpm   
-*.tif   
-*.tiff  
-*.png   
-*.svg   
-*.svgz  
-*.mng   
-*.pcx   
-*.mov   
-*.mpg   
-*.mpeg  
-*.m2v   
-*.mkv   
-*.webm  
-*.ogm   
-*.mp4   
-*.m4v   
-*.mp4v  
-*.vob   
-*.qt    
-*.nuv   
-*.wmv   
-*.asf   
-*.rm    
-*.rmvb  
-*.flc   
-*.avi   
-*.fli   
-*.flv   
-*.gl    
-*.dl    
-*.xcf   
-*.xwd   
-*.yuv   
-*.cgm   
-*.emf   
-*.ogv   
-*.ogx   
-
-## }}}
-## {{{ Audio
-# audio formats (extensions from dircolors defaults)
-*.aac   
-*.au    
-*.flac  
-*.m4a   
-*.mid   
-*.midi  
-*.mka   
-*.mp3   
-*.mpc   
-*.ogg   
-*.ra    
-*.wav   
-*.oga   
-*.opus  
-*.spx   
-*.xspf  
-
-## }}}
-## {{{ Other formats
-# other formats
-*.pdf   
-## }}}
+## {{{1 sys - misc
+*.fifo          󰟥
+*.diff          
+## }}}1
