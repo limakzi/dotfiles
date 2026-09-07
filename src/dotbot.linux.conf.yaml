@@ -51,7 +51,6 @@
     ~/.config/herdr: ./dot-herdr/herdr/
     ~/.config/zathura: ./dot-zathura/zathura/
 
-
 - link:
     ~/.config/user-dirs.dirs:
       force: true
