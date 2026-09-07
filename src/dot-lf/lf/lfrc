@@ -21,6 +21,17 @@ cmd fzf_jump ${{
         lf -remote "send $id cd \"$res\""
     fi
 }}
+
+cmd open ${{
+    case "$(file --mime-type -Lb "$f")" in
+        text/*|application/json|application/javascript|application/xml|inode/x-empty)
+            $EDITOR "$f"
+            ;;
+        *)
+            xdg-open "$f" >/dev/null 2>&1 &
+            ;;
+    esac
+}}
 ## }}}1
 
 ## {{{1 Keyboard shortcuts.
