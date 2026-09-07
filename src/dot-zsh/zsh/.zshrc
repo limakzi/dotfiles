@@ -35,9 +35,10 @@ has() {
 ## }}}
 
 ## aliases {{{
-alias ls='lsd'
-alias ll='lsd --long'
 alias -- '!!'='sudo su -'
+
+# fall back to plain ls when lsd is missing
+has lsd && alias ls='lsd' ll='lsd --long'
 
 # fall back to plain dig when doggo is missing
 has doggo && alias dig='doggo'
