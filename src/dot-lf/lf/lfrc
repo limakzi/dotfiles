@@ -1,13 +1,19 @@
-# lf configuration
+## vim: ft=conf
 
+## {{{1 Appearance.
 set icons true
 set drawbox true
-set ignorecase true
-set smartcase true
 set relativenumber true
 set number true
-set dirfirst true
+## }}}1
 
+## {{{1 Behaviour.
+set ignorecase true
+set smartcase true
+set dirfirst true
+## }}}1
+
+## {{{1 Commands.
 cmd fzf_jump ${{
     res="$(fdfind -H -t d '^\.git$' "$HOME" -0 2>/dev/null | xargs -0 -r -n 1 dirname | tr '\n' '\0' | xargs -0 -r lsd -d -1 --icon=always --color=always 2>/dev/null | fzf --ansi | sed 's/\x1b\[[0-9;]*m//g' | sed 's/^[^ ]* //' | sed 's/ ⇒ .*//')"
     res="${res%/}"
@@ -15,4 +21,150 @@ cmd fzf_jump ${{
         lf -remote "send $id cd \"$res\""
     fi
 }}
+## }}}1
+
+## {{{1 Keyboard shortcuts.
+
+## {{{2 keyboard shortcuts -- unbound defaults
+map d
+map y
+map p
+map c
+map u
+map s
+map M
+map w
+map [
+map ]
+map sn
+map ss
+map st
+map sa
+map sc
+map se
+map zn
+map zs
+map zt
+map za
+## }}}2
+
+## {{{2 keyboard shortcuts -- general
+map Q quit
+map ZZ quit
+map ZQ quit
+map R reload
+map i $$PAGER "$f"
+map E $$EDITOR "$f"
+map S $$SHELL
+map ? doc
+map s shell
+map r shell-async
+map cd push :cd<space>
+map <enter> open
+## }}}2
+
+## {{{2 keyboard shortcuts -- movement
+map J half-down
+map K half-up
+map H jump-prev
+map L jump-next
+## }}}2
+
+## {{{2 keyboard shortcuts -- selecting and tagging
+map uv unselect
+map t tag-toggle
+map ut :tag; tag-toggle
+## }}}2
+
+## {{{2 keyboard shortcuts -- copying, cutting and pasting
+map yy copy
+map dd cut
+map pp paste
+map ud clear
+map uy clear
+map dD delete
+map dc calcdirsize
+map du !du --max-depth=1 -h --apparent-size
+map dU !du --max-depth=1 -h --apparent-size | sort -rh
+## }}}2
+
+## {{{2 keyboard shortcuts -- yanking to the clipboard
+map yp %printf '%s' "$fx" | xclip -selection clipboard
+map yd %printf '%s' "$PWD" | xclip -selection clipboard
+map yn %basename "$f" | xclip -selection clipboard
+map y. %basename "$f" | sed 's/\.[^.]*$//' | xclip -selection clipboard
+## }}}2
+
+## {{{2 keyboard shortcuts -- renaming
+map cw push :rename<space>
+map a rename
+map A push a<c-e>
+map I push a<c-a>
+## }}}2
+
+## {{{2 keyboard shortcuts -- changing directories
+map gh cd ~
+map ge cd /etc
+map gu cd /usr
+map gd cd /dev
+map go cd /opt
+map gv cd /var
+map gm cd /media
+map gM cd /mnt
+map gs cd /srv
+map gp cd /tmp
+map gr cd /
+map g/ cd /
+map gi cd /run/media/$USER
+map gl &lf -remote "send $id cd \"$(realpath -- "$PWD")\""
+map gL &lf -remote "send $id select \"$(realpath -- "$f")\""
+## }}}2
+
+## {{{2 keyboard shortcuts -- bookmarks
+map ` mark-load
+map um mark-remove
+## }}}2
+
+## {{{2 keyboard shortcuts -- sorting
+map or set reverse!
+map on :set sortby natural; set info; set noreverse
+map ob :set sortby name; set info; set noreverse
+map os :set sortby size; set info size; set noreverse
+map om :set sortby time; set info time; set noreverse
+map oc :set sortby ctime; set info ctime; set noreverse
+map oa :set sortby atime; set info atime; set noreverse
+map oe :set sortby ext; set info; set noreverse
+map oN :set sortby natural; set info; set reverse
+map oB :set sortby name; set info; set reverse
+map oS :set sortby size; set info size; set reverse
+map oM :set sortby time; set info time; set reverse
+map oC :set sortby ctime; set info ctime; set reverse
+map oA :set sortby atime; set info atime; set reverse
+map oE :set sortby ext; set info; set reverse
+## }}}2
+
+## {{{2 keyboard shortcuts -- settings
+map zh set hidden!
+map zd set dirfirst!
+map zp set preview!
+map zf filter
+map zz filter
+## }}}2
+
+## {{{2 keyboard shortcuts -- line modes
+map Mf set info
+map Ms set info size
+map Mm set info time
+map Mp set info perm
+map MH set info size:time
+## }}}2
+
+## {{{2 keyboard shortcuts -- creating files
+map <insert> push $touch<space>
+## }}}2
+
+## {{{2 keyboard shortcuts -- fzf jump
 map <c-p> fzf_jump
+## }}}2
+
+## }}}1
