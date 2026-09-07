@@ -25,10 +25,22 @@ setopt hist_ignore_space    # leave commands typed with a leading space out of t
 setopt hist_reduce_blanks   # normalise whitespace before storing
 ## }}}
 
+## helpers {{{
+# succeed when a command is available, warn on stderr when it is not
+has() {
+    command -v "$1" > /dev/null 2>&1 && return 0
+    print -u2 "zsh: $1 is not installed"
+    return 1
+}
+## }}}
+
 ## aliases {{{
 alias ls='lsd'
 alias ll='lsd --long'
 alias -- '!!'='sudo su -'
+
+# fall back to plain dig when doggo is missing
+has doggo && alias dig='doggo'
 ## }}}
 
 ## lf: quit leaves the shell in lf's last directory {{{
