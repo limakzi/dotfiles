@@ -41,3 +41,11 @@ hide_tab_bar_when_single_tab = false
 allow_nested = true
 pane_history = true
 
+
+[[keys.command]]
+key = "prefix+t"
+type = "popup"
+command = "exec \"${SHELL:-sh}\""
+description = "open scratch terminal"
+width = "80%"
+height = "80%"

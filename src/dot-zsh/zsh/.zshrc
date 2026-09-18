@@ -1,6 +1,7 @@
 ## {{{
 export EDITOR=nv
 
+export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:/home/limakzi/.local/bin/"
 export PATH="$PATH:/home/limakzi/.local/share/pi-node/current/bin/"
 ## }}}

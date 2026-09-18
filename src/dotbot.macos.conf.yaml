@@ -9,6 +9,7 @@
 
 - link:
     ~/.hushlogin: ./dot-hushlogin/hushlogin/hushlogin
+    ~/.zshenv: ./dot-zsh/zshenv
     ~/.config/bash: ./dot-bash/bash/
     ~/.config/ghostty: ./dot-ghostty/ghostty/
     ~/.config/git: ./dot-git/git/
@@ -16,6 +17,7 @@
     ~/.config/lsd: ./dot-lsd/lsd/
     ~/.config/nvim: ./dot-nvim/nvim/
     ~/.config/starship: ./dot-starship/starship/
+    ~/.config/zsh: ./dot-zsh/zsh/
 
 - link:
     ~/.local/bin/1p: ./dot-1password/1p

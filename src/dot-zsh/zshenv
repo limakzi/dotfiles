@@ -1,6 +1,7 @@
 export ZDOTDIR=~/.config/zsh
 export CLAUDE_CONFIG_DIR=~/.config/claude
 
-if [[ -S "$HOME/.ssh/ssh_auth_sock" && ( -z "$SSH_AUTH_SOCK" || ! -S "$SSH_AUTH_SOCK" ) ]]; then
-  export SSH_AUTH_SOCK="$HOME/.ssh/ssh_auth_sock"
-fi
+case "$OSTYPE" in
+  darwin*) source "$ZDOTDIR/zshenv.macos" ;;
+  linux*) source "$ZDOTDIR/zshenv.linux" ;;
+esac
