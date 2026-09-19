@@ -55,10 +55,21 @@ lf() {
 }
 ## }}}
 
+## ranger: quit leaves the shell in ranger's last directory {{{
+ranger() {
+    local dir tmp
+    tmp="$(mktemp)" || return
+    command ranger --choosedir="$tmp" "$@"
+    dir="$(<"$tmp")"
+    rm -f -- "$tmp"
+    [[ -d $dir && $dir != $PWD ]] && cd -- "$dir"
+}
+## }}}
+
 ## fzf {{{
 has fzf && eval "$(fzf --zsh)"
 ## }}}
 
 ## keyboard shortcuts {{{
-bindkey -s '^e' '\eqlf\n'
+bindkey -s '^e' '\eqranger\n'
 ## }}}
