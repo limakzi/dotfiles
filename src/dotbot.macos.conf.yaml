@@ -8,6 +8,7 @@
       mode: 0700
 
 - link:
+    ~/.Brewfile: ./dot-brew/brew/Brewfile
     ~/.hushlogin: ./dot-hushlogin/hushlogin/hushlogin
     ~/.zshenv: ./dot-zsh/zshenv
     ~/.config/bash: ./dot-bash/bash/
