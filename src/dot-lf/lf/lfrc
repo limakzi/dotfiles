@@ -14,7 +14,51 @@ set smartcase true
 set dirfirst true
 ## }}}1
 
+## {{{1 Directory specific settings.
+setlocal ~/Downloads sortby time
+setlocal ~/Downloads info custom
+setlocal ~/Downloads reverse
+## }}}1
+
 ## {{{1 Commands.
+cmd on-load &{{
+    [ $# -gt 0 ] || exit 0
+    printf '%s\0' "$@" | xargs -0 stat -f '%m %N' 2>/dev/null | awk -v now="$(date +%s)" '
+        function plural(x, unit,   v) { v = int(x); return (v < 2 ? 2 : v) " " unit }
+        function relative(d,   a, prefix, suffix) {
+            a = d < 0 ? -d : d
+            prefix = d < 0 ? "in " : ""
+            suffix = d < 0 ? "" : " ago"
+            if (a <= 10)       return "now"
+            if (a <= 45)       return prefix int(a) " seconds" suffix
+            if (a <= 90)       return prefix "a minute" suffix
+            if (a <= 2700)     return prefix plural(a / 60, "minutes") suffix
+            if (a <= 5400)     return prefix "an hour" suffix
+            if (a <= 79200)    return prefix plural(a / 3600, "hours") suffix
+            if (a <= 129600)   return prefix "a day" suffix
+            if (a <= 561600)   return prefix plural(a / 86400, "days") suffix
+            if (a <= 907200)   return prefix "a week" suffix
+            if (a <= 2591999)  return prefix plural(a / 604800, "weeks") suffix
+            if (a <= 3888000)  return prefix "a month" suffix
+            if (a <= 29808000) return prefix plural(a / 2592000, "months") suffix
+            if (a <= 47260800) return prefix "a year" suffix
+            return prefix plural(a / 31536000, "years") suffix
+        }
+        $1 !~ /^[0-9]+$/ { next }
+        {
+            name = substr($0, index($0, " ") + 1)
+            info = relative(now - $1)
+            gsub(/\\/, "\\\\", name)
+            gsub(/"/, "\\\"", name)
+            cmds = cmds "addcustominfo \"" name "\" \"" info "\"; "
+            if (++count % 1000 == 0) { print cmds; cmds = "" }
+        }
+        END { if (cmds != "") print cmds }
+    ' | while IFS= read -r cmds; do
+        lf -remote "send $id :$cmds"
+    done
+}}
+
 cmd fzf_jump ${{
     res="$(fdfind -H -t d '^\.git$' "$HOME" -0 2>/dev/null | xargs -0 -r -n 1 dirname | tr '\n' '\0' | xargs -0 -r lsd -d -1 --icon=always --color=always 2>/dev/null | fzf --ansi | sed 's/\x1b\[[0-9;]*m//g' | sed 's/^[^ ]* //' | sed 's/ ⇒ .*//')"
     res="${res%/}"
@@ -147,14 +191,14 @@ map or set reverse!
 map on :set sortby natural; set info; set noreverse
 map ob :set sortby name; set info; set noreverse
 map os :set sortby size; set info size; set noreverse
-map om :set sortby time; set info time; set noreverse
+map om :set sortby time; set info custom; set noreverse
 map oc :set sortby ctime; set info ctime; set noreverse
 map oa :set sortby atime; set info atime; set noreverse
 map oe :set sortby ext; set info; set noreverse
 map oN :set sortby natural; set info; set reverse
 map oB :set sortby name; set info; set reverse
 map oS :set sortby size; set info size; set reverse
-map oM :set sortby time; set info time; set reverse
+map oM :set sortby time; set info custom; set reverse
 map oC :set sortby ctime; set info ctime; set reverse
 map oA :set sortby atime; set info atime; set reverse
 map oE :set sortby ext; set info; set reverse
@@ -171,9 +215,9 @@ map zz filter
 ## {{{2 keyboard shortcuts -- line modes
 map Mf set info
 map Ms set info size
-map Mm set info time
+map Mm set info custom
 map Mp set info perm
-map MH set info size:time
+map MH set info size:custom
 ## }}}2
 
 ## {{{2 keyboard shortcuts -- creating files
