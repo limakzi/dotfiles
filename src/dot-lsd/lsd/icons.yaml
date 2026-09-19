@@ -1,0 +1,718 @@
+## vim:ft=yaml
+## Mirrors ../../dot-lf/lf/icons -- keep the two in sync.
+## lsd matches basenames and lowercases them, so lf's `~/...` rules and
+## case variants fold into a single lowercase key.
+---
+
+## {{{1 filetype
+filetype:
+  ## {{{2 types
+  dir:            
+  file:           
+  executable:     
+  symlink-dir:    
+  symlink-file:   
+  pipe:           p
+  socket:         s
+  device-block:   b
+  device-char:    c
+  ## }}}2
+## }}}1
+
+
+## {{{1 name
+name:
+  ## {{{2 home - tools
+  .gnupg:    
+  .cargo:    
+  .rustup:   
+  .java:     
+  .vim:      
+  ## }}}2
+
+  ## {{{2 dir - xdg
+  desktop:     
+  documents:   
+  downloads:   
+  music:       
+  pictures:    
+  public:      
+  templates:   
+  videos:      
+  ## }}}2
+
+  ## {{{2 dir - dev
+  .git:        
+  go:          
+  workspace:   
+  anaconda3:   
+  dotfiles:    
+  linux:       
+  macos:       
+  ## }}}2
+
+  ## {{{2 dir - macos
+  applications:   󰀻
+  library:        
+  movies:         
+  ## }}}2
+
+  ## {{{2 dir - cloud
+  dropbox:    
+  onedrive:   
+  ## }}}2
+
+  ## {{{2 dir - base
+  .config:   
+  .cache:    
+  .local:    󰜷
+  .ssh:      󰣀
+  bin:       b
+  home:      c
+  ## }}}2
+
+  ## {{{2 dir - i18n
+  bilder:            
+  bureau:            
+  config:            
+  download:          
+  descargas:         
+  documenti:         
+  documentos:        
+  dokument:          
+  dokumente:         
+  dokumentumok:      
+  escritorio:        
+  hämtningar:        
+  imagens:           
+  images:            
+  immagini:          
+  imágenes:          
+  képek:             
+  letöltések:        
+  mallar:            
+  modelli:           
+  modelos:           
+  musica:            
+  musik:             
+  musique:           
+  música:            
+  publicshare:       
+  plantillas:        
+  pubblici:          
+  publique:          
+  público:           
+  scaricati:         
+  schreibtisch:      
+  scrivania:         
+  skrivbord:         
+  számítógép:        
+  téléchargements:   
+  video:             
+  videók:            
+  vidéos:            
+  vorlagen:          
+  vídeos:            
+  zene:              
+  öffentlich:        
+  下載:                
+  下载:                
+  公共:                
+  公共的:               
+  图片:                
+  圖片:                
+  文档:                
+  文檔:                
+  桌面:                
+  模板:                
+  視頻:                
+  视频:                
+  音乐:                
+  音樂:                
+  ## }}}2
+
+  ## {{{2 name - shell
+  .bashrc:            
+  .bash_profile:      
+  .bashprofile:       
+  .bash_aliases:      
+  .bash_history:      
+  .bash_logout:       
+  .profile:           
+  .zshrc:             
+  .zshenv:            
+  .zprofile:          
+  .inputrc:           
+  .selected_editor:   
+  .fasd:              
+  bspwmrc:            
+  sxhkdrc:            
+  ## }}}2
+
+  ## {{{2 name - vim
+  .vimrc:     
+  .gvimrc:    
+  _vimrc:     
+  _gvimrc:    
+  vimrc:      
+  .viminfo:   
+  ## }}}2
+
+  ## {{{2 name - vcs
+  .gitconfig:        
+  .gitignore:        
+  .gitattributes:    
+  .gitlab-ci.yml:    
+  known_hosts:       
+  authorized_keys:   
+  ## }}}2
+
+  ## {{{2 name - build
+  makefile:         
+  makefile.ac:      
+  makefile.in:      
+  cmakelists.txt:   
+  config.ac:        
+  config.m4:        
+  config.mk:        
+  config.ru:        
+  configure:        
+  a.out:            
+  ledger:           
+  ## }}}2
+
+  ## {{{2 name - pkg
+  package.json:        
+  package-lock.json:   
+  mix.lock:            
+  node_modules:        
+  gemfile:             
+  rakefile:            
+  procfile:            
+  webpack.config.js:   
+  ## }}}2
+
+  ## {{{2 name - docker
+  dockerfile:            
+  docker-compose.yml:    
+  docker-compose.yaml:   
+  compose.yml:           
+  compose.yaml:          
+  vagrantfile:           
+  ## }}}2
+
+  ## {{{2 name - docs
+  readme:            
+  readme.md:         
+  readme.markdown:   
+  readme.rst:        
+  readme.txt:        
+  license:           
+  license.md:        
+  license.txt:       
+  ## }}}2
+
+  ## {{{2 name - x11
+  .xauthority:           
+  .xdefaults:            
+  .xresources:           
+  .xinitrc:              
+  .xinputrc:             
+  .dmrc:                 
+  .fehbg:                
+  .pam_environment:      
+  .mime.types:           
+  mimeapps.list:         
+  user-dirs.dirs:        
+  .recently-used:        
+  .nvidia-settings-rc:   
+  .jack-settings:        
+  .ncmpcpp:              
+  playlists:             
+  .ds_store:             
+  ## }}}2
+
+  ## {{{2 name - web
+  favicon.ico:           
+  robots.txt:            󰚩
+  react.jsx:             
+  jquery.min.js:         
+  angular.min.js:        
+  backbone.min.js:       
+  require.min.js:        
+  materialize.min.js:    
+  materialize.min.css:   
+  mootools.min.js:       
+  gruntfile.js:          
+  gruntfile.coffee:      
+  gruntfile.ls:          
+  gulpfile.js:           
+  gulpfile.coffee:       
+  gulpfile.ls:           
+  ## }}}2
+
+  ## {{{2 name - misc
+  ini:   
+  ## }}}2
+## }}}1
+
+
+## {{{1 extension
+extension:
+  ## {{{2 name - vim
+  vim:   
+  ## }}}2
+
+  ## {{{2 code - c
+  c:     
+  c++:   
+  cc:    
+  cp:    
+  cpp:   
+  cxx:   
+  h:     
+  hh:    
+  hpp:   
+  hxx:   
+  ## }}}2
+
+  ## {{{2 code - d
+  d:   
+  ## }}}2
+
+  ## {{{2 code - cs
+  cs:   󰌛
+  ## }}}2
+
+  ## {{{2 code - fs
+  fs:         
+  fsi:        
+  fsx:        
+  fsscript:   
+  f#:         
+  ## }}}2
+
+  ## {{{2 code - go
+  go:   
+  ## }}}2
+
+  ## {{{2 code - rust
+  rs:     
+  rlib:   
+  ## }}}2
+
+  ## {{{2 code - java
+  java:    
+  class:   
+  ## }}}2
+
+  ## {{{2 code - jvm
+  scala:   
+  clj:     
+  cljc:    
+  cljs:    
+  edn:     
+  ## }}}2
+
+  ## {{{2 code - python
+  py:      
+  pyc:     
+  pyd:     
+  pyo:     
+  ipynb:   
+  ## }}}2
+
+  ## {{{2 code - ruby
+  rb:        
+  gemspec:   
+  rake:      
+  gem:       
+  ## }}}2
+
+  ## {{{2 code - perl
+  pl:   
+  pm:   
+  t:    
+  ## }}}2
+
+  ## {{{2 code - php
+  php:   
+  ## }}}2
+
+  ## {{{2 code - haskell
+  hs:    
+  lhs:   
+  ## }}}2
+
+  ## {{{2 code - erlang
+  erl:   
+  hrl:   
+  ## }}}2
+
+  ## {{{2 code - elixir
+  ex:     
+  exs:    
+  eex:    
+  leex:   
+  heex:   
+  ## }}}2
+
+  ## {{{2 code - ocaml
+  ml:    λ
+  mli:   λ
+  ## }}}2
+
+  ## {{{2 code - lua
+  lua:   
+  ## }}}2
+
+  ## {{{2 code - swift
+  swift:          
+  xcplayground:   
+  ## }}}2
+
+  ## {{{2 code - dart
+  dart:   
+  ## }}}2
+
+  ## {{{2 code - julia
+  jl:   
+  ## }}}2
+
+  ## {{{2 code - r
+  r:       󰟔
+  rmd:     
+  rproj:   󰗆
+  ## }}}2
+
+  ## {{{2 code - nix
+  nix:   
+  ## }}}2
+
+  ## {{{2 code - elm
+  elm:   
+  ## }}}2
+
+  ## {{{2 code - solidity
+  sol:   󰡪
+  ## }}}2
+
+  ## {{{2 code - asm
+  asm:   
+  s:     
+  ## }}}2
+
+  ## {{{2 code - puppet
+  pp:   
+  ## }}}2
+
+  ## {{{2 code - shell
+  sh:     
+  bash:   
+  zsh:    
+  fish:   
+  ksh:    
+  csh:    
+  ps1:    
+  awk:    
+  bat:    
+  rc:     
+  ## }}}2
+
+  ## {{{2 web - html
+  html:    
+  htm:     
+  xhtml:   
+  xul:     
+  ## }}}2
+
+  ## {{{2 web - css
+  css:    
+  scss:   
+  sass:   
+  styl:   
+  less:   
+  ## }}}2
+
+  ## {{{2 web - js
+  js:       
+  mjs:      
+  jsx:      
+  ts:       
+  tsx:      
+  coffee:   
+  ## }}}2
+
+  ## {{{2 web - vue
+  vue:      󰡄
+  svelte:   
+  ## }}}2
+
+  ## {{{2 web - template
+  ejs:           
+  slim:          
+  haml:          
+  hbs:           
+  mustache:      
+  twig:          
+  asp:           
+  webmanifest:   
+  ## }}}2
+
+  ## {{{2 data - config
+  json:    
+  jsonc:   
+  yaml:    
+  yml:     
+  toml:    
+  ini:     
+  conf:    
+  cmake:   
+  mk:      
+  sln:     
+  suo:     
+  cvs:     
+  ## }}}2
+
+  ## {{{2 data - markup
+  xml:   
+  rss:   
+  ## }}}2
+
+  ## {{{2 data - log
+  log:    
+  part:   
+  ## }}}2
+
+  ## {{{2 doc - text
+  md:         
+  mdx:        
+  markdown:   
+  tex:        󰙩
+  pdf:        
+  epub:       
+  rtf:        
+  ## }}}2
+
+  ## {{{2 doc - office
+  doc:    
+  docx:   
+  docm:   
+  dotx:   
+  dotm:   
+  wps:    
+  wpt:    
+  ## }}}2
+
+  ## {{{2 doc - sheet
+  xls:    󰈛
+  xlsx:   󰈛
+  xlsm:   󰈛
+  xlsb:   󰈛
+  xlt:    󰈛
+  xltx:   󰈛
+  xltm:   󰈛
+  xla:    󰈛
+  xlam:   󰈛
+  et:     󰈛
+  ett:    󰈛
+  ## }}}2
+
+  ## {{{2 doc - slide
+  ppt:    
+  pptx:   
+  pptm:   
+  pot:    
+  potx:   
+  potm:   
+  pps:    
+  ppsx:   
+  ppsm:   
+  dps:    
+  dpt:    
+  ## }}}2
+
+  ## {{{2 img - raster
+  jpg:     
+  jpeg:    
+  mjpg:    
+  mjpeg:   
+  png:     
+  gif:     
+  bmp:     
+  ico:     
+  webp:    
+  tif:     
+  tiff:    
+  tga:     
+  xbm:     
+  xpm:     
+  pbm:     
+  pgm:     
+  ppm:     
+  pcx:     
+  xwd:     
+  yuv:     
+  dl:      
+  gl:      
+  ## }}}2
+
+  ## {{{2 img - vector
+  svg:    
+  svgz:   
+  cgm:    
+  emf:    
+  mng:    
+  ai:     
+  ## }}}2
+
+  ## {{{2 img - design
+  psd:   
+  psb:   
+  xcf:   
+  ## }}}2
+
+  ## {{{2 media - video
+  avi:    
+  mkv:    
+  mp4:    
+  m4v:    
+  mp4v:   
+  mpg:    
+  mpeg:   
+  m2v:    
+  mov:    
+  qt:     
+  webm:   
+  ogv:    
+  ogm:    
+  ogx:    
+  flv:    
+  fli:    
+  flc:    
+  vob:    
+  wmv:    
+  asf:    
+  rm:     
+  rmvb:   
+  nuv:    
+  ## }}}2
+
+  ## {{{2 media - audio
+  mp3:    
+  m4a:    
+  mka:    
+  flac:   
+  wav:    
+  ogg:    
+  oga:    
+  opus:   
+  spx:    
+  aac:    
+  au:     
+  mid:    
+  midi:   
+  mpc:    
+  ra:     
+  cue:    
+  aup:    
+  xspf:   
+  ## }}}2
+
+  ## {{{2 arch - archive
+  zip:       
+  7z:        
+  rar:       
+  tar:       
+  tgz:       
+  taz:       
+  gz:        
+  gzip:      
+  bz:        
+  bz2:       
+  tbz:       
+  tbz2:      
+  xz:        
+  txz:       
+  lzma:      
+  tlz:       
+  lz:        
+  lz4:       
+  lzo:       
+  lzh:       
+  lha:       
+  lrz:       
+  zst:       
+  tzst:      
+  tz:        
+  tzo:       
+  t7z:       
+  z:         
+  dz:        
+  rz:        
+  arc:       
+  arj:       
+  ace:       
+  alz:       
+  cab:       
+  cpio:      
+  zoo:       
+  wim:       
+  swm:       
+  dwm:       
+  esd:       
+  cbr:       
+  cbz:       
+  torrent:   
+  ## }}}2
+
+  ## {{{2 arch - package
+  deb:    
+  rpm:    
+  apk:    
+  xbps:   
+  msi:    
+  jar:    
+  war:    
+  ear:    
+  sar:    
+  ## }}}2
+
+  ## {{{2 arch - disk
+  iso:   
+  img:   
+  rom:   
+  ## }}}2
+
+  ## {{{2 bin - exe
+  exe:   
+  efi:   
+  elf:   
+  ## }}}2
+
+  ## {{{2 bin - obj
+  o:     
+  a:     
+  so:    
+  dll:   
+  ## }}}2
+
+  ## {{{2 db - sql
+  db:     
+  sql:    
+  dump:   
+  ## }}}2
+
+  ## {{{2 sec - key
+  pem:        
+  pub:        
+  key:        
+  htaccess:   
+  htpasswd:   
+  ## }}}2
+
+  ## {{{2 sys - misc
+  fifo:   󰟥
+  diff:   
+  ## }}}2
+## }}}1
