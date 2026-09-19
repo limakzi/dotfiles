@@ -166,20 +166,7 @@ map I push a<c-a>
 
 ## {{{2 keyboard shortcuts -- changing directories
 map gh cd ~
-map ge cd /etc
-map gu cd /usr
-map gd cd /dev
-map go cd /opt
-map gv cd /var
-map gm cd /media
-map gM cd /mnt
-map gs cd /srv
-map gp cd /tmp
-map gr cd /
 map g/ cd /
-map gi cd /run/media/$USER
-map gl &lf -remote "send $id cd \"$(realpath -- "$PWD")\""
-map gL &lf -remote "send $id select \"$(realpath -- "$f")\""
 ## }}}2
 
 ## {{{2 keyboard shortcuts -- bookmarks
