@@ -55,6 +55,10 @@ lf() {
 }
 ## }}}
 
+## fzf {{{
+has fzf && eval "$(fzf --zsh)"
+## }}}
+
 ## keyboard shortcuts {{{
 bindkey -s '^e' '\eqlf\n'
 ## }}}
