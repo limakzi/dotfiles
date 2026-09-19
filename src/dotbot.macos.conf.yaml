@@ -19,6 +19,7 @@
     ~/.config/ghostty: ./dot-ghostty/ghostty/
     ~/.config/git: ./dot-git/git/
     ~/.config/herdr: ./dot-herdr/herdr/
+    ~/.config/lf: ./dot-lf/lf/
     ~/.config/lsd: ./dot-lsd/lsd/
     ~/.config/nvim: ./dot-nvim/nvim/
     ~/.config/starship: ./dot-starship/starship/
