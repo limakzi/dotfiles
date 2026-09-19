@@ -82,7 +82,7 @@ go/                 
 workspace/          
 anaconda3/          
 dotfiles/           
-Dotfiles/           
+Dotfiles/           
 linux/              
 Linux/              
 macos/              
@@ -117,7 +117,7 @@ home/               c
 ## {{{1 dir - i18n
 Bilder/             
 Bureau/             
-CONFIG/             
+CONFIG/             
 DOCUMENTS/          
 DOWNLOAD/           
 Descargas/          
@@ -247,9 +247,9 @@ Zene/               
 ## }}}1
 
 ## {{{1 name - docker
-*Dockerfile                 
+*Dockerfile                 
 *dockerfile                 
-*docker-compose.yml         
+*docker-compose.yml         
 *docker-compose.yaml        
 *Docker-compose.yml         
 *Docker-compose.yaml        
@@ -294,7 +294,7 @@ Zene/               
 ## {{{1 name - web
 *favicon.ico                
 *robots.txt                 󰚩
-*react.jsx                  
+*react.jsx                  
 *React.jsx                  
 *jquery.min.js              
 *angular.min.js             
