@@ -1,6 +1,8 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 format = """${custom.1p-agent}$all"""
 add_newline = false
+scan_timeout = 10
+command_timeout = 100
 
 [line_break]
 disabled = true
