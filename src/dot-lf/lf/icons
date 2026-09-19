@@ -29,8 +29,17 @@ fi      
 
 ## {{{1 home - personal
 ~/dotfiles      
+~/linux         
+~/Linux         
 ~/macos         
+~/macOS         
 ~/go            
+## }}}1
+
+## {{{1 home - macos
+~/Applications  󰀻
+~/Library       
+~/Movies        
 ## }}}1
 
 ## {{{1 home - base
@@ -74,7 +83,19 @@ workspace/          
 anaconda3/          
 dotfiles/           
 Dotfiles/           
+linux/              
+Linux/              
 macos/              
+macOS/              
+## }}}1
+
+## {{{1 dir - macos
+applications/       󰀻
+Applications/       󰀻
+library/            
+Library/            
+movies/             
+Movies/             
 ## }}}1
 
 ## {{{1 dir - cloud
