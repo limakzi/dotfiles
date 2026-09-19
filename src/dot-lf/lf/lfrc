@@ -22,6 +22,11 @@ cmd fzf_jump ${{
     fi
 }}
 
+cmd mkdir %{{
+    set -f
+    mkdir -p -- "$@" && lf -remote "send $id reload"
+}}
+
 cmd open ${{
     case "$(file --mime-type -Lb "$f")" in
         text/*|application/json|application/javascript|application/xml|inode/x-empty)
@@ -172,6 +177,7 @@ map MH set info size:time
 
 ## {{{2 keyboard shortcuts -- creating files
 map <insert> push $touch<space>
+map N push :mkdir<space>
 ## }}}2
 
 ## {{{2 keyboard shortcuts -- fzf jump
