@@ -7,6 +7,10 @@
     create:
       mode: 0700
 
+- create:
+    - ~/.local/state/
+    - ~/.local/state/zsh/
+
 - link:
     ~/.Brewfile: ./dot-brew/brew/Brewfile
     ~/.hushlogin: ./dot-hushlogin/hushlogin/hushlogin

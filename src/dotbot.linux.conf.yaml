@@ -23,6 +23,7 @@
 
 - create:
     - ~/.local/state/
+    - ~/.local/state/zsh/
 
 - link:
     ~/.hushlogin: ./dot-hushlogin/hushlogin/hushlogin

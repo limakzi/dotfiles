@@ -19,6 +19,8 @@ HISTFILE=${XDG_STATE_HOME:-~/.local/state}/zsh/history
 HISTSIZE=100000
 SAVEHIST=100000
 
+[[ -d ${HISTFILE:h} ]] || mkdir -p ${HISTFILE:h}
+
 setopt share_history        # append as commands run, and pick up other sessions' entries
 setopt extended_history     # store timestamp and duration alongside the command
 setopt hist_ignore_all_dups # keep only the most recent copy of a repeated command
