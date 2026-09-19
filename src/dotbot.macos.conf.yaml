@@ -22,6 +22,7 @@
     ~/.config/lf: ./dot-lf/lf/
     ~/.config/lsd: ./dot-lsd/lsd/
     ~/.config/nvim: ./dot-nvim/nvim/
+    ~/.config/ranger: ./dot-ranger/ranger/
     ~/.config/starship: ./dot-starship/starship/
     ~/.config/zsh: ./dot-zsh/zsh/
 
