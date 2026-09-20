@@ -1,5 +1,5 @@
 {
-  "defaultModel": "opus",
+  "defaultModel": "claude-opus-5",
   "defaultThinkingLevel": "high",
   "compaction": {
     "enabled": true
@@ -13,10 +13,10 @@
   "fullscreenScrollbar": "hidden",
   "lastChangelogVersion": "0.86.1",
   "theme": "dark",
-  "defaultProvider": "pi-claude-code-provider",
+  "defaultProvider": "pi-claude-cli",
   "packages": [
     "npm:pi-agent-extensions",
     "npm:pi-mcp-adapter",
-    "npm:pi-claude-code-provider"
+    "npm:@saccolabs/pi-claude-cli"
   ]
 }
