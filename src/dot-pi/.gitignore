@@ -2,6 +2,7 @@ pi/agent/bin/
 pi/agent/extensions/
 pi/agent/npm/
 pi/agent/sessions/
+pi/agent/skills/synced/
 pi/workflows/
 
 
