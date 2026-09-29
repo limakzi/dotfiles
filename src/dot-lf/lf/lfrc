@@ -68,6 +68,88 @@ cmd fzf_jump ${{
     fi
 }}
 
+## Find a directory below the current one and cd into it.
+## Backspace on an empty query moves the search root one level up; above ~/<word> it searches home.
+cmd fzf_find ${{
+    search_root="$PWD"
+    ignored_directory="$HOME/Library"
+    move_up_exit_status=10
+
+    ignored_directory_below_search_root() {
+        case "$ignored_directory" in
+            "${search_root%/}"/*) printf '%s' "${ignored_directory#"${search_root%/}"/}" ;;
+        esac
+    }
+
+    find_directories() {
+        relative_ignored_directory="$1"
+        set -- --type directory --hidden --follow --exclude .git
+        if [ -n "$relative_ignored_directory" ]; then
+            set -- "$@" --exclude "/$relative_ignored_directory"
+        fi
+        if command -v fd >/dev/null; then
+            fd "$@"
+        elif command -v fdfind >/dev/null; then
+            fdfind "$@"
+        else
+            find -L . -mindepth 1 \( -name .git -o -path "./$relative_ignored_directory" -o -fstype dev -o -fstype proc \) -prune -o -type d -print 2>/dev/null \
+                | sed 's|^\./||'
+        fi
+    }
+
+    add_directory_icons() {
+        sed 's|/$||' \
+            | tr '\n' '\0' \
+            | xargs -0 -r lsd --directory-only --oneline --icon=always --color=always 2>/dev/null
+    }
+
+    list_directories() {
+        relative_ignored_directory="$(ignored_directory_below_search_root)"
+        cd "$search_root" && { printf '.\n'; find_directories "$relative_ignored_directory"; } | add_directory_icons
+    }
+
+    parent_search_root() {
+        parent_directory="$(dirname "$search_root")"
+        if [ "$search_root" = "$HOME" ] || [ "$parent_directory" = / ]; then
+            parent_directory="$HOME"
+        fi
+        printf '%s' "$parent_directory"
+    }
+
+    search_prompt() {
+        case "$search_root" in
+            "$HOME"|"$HOME"/*) printf '%s/ ' "~${search_root#"$HOME"}" ;;
+            *) printf '%s/ ' "${search_root%/}" ;;
+        esac
+    }
+
+    strip_directory_icons() {
+        sed 's/\x1b\[[0-9;]*m//g' | sed 's/^[^ ]* //' | sed 's/ ⇒ .*//'
+    }
+
+    escape_lf_string() {
+        printf '%s' "$1" | sed 's/\\/\\\\/g; s/"/\\"/g'
+    }
+
+    ## fzf exits with move_up_exit_status on backspace, and the loop restarts it one level up.
+    select_directory() {
+        while true; do
+            selected_line="$(list_directories | fzf \
+                --no-multi --ansi --reverse --height=100% \
+                --prompt="$(search_prompt)" \
+                --bind="backward-eof:become(exit $move_up_exit_status)")"
+            case "$?" in
+                0) printf '%s/%s' "$search_root" "$(printf '%s' "$selected_line" | strip_directory_icons)"; return ;;
+                "$move_up_exit_status") search_root="$(parent_search_root)" ;;
+                *) return 1 ;;
+            esac
+        done
+    }
+
+    selected_directory="$(select_directory)" || exit 0
+    lf -remote "send $id cd \"$(escape_lf_string "$selected_directory")\""
+}}
+
 cmd mkdir %{{
     set -f
     mkdir -p -- "$@" && lf -remote "send $id reload"
@@ -214,7 +296,7 @@ map N push :mkdir<space>
 ## }}}2
 
 ## {{{2 keyboard shortcuts -- fzf jump
-map <c-p> fzf_jump
+map <c-p> fzf_find
 ## }}}2
 
 ## }}}1
