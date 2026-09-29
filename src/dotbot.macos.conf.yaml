@@ -29,3 +29,7 @@
 - link:
     ~/.local/bin/1p: ./dot-1password/1p
     ~/.config/1password: ./dot-1password/1password/
+
+- link:
+    ~/.local/bin/pbcopy: ./dot-clipboard/clipboard/pbcopy
+    ~/.local/bin/pbpaste: ./dot-clipboard/clipboard/pbpaste

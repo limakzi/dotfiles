@@ -53,6 +53,10 @@
     ~/.config/zathura: ./dot-zathura/zathura/
 
 - link:
+    ~/.local/bin/pbcopy: ./dot-clipboard/clipboard/pbcopy
+    ~/.local/bin/pbpaste: ./dot-clipboard/clipboard/pbpaste
+
+- link:
     ~/.config/user-dirs.dirs:
       force: true
       path: ./dot-xdg/xdg/user-dirs.dirs
