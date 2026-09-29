@@ -155,6 +155,65 @@ cmd mkdir %{{
     mkdir -p -- "$@" && lf -remote "send $id reload"
 }}
 
+cmd chmod %{{
+    set -f
+    IFS='
+'
+    [ $# -gt 0 ] || exit 0
+    chmod -- "$1" $fx && lf -remote "send $id reload"
+}}
+
+cmd trash %{{
+    set -f
+    IFS='
+'
+    if command -v trash >/dev/null; then
+        trash $fx
+    elif command -v gio >/dev/null; then
+        gio trash -- $fx
+    else
+        printf 'trash: no trash command found'
+        exit 1
+    fi
+    lf -remote "send $id reload"
+}}
+
+## Move the selection in the parent directory and enter the directory there, like ranger's [ and ].
+cmd move-parent &{{
+    parent_directory="$(dirname -- "$PWD" | sed 's/\\/\\\\/g; s/"/\\"/g')"
+    dironly="setlocal \"$parent_directory\" dironly"
+    lf -remote "send $id :updir; $dironly true; $1; $dironly false; open"
+}}
+
+## Paste copied or cut files, overwriting existing ones.
+cmd paste-overwrite %{{
+    files="${XDG_DATA_HOME:-$HOME/.local/share}/lf/files"
+    mode="$(sed -n '1p' "$files")"
+    sed '1d' "$files" | while IFS= read -r file; do
+        case "$mode" in
+            copy) cp -R -f -- "$file" . ;;
+            move) mv -f -- "$file" . ;;
+        esac
+    done
+    if [ "$mode" = move ]; then
+        lf -remote "send clear"
+    fi
+    lf -remote "send $id reload"
+}}
+
+## Link copied or cut files here: absolute, relative or hard.
+cmd paste-link %{{
+    files="${XDG_DATA_HOME:-$HOME/.local/share}/lf/files"
+    sed '1d' "$files" | while IFS= read -r file; do
+        case "$1" in
+            absolute) ln -s -- "$file" . ;;
+            relative) ln -s -- "$(python3 -c 'import os, sys; print(os.path.relpath(sys.argv[1]))' "$file")" . ;;
+            hard) ln -- "$file" . ;;
+        esac
+    done
+    lf -remote "send $id reload"
+}}
+
 cmd open ${{
     case "$(file --mime-type -Lb "$f")" in
         text/*|application/json|application/javascript|application/xml|inode/x-empty)
@@ -178,8 +237,6 @@ map u
 map s
 map M
 map w
-map [
-map ]
 map sn
 map ss
 map st
@@ -204,6 +261,9 @@ map ? doc
 map s shell
 map r shell-async
 map cd push :cd<space>
+map ; read
+map # shell-pipe
+map = push :chmod<space>
 map <enter> open
 ## }}}2
 
@@ -212,6 +272,8 @@ map J half-down
 map K half-up
 map H jump-prev
 map L jump-next
+map [ move-parent up
+map ] move-parent down
 ## }}}2
 
 ## {{{2 keyboard shortcuts -- selecting and tagging
@@ -224,19 +286,24 @@ map ut :tag; tag-toggle
 map yy copy
 map dd cut
 map pp paste
+map po paste-overwrite
+map pl paste-link absolute
+map pL paste-link relative
+map phl paste-link hard
 map ud clear
 map uy clear
 map dD delete
+map dT trash
 map dc calcdirsize
 map du !du --max-depth=1 -h --apparent-size
 map dU !du --max-depth=1 -h --apparent-size | sort -rh
 ## }}}2
 
 ## {{{2 keyboard shortcuts -- yanking to the clipboard
-map yp %printf '%s' "$fx" | xclip -selection clipboard
-map yd %printf '%s' "$PWD" | xclip -selection clipboard
-map yn %basename "$f" | xclip -selection clipboard
-map y. %basename "$f" | sed 's/\.[^.]*$//' | xclip -selection clipboard
+map yp %printf '%s' "$fx" | pbcopy
+map yd %printf '%s' "$PWD" | pbcopy
+map yn %basename "$f" | pbcopy
+map y. %basename "$f" | sed 's/\.[^.]*$//' | pbcopy
 ## }}}2
 
 ## {{{2 keyboard shortcuts -- renaming
@@ -278,21 +345,40 @@ map oE :set sortby ext; set info; set reverse
 map zh set hidden!
 map zd set dirfirst!
 map zp set preview!
+map zP set dirpreviews!
+map zs set ignorecase!
+map zm set mouse!
+map <c-h> set hidden!
+map <backspace> set hidden!
+map <backspace2> set hidden!
 map zf filter
 map zz filter
 ## }}}2
 
 ## {{{2 keyboard shortcuts -- line modes
 map Mf set info
-map Ms set info size
-map Mm set info custom
+map Mi set info size
+map Mm set info time
+map Mh set info custom
 map Mp set info perm
+map Ms set info size:time
 map MH set info size:custom
 ## }}}2
 
 ## {{{2 keyboard shortcuts -- creating files
 map <insert> push $touch<space>
-map N push :mkdir<space>
+## }}}2
+
+## {{{2 keyboard shortcuts -- function keys
+map <f1> doc
+map <f2> rename
+map <f3> $$PAGER "$f"
+map <f4> $$EDITOR "$f"
+map <f5> copy
+map <f6> cut
+map <f7> push :mkdir<space>
+map <f8> delete
+map <f10> quit
 ## }}}2
 
 ## {{{2 keyboard shortcuts -- fzf jump
