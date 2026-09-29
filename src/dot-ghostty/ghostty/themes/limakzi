@@ -1,0 +1,47 @@
+## limakzi — based on the Dracula Pro palette.
+##
+## palette = 0=#22212c           ## Black (background)
+## palette = 1=#ff9580           ## Red
+## palette = 2=#8aff80           ## Green
+## palette = 3=#ffff80           ## Yellow
+## palette = 4=#9580ff           ## Blue (purple)
+## palette = 5=#ff80bf           ## Magenta (pink)
+## palette = 6=#80ffea           ## Cyan
+## palette = 7=#f8f8f2           ## White (foreground)
+## palette = 8=#7970a9           ## Bright black (comment)
+## palette = 9=#ffaa99           ## Bright red
+## palette = 10=#a2ff99          ## Bright green
+## palette = 11=#ffff99          ## Bright yellow
+## palette = 12=#aa99ff          ## Bright blue (purple)
+## palette = 13=#ff99cc          ## Bright magenta (pink)
+## palette = 14=#99ffee          ## Bright cyan
+## palette = 15=#ffffff          ## Bright white
+## background = #22212c          ## Background
+## foreground = #f8f8f2          ## Foreground
+## cursor-color = #9580ff        ## Cursor (purple)
+## cursor-text = #22212c         ## Text under cursor (background)
+## selection-background = #454158 ## Selection (current line)
+## selection-foreground = #f8f8f2 ## Selected text (foreground)
+
+palette = 0=#22212c
+palette = 1=#ff9580
+palette = 2=#8aff80
+palette = 3=#ffff80
+palette = 4=#9580ff
+palette = 5=#ff80bf
+palette = 6=#80ffea
+palette = 7=#f8f8f2
+palette = 8=#7970a9
+palette = 9=#ffaa99
+palette = 10=#a2ff99
+palette = 11=#ffff99
+palette = 12=#aa99ff
+palette = 13=#ff99cc
+palette = 14=#99ffee
+palette = 15=#ffffff
+background = #22212c
+foreground = #f8f8f2
+cursor-color = #9580ff
+cursor-text = #22212c
+selection-background = #454158
+selection-foreground = #f8f8f2
