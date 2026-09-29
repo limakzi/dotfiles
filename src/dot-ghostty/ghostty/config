@@ -6,3 +6,7 @@ font-family = "JetBrainsMono Nerd Font"
 cursor-style = "bar"
 
 macos-option-as-alt = "left"
+
+title = " "
+shell-integration-features = no-title
+macos-titlebar-proxy-icon = hidden
