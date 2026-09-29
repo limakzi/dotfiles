@@ -24,7 +24,12 @@ only_attached = true
 disabled = true
 
 [git_status]
-disabled = true
+disabled = false
+format = '([$ahead_behind]($style) )'
+ahead = '⇡${count}'
+behind = '⇣${count}'
+diverged = '⇡${ahead_count}⇣${behind_count}'
+up_to_date = ''
 
 [hostname]
 disabled = false
