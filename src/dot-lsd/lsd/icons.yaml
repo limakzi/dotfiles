@@ -23,11 +23,11 @@ filetype:
 ## {{{1 name
 name:
   ## {{{2 home - tools
-  .gnupg:    
+  .gnupg:    
   .cargo:    
   .rustup:   
   .java:     
-  .vim:      
+  .vim:      
   ## }}}2
 
   ## {{{2 dir - xdg
@@ -47,7 +47,7 @@ name:
   workspace:   
   anaconda3:   
   dotfiles:    
-  linux:       
+  linux:       󰌽
   macos:       
   ## }}}2
 
@@ -67,8 +67,8 @@ name:
   .cache:    
   .local:    󰜷
   .ssh:      󰣀
-  bin:       b
-  home:      c
+  bin:       
+  home:      󰋜
   ## }}}2
 
   ## {{{2 dir - i18n
@@ -129,6 +129,7 @@ name:
   视频:                
   音乐:                
   音樂:                
+  área de trabalho:  
   ## }}}2
 
   ## {{{2 name - shell
@@ -193,11 +194,11 @@ name:
   ## }}}2
 
   ## {{{2 name - docker
-  dockerfile:            
-  docker-compose.yml:    
-  docker-compose.yaml:   
-  compose.yml:           
-  compose.yaml:          
+  dockerfile:            
+  docker-compose.yml:    
+  docker-compose.yaml:   
+  compose.yml:           
+  compose.yaml:          
   vagrantfile:           
   ## }}}2
 
@@ -235,7 +236,7 @@ name:
   ## {{{2 name - web
   favicon.ico:           
   robots.txt:            󰚩
-  react.jsx:             
+  react.jsx:             
   jquery.min.js:         
   angular.min.js:        
   backbone.min.js:       
@@ -261,6 +262,7 @@ name:
 extension:
   ## {{{2 name - vim
   vim:   
+  vimrc: 
   ## }}}2
 
   ## {{{2 code - c
@@ -704,7 +706,7 @@ extension:
   ## }}}2
 
   ## {{{2 sec - key
-  pem:        
+  pem:        
   pub:        
   key:        
   htaccess:   
