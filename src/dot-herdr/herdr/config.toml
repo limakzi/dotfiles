@@ -67,6 +67,7 @@ goto = "prefix+ctrl+p"
 split_vertical   = "prefix+|"
 split_horizontal = "prefix+-"
 new_tab          = ["prefix+c", "prefix+ctrl+n"]
+new_worktree     = "prefix+n"
 close_workspace  = "prefix+shift+q"
 switch_tab       = "alt+1..9"
 reload_config    = "prefix+r"
