@@ -2,6 +2,7 @@ onboarding = false
 
 [terminal]
 default_shell = "zsh"
+new_cwd       = "home"
 
 
 [theme]
