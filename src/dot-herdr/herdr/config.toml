@@ -6,7 +6,24 @@ new_cwd       = "home"
 
 
 [theme]
-name = "terminal"
+name = "dracula"
+
+## limakzi — mirrors ghostty/themes/limakzi (Dracula Pro palette).
+[theme.custom]
+accent        = "#9580ff"
+panel_bg      = "#22212c"
+active_row_bg = "#454158"
+selection_bg  = "#454158"
+surface0      = "#454158"
+overlay0      = "#7970a9"
+text          = "#f8f8f2"
+mauve         = "#ff80bf"
+green         = "#8aff80"
+yellow        = "#ffff80"
+red           = "#ff9580"
+blue          = "#9580ff"
+teal          = "#80ffea"
+peach         = "#ffaa99"
 
 
 [ui]
