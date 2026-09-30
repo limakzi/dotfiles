@@ -24,6 +24,7 @@ sidebar_collapsed_mode       = "hidden"
 hide_tab_bar_when_single_tab = false
 
 tab_bar_right = [
+  { type = "command", command = "echo \"\U000f0306 $($HOME/.local/bin/1p)\"", interval_seconds = 5 },
   { type = "zoom" },
   { type = "hostname" },
   { type = "datetime", format = "\U000f00ed %a %d %b" },
