@@ -52,15 +52,13 @@ tab_bar_right_separator = " · "
 [ui.sidebar.agents]
 row_gap = 0
 rows = [
-  ["state_icon", "machine", "workspace", "tab"],
-  ["agent"],
+  ["state_icon", "machine", "workspace", "tab", "agent"],
 ]
 
 [ui.sidebar.spaces]
 row_gap = 0
 rows = [
-  ["state_icon", "workspace"],
-  ["branch", "git_status"],
+  ["state_icon", "workspace", "branch", "git_status"],
 ]
 
 
