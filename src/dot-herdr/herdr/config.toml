@@ -3,6 +3,7 @@ onboarding = false
 [terminal]
 default_shell = "zsh"
 new_cwd       = "home"
+kitty_graphics = true
 
 
 [theme]
