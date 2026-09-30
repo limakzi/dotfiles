@@ -43,10 +43,10 @@ hide_tab_bar_when_single_tab = false
 
 tab_bar_right = [
   { type = "zoom" },
-  { type = "command", command = "echo \"\uf179 $(hostname -s)\"", interval_seconds = 3600 },
+  { type = "command", command = "case $(uname -s) in Darwin) i=\"\uf179\" ;; *) [ -f /etc/debian_version ] && i=\"\uf306\" || i=\"\uf17c\" ;; esac; echo \"$i $(hostname -s)\"", interval_seconds = 3600 },
   { type = "command", command = "echo \"\U000f00ed $(LC_ALL=C date '+%a %d %b')\"", interval_seconds = 60 },
   { type = "datetime", format = "\U000f0954 %H:%M" },
-  { type = "command", command = "echo \"\uf511 $($HOME/.local/bin/1p)\"", interval_seconds = 5 },
+  { type = "command", command = "[ \"$(uname -s)\" = Darwin ] && echo \"\uf511 $($HOME/.local/bin/1p)\"", interval_seconds = 5 },
 ]
 tab_bar_right_separator = " · "
 
