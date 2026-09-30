@@ -13,3 +13,5 @@ macos-option-as-alt = "left"
 title = " "
 shell-integration-features = no-title
 macos-titlebar-proxy-icon = hidden
+
+keybind = super+k=toggle_command_palette
