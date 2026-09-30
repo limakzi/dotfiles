@@ -71,5 +71,5 @@ has fzf && eval "$(fzf --zsh)"
 ## }}}
 
 ## keyboard shortcuts {{{
-bindkey -s '^e' '\eqranger\n'
+bindkey -s '^e' '\eqlf\n'
 ## }}}
