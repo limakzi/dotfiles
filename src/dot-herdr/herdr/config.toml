@@ -26,9 +26,8 @@ hide_tab_bar_when_single_tab = false
 tab_bar_right = [
   { type = "zoom" },
   { type = "hostname" },
-  { type = "datetime", format = "%H:%M" },
-  { type = "text", text = "prod" },
-  { type = "command", command = "~/.config/herdr/status.sh", interval_seconds = 5, timeout_seconds = 2 },
+  { type = "datetime", format = "\U000f00ed %a %d %b" },
+  { type = "datetime", format = "\U000f0954 %H:%M" },
 ]
 tab_bar_right_separator = " · "
 
