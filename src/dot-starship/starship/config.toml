@@ -1,5 +1,5 @@
 "$schema" = 'https://starship.rs/config-schema.json'
-format = """${custom.1p-agent}$all"""
+format = """$all"""
 add_newline = false
 scan_timeout = 10
 command_timeout = 100
@@ -62,14 +62,6 @@ disabled = false
 
 [vagrant]
 disabled = true
-
-[custom.1p-agent]
-disabled = false
-style = 'bold blue'
-symbol = ' '
-when = '1p'
-command = '1p'
-os = 'macos'
 
 [nodejs]
 disabled = true
