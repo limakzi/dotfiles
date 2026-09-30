@@ -70,3 +70,6 @@ symbol = ' '
 when = '1p'
 command = '1p'
 os = 'macos'
+
+[nodejs]
+disabled = true
