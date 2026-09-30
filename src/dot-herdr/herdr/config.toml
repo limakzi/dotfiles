@@ -55,7 +55,7 @@ directory = "~/cache/herdr/worktrees"
 
 
 [experimental]
-allow_nested = true
+allow_nested = false
 pane_history = true
 
 
