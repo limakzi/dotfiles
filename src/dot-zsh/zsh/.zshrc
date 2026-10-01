@@ -66,6 +66,22 @@ ranger() {
 }
 ## }}}
 
+## completion {{{
+ZSH_CACHE_DIR=${XDG_CACHE_HOME:-~/.cache}/zsh
+[[ -d $ZSH_CACHE_DIR ]] || mkdir -p $ZSH_CACHE_DIR
+
+autoload -Uz compinit
+compinit -d $ZSH_CACHE_DIR/zcompdump
+
+zstyle ':completion:*' menu select                                   # arrow through candidates in a menu
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*' # case-insensitive, then substring
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}               # colour candidates like ls
+zstyle ':completion:*:descriptions' format '%F{yellow}-- %d --%f'   # group headers
+zstyle ':completion:*' group-name ''                                 # group candidates by type
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path $ZSH_CACHE_DIR/zcompcache
+## }}}
+
 ## fzf {{{
 has fzf && eval "$(fzf --zsh)"
 ## }}}
