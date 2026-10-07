@@ -2,7 +2,7 @@ onboarding = false
 
 [terminal]
 default_shell = "zsh"
-new_cwd       = "home"
+new_cwd       = "follow"
 kitty_graphics = true
 
 
