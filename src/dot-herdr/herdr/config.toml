@@ -40,6 +40,7 @@ sidebar_width                = 64
 sidebar_min_width            = 48
 sidebar_max_width            = 64
 sidebar_collapsed_mode       = "hidden"
+agent_panel_sort             = "priority"
 hide_tab_bar_when_single_tab = false
 
 tab_bar_right = [
@@ -87,6 +88,8 @@ new_tab          = ["prefix+c", "prefix+ctrl+n"]
 new_worktree     = "prefix+n"
 close_workspace  = "prefix+shift+q"
 switch_tab       = "alt+1..9"
+next_agent       = "prefix+]"
+previous_agent   = "prefix+["
 reload_config    = "prefix+r"
 resize_mode      = "prefix+shift+r"
 zoom             = "prefix+enter"
