@@ -101,3 +101,8 @@ command     = "exec \"${SHELL:-sh}\""
 description = "open scratch terminal"
 width       = "80%"
 height      = "80%"
+
+[[keys.command]]
+key         = "prefix+shift+n"
+command     = '''herdr workspace list | jq -r --arg id "$HERDR_ACTIVE_WORKSPACE_ID" '.result.workspaces as $w | ($w[] | select(.workspace_id == $id).worktree.repo_key) as $k | $w[] | select(.worktree.repo_key == $k and (.worktree.is_linked_worktree | not)).workspace_id' | head -n 1 | xargs -r herdr workspace focus'''
+description = "focus repo parent space"
