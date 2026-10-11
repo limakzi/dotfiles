@@ -45,6 +45,9 @@ has lsd && alias ls='lsd' ll='lsd --long'
 
 # fall back to plain dig when doggo is missing
 has doggo && alias dig='doggo'
+
+# fall back to plain ping when grc is missing
+has grc && alias ping='grc ping'
 ## }}}
 
 ## lf: quit leaves the shell in lf's last directory {{{
