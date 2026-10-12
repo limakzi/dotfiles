@@ -91,4 +91,6 @@ has fzf && eval "$(fzf --zsh)"
 
 ## keyboard shortcuts {{{
 bindkey -s '^e' '\eqlf\n'
+bindkey '^[[1;3D' backward-word # alt+left
+bindkey '^[[1;3C' forward-word  # alt+right
 ## }}}

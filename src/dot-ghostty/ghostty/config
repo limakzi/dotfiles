@@ -15,3 +15,6 @@ shell-integration-features = no-title
 macos-titlebar-proxy-icon = hidden
 
 keybind = super+k=toggle_command_palette
+# send alt+arrows as CSI, not ESC b/f, so herdr does not read the ESC as ctrl+[
+keybind = alt+left=unbind
+keybind = alt+right=unbind
