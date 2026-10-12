@@ -45,6 +45,12 @@ has doggo && alias dig='doggo'
 
 has grc && alias ping='grc ping'
 has grc && alias ps='grc ps'
+has grc && alias ss='grc ss'
+has grc && alias stat='grc stat'
+has grc && alias netstat='grc netstat'
+has grc && alias docker='grc docker'
+has grc && alias nmap='grc nmap'
+has grc && alias mtr='grc mtr'
 ## }}}
 
 ## lf: quit leaves the shell in lf's last directory {{{
