@@ -40,14 +40,11 @@ has() {
 ## aliases {{{
 alias -- '!!'='sudo su -'
 
-# fall back to plain ls when lsd is missing
 has lsd && alias ls='lsd' ll='lsd --long'
-
-# fall back to plain dig when doggo is missing
 has doggo && alias dig='doggo'
 
-# fall back to plain ping when grc is missing
 has grc && alias ping='grc ping'
+has grc && alias ps='grc ps'
 ## }}}
 
 ## lf: quit leaves the shell in lf's last directory {{{
