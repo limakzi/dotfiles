@@ -5,14 +5,15 @@ font-size = 14
 font-family = "JetBrainsMono Nerd Font"
 cursor-style = "bar"
 
-window-padding-x = 8
-window-padding-y = 8
+window-padding-x = 12
+window-padding-y = 12
 
 macos-option-as-alt = "left"
 
 title = " "
 shell-integration-features = no-title
 macos-titlebar-proxy-icon = hidden
+macos-titlebar-style = hidden
 
 keybind = super+k=toggle_command_palette
 # send alt+arrows as CSI, not ESC b/f, so herdr does not read the ESC as ctrl+[
