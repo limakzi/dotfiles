@@ -1,3 +1,4 @@
+tap "abue-ammar/tinycast", trusted: true
 brew "doggo"
 brew "dotbot"
 brew "fzf"
@@ -11,3 +12,4 @@ brew "neovim"
 brew "pi-coding-agent"
 brew "ranger"
 brew "starship"
+cask "abue-ammar/tinycast/tinycast", trusted: true
