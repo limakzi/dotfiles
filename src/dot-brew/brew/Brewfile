@@ -1,6 +1,8 @@
 tap "abue-ammar/tinycast", trusted: true
+brew "bat"
 brew "doggo"
 brew "dotbot"
+brew "fd"
 brew "fzf"
 brew "git"
 brew "git-lfs"
