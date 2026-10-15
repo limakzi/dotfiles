@@ -93,6 +93,7 @@ previous_agent   = "ctrl+["
 reload_config    = "prefix+r"
 resize_mode      = "prefix+shift+r"
 zoom             = "prefix+enter"
+toggle_sidebar   = "prefix+ctrl+/"
 
 [[keys.command]]
 key         = "prefix+t"
