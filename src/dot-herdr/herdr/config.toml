@@ -29,7 +29,7 @@ peach         = "#ffaa99"
 
 
 [ui]
-pane_gaps = true
+pane_gaps = false
 
 confirm_close                     = true
 prompt_new_tab_name               = false
