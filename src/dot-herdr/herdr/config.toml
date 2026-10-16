@@ -76,6 +76,14 @@ rows = [
 ]
 
 
+[session]
+## Relaunch Claude (and other integrated agents) into their own conversation
+## after a server restart. Needs `herdr integration install claude`, whose
+## SessionStart hook reports the session id — tracked in dot-claude.
+resume_agents_on_restore   = true
+startup_per_agent_delay_ms = 250
+
+
 [remote]
 manage_ssh_config = true
 
