@@ -7,7 +7,36 @@ kitty_graphics = true
 
 
 [theme]
-name = "terminal"
+## herdr has no theme files; a built-in base is required. Every token below
+## is overridden, so the base contributes nothing — this is bruxa
+## (mirrors ghostty/themes/bruxa).
+name = "dracula"
+
+[theme.custom]
+## Surfaces, darkest → lightest.
+panel_bg      = "#22212c"
+sidebar_bg    = "#22212c"
+surface_dim   = "#1b1a23"
+surface0      = "#2f2d3d"
+surface1      = "#454158"
+active_row_bg = "#454158"
+selection_bg  = "#5a5577"
+
+## Text, brightest → dimmest.
+text          = "#f8f8f2"
+subtext0      = "#bfbfb8"
+overlay1      = "#bfbfb8"
+overlay0      = "#7970a9"
+
+## Accents.
+accent        = "#9580ff"
+blue          = "#9580ff"
+mauve         = "#ff80bf"
+green         = "#8aff80"
+yellow        = "#ffff80"
+red           = "#ff9580"
+teal          = "#80ffea"
+peach         = "#ffaa99"
 
 
 [ui]
