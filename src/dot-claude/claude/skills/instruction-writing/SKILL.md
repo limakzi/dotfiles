@@ -1,6 +1,6 @@
 ---
 name: instruction-writing
-description: Rules and guidelines for writing instruction file content, structure, writing style, and locations. Use when creating or editing instruction files (`.instructions.md`, `AGENTS.md`, `SKILL.md`).
+description: Rules and guidelines for writing instruction file content, structure, writing style, and locations. Use when creating or editing instruction files (`CLAUDE.md`, `AGENTS.md`, `.instructions.md`, `SKILL.md`).
 metadata:
   version: "0.1.0"
   category: "documentation"
