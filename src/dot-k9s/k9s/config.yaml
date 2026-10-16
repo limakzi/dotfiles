@@ -13,6 +13,6 @@ k9s:
     crumbsless: false
     enableMouse: false
     reactive: false
-    skin: dracula
+    skin: bruxa
   imageScans:
     enable: false

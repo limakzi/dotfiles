@@ -1,20 +1,15 @@
-# -----------------------------------------------------------------------------
-# Dracula skin
-# -----------------------------------------------------------------------------
-
-# Styles...
-foreground: &foreground "#f8f8f2"
-background: &background "#282a36"
-current_line: &current_line "#44475a"
-selection: &selection "#44475a"
-comment: &comment "#6272a4"
-cyan: &cyan "#8be9fd"
-green: &green "#50fa7b"
-orange: &orange "#ffb86c"
-pink: &pink "#ff79c6"
-purple: &purple "#bd93f9"
-red: &red "#ff5555"
-yellow: &yellow "#f1fa8c"
+foreground: &foreground "default"
+background: &background "default"
+current_line: &current_line "gray"
+selection: &selection "gray"
+comment: &comment "gray"
+cyan: &cyan "teal"
+green: &green "green"
+orange: &orange "olive"
+pink: &pink "purple"
+purple: &purple "navy"
+red: &red "maroon"
+yellow: &yellow "olive"
 
 # Skin...
 k9s:
