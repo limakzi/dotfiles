@@ -99,7 +99,7 @@ pane_history = true
 
 [keys]
 prefix = "ctrl+a"
-goto = "prefix+ctrl+p"
+goto = "ctrl+p"
 
 split_vertical   = "prefix+|"
 split_horizontal = "prefix+ctrl+-"
