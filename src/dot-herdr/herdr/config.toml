@@ -102,7 +102,7 @@ prefix = "ctrl+a"
 goto = "prefix+ctrl+p"
 
 split_vertical   = "prefix+|"
-split_horizontal = "prefix+-"
+split_horizontal = "prefix+ctrl+-"
 new_tab          = []
 new_worktree     = "prefix+ctrl+n"
 close_workspace  = "prefix+shift+q"
