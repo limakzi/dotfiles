@@ -104,6 +104,7 @@ goto = "prefix+ctrl+p"
 split_vertical   = "prefix+|"
 split_horizontal = "prefix+ctrl+-"
 new_tab          = []
+new_workspace    = "prefix+shift+n"
 new_worktree     = "prefix+ctrl+n"
 close_workspace  = "prefix+shift+q"
 switch_tab       = "alt+1..9"
@@ -121,8 +122,3 @@ command     = "exec \"${SHELL:-sh}\""
 description = "open scratch terminal"
 width       = "80%"
 height      = "80%"
-
-[[keys.command]]
-key         = "prefix+shift+n"
-command     = 'herdr workspace create --cwd "$HOME" --focus'
-description = "new workspace in home"
