@@ -30,6 +30,16 @@
   default = current
   autoSetupRemote = true
 
+[diff]
+  colorMoved = zebra
+  colorMovedWS = allow-indentation-change
+
+[color "diff"]
+  oldMoved = magenta
+  oldMovedAlternative = blue
+  newMoved = cyan
+  newMovedAlternative = yellow
+
 [rebase]
   instructionFormat = (%an <%ae>) %s
 
