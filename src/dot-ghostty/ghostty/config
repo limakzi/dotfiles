@@ -20,4 +20,5 @@ quit-after-last-window-closed = true
 keybind = super+k=toggle_command_palette
 keybind = alt+left=unbind
 keybind = alt+right=unbind
+keybind = super+left=unbind
 keybind = super+d=new_split:down
