@@ -317,6 +317,7 @@ map I push a<c-a>
 ## {{{2 keyboard shortcuts -- changing directories
 map gh cd ~
 map g/ cd /
+map g. cd ~/Dotfiles
 ## }}}2
 
 ## {{{2 keyboard shortcuts -- bookmarks
